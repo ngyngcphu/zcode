@@ -26,7 +26,7 @@ def main(argv):
         os.mkdir(TARGET_DIR)
         for root, dirs, files in os.walk("..", topdown=False):
             for name in dirs:
-                if name[0] in ['.', '_']:
+                if name[0] in ['.', '_'] and name != '.git':
                     shutil.rmtree(os.path.join(root, name))
             for name in files:
                 if name == '.DS_Store':
@@ -35,8 +35,8 @@ def main(argv):
     elif argv[0] == 'gui':
         seperator = ';' if platform.system() == "Windows" else ":"
         process1 = subprocess.Popen(
-            ["java", "-jar", ANTLR_JAR,
-             "ZCode.g4", "-Dlanguage=Java"], cwd="{}/test/gui".format(os.getcwd()))
+            ["java", "-jar", ANTLR_JAR, "-o", "{}/test/gui".format(os.getcwd()),
+             "ZCode.g4", "-Dlanguage=Java"], cwd="{}/main/zcode/parser".format(os.getcwd()))
         process1.wait()
 
         process2 = subprocess.Popen(

@@ -10,30 +10,71 @@ options {
 	language = Python3;
 }
 
-program: (varDecl statement* | functionDecl)+ EOF;
+program: ((varDecl | functionDecl) NEWLINE*)+ EOF;
 
 varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 		ASSIGN expr
-	)? NEWLINE+
-	| VAR IDENTIFIER ASSIGN expr NEWLINE+
-	| array_type (ASSIGN array_value)? NEWLINE+;
+	)?
+	| VAR IDENTIFIER ASSIGN expr
+	| array_type (ASSIGN array_value)?;
 
 functionDecl:
-	FUNC IDENTIFIER LB paramList RB NEWLINE* (
-		returnStat
-		| blockStat
-	);
+	FUNC IDENTIFIER LB paramList RB NEWLINE* functionBody?;
+functionBody: statement+;
+
 paramList: paramPrime |;
 paramPrime: formalParameter COMMA paramPrime | formalParameter;
 formalParameter: (NUMBER | BOOL | STRING) IDENTIFIER
 	| array_type;
 
-statement: varDecl;
+statement: (
+		varDecl
+		| assign_stat
+		| if_stat
+		| for_stat
+		| BREAK
+		| CONTINUE
+		| return_stat
+		| func_call_stat
+		| block_stat
+	) NEWLINE+;
+
+assign_stat: lhs ASSIGN expr;
+lhs: IDENTIFIER | index_expr;
+
+if_stat: if_fragment elif_fragment*? else_fragment?;
+if_fragment: IF LB expr RB NEWLINE* statement+;
+elif_fragment: ELIF LB expr RB NEWLINE* statement+;
+else_fragment: ELSE statement+;
+
+for_stat:
+	FOR IDENTIFIER UNTIL expr BY expr NEWLINE* (statement+);
+
+return_stat: RETURN expr?;
+
+func_call_stat: (IDENTIFIER LB arglist RB) | io_function;
+arglist: argprime |;
+argprime: expr COMMA argprime | expr;
+
+block_stat: BEGIN NEWLINE+ statement* END;
+
+io_function:
+	read_number
+	| write_number
+	| read_bool
+	| write_bool
+	| read_string
+	| write_string;
+
+read_number: 'readNumber' LB RB;
+write_number: 'writeNumber' LB expr RB;
+read_bool: 'readBool' LB RB;
+write_bool: 'writeBool' LB expr RB;
+read_string: 'readString' LB RB;
+write_string: 'writeString' LB expr RB;
 
 array_type: (NUMBER | STRING | BOOL) IDENTIFIER LS dimension_list RS;
-dimension_list:
-	INTLIT_NON_ZERO COMMA dimension_list
-	| INTLIT_NON_ZERO;
+dimension_list: NUMBERLIT COMMA dimension_list | NUMBERLIT;
 
 array_value: LS array_elements RS;
 array_elements:
@@ -42,10 +83,11 @@ array_elements:
 array_nested_or_expression: array_value | exprlist;
 
 exprlist: expr COMMA exprlist | expr;
+index_expr: (IDENTIFIER | func_call_stat) LS exprlist RS;
 
 expr:
 	LB expr RB
-	| (IDENTIFIER | func_call) LS exprlist RS
+	| index_expr
 	| <assoc = right> SUB_OF expr
 	| <assoc = right> NOT_OP expr
 	| expr (MUL_OF | DIV_OF | MOD_OF) expr
@@ -67,10 +109,6 @@ expr:
 	| STRINGLIT
 	| array_value
 	| IDENTIFIER;
-
-func_call: IDENTIFIER LB arglist RB;
-arglist: argprime |;
-argprime: expr COMMA argprime | expr;
 
 TRUE: 'true';
 FALSE: 'false';
@@ -118,7 +156,6 @@ COMMA: ',';
 
 NUMBERLIT: INT EXP? | INT '.' [0-9]* EXP?;
 fragment INT: '0' | [1-9][0-9]*;
-fragment INTLIT_NON_ZERO: [1-9][0-9]*;
 fragment EXP: [eE] [+\-]? [0-9]+;
 
 STRINGLIT: '"' CHAR_LIT*? '"' {self.text = self.text[1:-1]};
