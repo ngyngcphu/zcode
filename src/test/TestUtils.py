@@ -3,8 +3,8 @@ from antlr4 import *
 from antlr4.error.ErrorListener import ConsoleErrorListener,ErrorListener
 if not './main/zcode/parser/' in sys.path:
     sys.path.append('./main/zcode/parser/')
-if os.path.isdir('../target/main/zcode/parser') and not '../target/main/zcode/parser/' in sys.path:
-    sys.path.append('../target/main/zcode/parser/')
+if os.path.isdir('../target') and not '../target' in sys.path:
+    sys.path.append('../target')
 from ZCodeLexer import ZCodeLexer
 from ZCodeParser import ZCodeParser
 from lexererr import *
