@@ -162,7 +162,7 @@ fragment INT: [0-9]+;
 fragment EXP: [eE] [+\-]? INT;
 
 STRINGLIT: '"' CHAR_LIT*? '"' {self.text = self.text[1:-1]};
-fragment CHAR_LIT: (ESC | ~[\\'"]);
+fragment CHAR_LIT: (ESC | ~[\\"]);
 fragment ESC: '\\' [bfrnt'\\] | '\'"';
 
 IDENTIFIER: [a-zA-Z_] [a-zA-Z0-9_]*;
