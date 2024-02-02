@@ -1,0 +1,4 @@
+
+number gwva[9.723e-48,75.717E-86,1]
+func VNNM (dynamic ZZb, string IME)
+	return

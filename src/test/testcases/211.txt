@@ -1,0 +1,8 @@
+
+## ~)O
+func QN (number le[205.835E+31,904.947e+64])
+	return true
+
+var ut8V[25e+51,78.598,84.614]
+func epQ1 ()	return he
+

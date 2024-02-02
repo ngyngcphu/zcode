@@ -1,0 +1,4 @@
+
+string ZLU[97,4.233e+37] <- saG ## 7n;l$FuX$
+func sArZ (number WHN)
+	return V4

@@ -1,0 +1,6 @@
+
+bool RZn[3.127,0e+07] ## 0,7!&;F
+var jT ## @7:=X:/+u
+func xgN (string xEcy, number JOU6)
+	return oQ
+

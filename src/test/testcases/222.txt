@@ -1,0 +1,3 @@
+
+func w1lN (number pjZ[6.061E-19,689.960,73E+54])	begin
+	end

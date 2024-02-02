@@ -1,0 +1,8 @@
+
+func hzpX (bool uOC[637e10])
+	begin
+		number Cd[5E20,89e-77] <- 1.090E-32
+		s4 <- 2e-45
+		## _"Tdq?_!h
+	end
+

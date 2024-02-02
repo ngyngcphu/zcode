@@ -3,301 +3,307 @@ from TestUtils import TestLexer
 
 class LexerSuite(unittest.TestCase):
 	def test_101(self):
-		self.assertTrue(TestLexer.test('''## ,l)y82''', '''Error Token #''', 101))
+		self.assertTrue(TestLexer.test('''## A3l{mTLWTO[&''', '''Error Token #''', 101))
 
 	def test_102(self):
-		self.assertTrue(TestLexer.test("60.954", "60.954,<EOF>", 102))
+		self.assertTrue(TestLexer.test("UUp4PzBW^", "UUp4PzBW,Error Token ^", 102))
 
 	def test_103(self):
-		self.assertTrue(TestLexer.test('''## l0("`JM''', '''Error Token #''', 103))
+		self.assertTrue(TestLexer.test("yd_X", "yd_X,<EOF>", 103))
 
 	def test_104(self):
-		self.assertTrue(TestLexer.test('''## *?``,=ZY''', '''Error Token #''', 104))
+		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 104))
 
-	# def test_105(self):
-	# 	self.assertTrue(TestLexer.test('''"\\g'"n'""''', '''"\\g,Error Token '''', 105))
+	def test_105(self):
+		self.assertTrue(TestLexer.test('''"\\kR%"''', '''"\\k,R,%,Unclosed String: ''', 105))
 
 	def test_106(self):
-		self.assertTrue(TestLexer.test("120e+90", "120e+90,<EOF>", 106))
+		self.assertTrue(TestLexer.test('''"
+'"'"'" ''', '''Unclosed String: 
+''', 106))
 
 	def test_107(self):
-		self.assertTrue(TestLexer.test("0.025", "0.025,<EOF>", 107))
+		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 107))
 
 	def test_108(self):
-		self.assertTrue(TestLexer.test("23", "23,<EOF>", 108))
+		self.assertTrue(TestLexer.test('''## F3A''', '''Error Token #''', 108))
 
 	def test_109(self):
-		self.assertTrue(TestLexer.test('''## kRSo"s9x''', '''Error Token #''', 109))
+		self.assertTrue(TestLexer.test('''"'"^RD"''', '''\'"^RD,<EOF>''', 109))
 
 	def test_110(self):
-		self.assertTrue(TestLexer.test('''"'"#'"'""''', '''\'"#'"'",<EOF>''', 110))
+		self.assertTrue(TestLexer.test('''## ]I&*!c''', '''Error Token #''', 110))
 
 	def test_111(self):
-		self.assertTrue(TestLexer.test('''## 3q#K91dAMP''', '''Error Token #''', 111))
+		self.assertTrue(TestLexer.test('''## _MRG-%@,}0vrbL"D''', '''Error Token #''', 111))
 
-	# def test_112(self):
-	# 	self.assertTrue(TestLexer.test('''"'"ph'"\\j'""''', '''"'"ph'"\\j,Error Token '''', 112))
+	def test_112(self):
+		self.assertTrue(TestLexer.test("vqJOOdYk", "vqJOOdYk,<EOF>", 112))
 
 	def test_113(self):
-		self.assertTrue(TestLexer.test('''"'"/"''', '''\'"/,<EOF>''', 113))
+		self.assertTrue(TestLexer.test("MldfF", "MldfF,<EOF>", 113))
 
 	def test_114(self):
-		self.assertTrue(TestLexer.test('''"q
-M'"b'""''', '''q
-M'"b'",<EOF>''', 114))
+		self.assertTrue(TestLexer.test("1N", "1,N,<EOF>", 114))
 
 	def test_115(self):
-		self.assertTrue(TestLexer.test("72.178", "72.178,<EOF>", 115))
+		self.assertTrue(TestLexer.test("8Rzls7g", "8,Rzls7g,<EOF>", 115))
 
 	def test_116(self):
-		self.assertTrue(TestLexer.test('''## T8{a>kwBI;2<''', '''Error Token #''', 116))
+		self.assertTrue(TestLexer.test("#wKuPh", "Error Token #", 116))
 
 	def test_117(self):
-		self.assertTrue(TestLexer.test("8", "8,<EOF>", 117))
+		self.assertTrue(TestLexer.test("771e-96", "771e-96,<EOF>", 117))
 
 	def test_118(self):
-		self.assertTrue(TestLexer.test("2Cy", "2,Cy,<EOF>", 118))
+		self.assertTrue(TestLexer.test("Ynro", "Ynro,<EOF>", 118))
 
 	def test_119(self):
-		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 119))
+		self.assertTrue(TestLexer.test("797E+28", "797E+28,<EOF>", 119))
 
 	def test_120(self):
-		self.assertTrue(TestLexer.test('''"='" ''', '''Unclosed String: ='" ''', 120))
+		self.assertTrue(TestLexer.test('''"\\w'"'""''', '''"\\w,Error Token '''', 120))
 
 	def test_121(self):
-		self.assertTrue(TestLexer.test('''## 8~/Nw$4aa7cqP''', '''Error Token #''', 121))
+		self.assertTrue(TestLexer.test("77", "77,<EOF>", 121))
 
 	def test_122(self):
-		self.assertTrue(TestLexer.test("561E-30", "561E-30,<EOF>", 122))
+		self.assertTrue(TestLexer.test("Mt", "Mt,<EOF>", 122))
 
 	def test_123(self):
-		self.assertTrue(TestLexer.test("gcKFz", "gcKFz,<EOF>", 123))
+		self.assertTrue(TestLexer.test("9bO8n", "9,bO8n,<EOF>", 123))
 
 	def test_124(self):
-		self.assertTrue(TestLexer.test("87", "87,<EOF>", 124))
+		self.assertTrue(TestLexer.test("kqYJP@", "kqYJP,Error Token @", 124))
 
 	def test_125(self):
-		self.assertTrue(TestLexer.test("945e+92", "945e+92,<EOF>", 125))
+		self.assertTrue(TestLexer.test("UGA", "UGA,<EOF>", 125))
 
 	def test_126(self):
-		self.assertTrue(TestLexer.test("6e+57", "6e+57,<EOF>", 126))
+		self.assertTrue(TestLexer.test("Vkni7Y", "Vkni7Y,<EOF>", 126))
 
 	def test_127(self):
-		self.assertTrue(TestLexer.test('''## 3!#y)/z9p{de5`0]35''', '''Error Token #''', 127))
+		self.assertTrue(TestLexer.test('''"'"'" ''', '''Unclosed String: '"'" ''', 127))
 
 	def test_128(self):
-		self.assertTrue(TestLexer.test("53E00", "53E00,<EOF>", 128))
+		self.assertTrue(TestLexer.test('''"'"'" "''', '''\'"'" ,<EOF>''', 128))
 
 	def test_129(self):
-		self.assertTrue(TestLexer.test("1.097e+81", "1.097e+81,<EOF>", 129))
+		self.assertTrue(TestLexer.test("3.345e-58", "3.345e-58,<EOF>", 129))
 
 	def test_130(self):
-		self.assertTrue(TestLexer.test('''## ^2}NGyd{0f[?3M;E''', '''Error Token #''', 130))
+		self.assertTrue(TestLexer.test("rkf", "rkf,<EOF>", 130))
 
 	def test_131(self):
-		self.assertTrue(TestLexer.test("1e-73", "1e-73,<EOF>", 131))
+		self.assertTrue(TestLexer.test("K@Z40", "K,Error Token @", 131))
 
 	def test_132(self):
-		self.assertTrue(TestLexer.test("21.370e+38", "21.370e+38,<EOF>", 132))
+		self.assertTrue(TestLexer.test("$", "Error Token $", 132))
 
 	def test_133(self):
-		self.assertTrue(TestLexer.test('''"'"'" ''', '''Unclosed String: '"'" ''', 133))
+		self.assertTrue(TestLexer.test('''"|'"0v ''', '''Unclosed String: |'"0v ''', 133))
 
 	def test_134(self):
-		self.assertTrue(TestLexer.test('''## n$+QN3q.E''', '''Error Token #''', 134))
+		self.assertTrue(TestLexer.test('''## 9t$@]pMn73"''', '''Error Token #''', 134))
 
 	def test_135(self):
-		self.assertTrue(TestLexer.test("7.256", "7.256,<EOF>", 135))
+		self.assertTrue(TestLexer.test("48E+84", "48E+84,<EOF>", 135))
 
 	def test_136(self):
-		self.assertTrue(TestLexer.test('''"'"ph '""''', '''\'"ph '",<EOF>''', 136))
+		self.assertTrue(TestLexer.test('''## x<Nl%h''', '''Error Token #''', 136))
 
 	def test_137(self):
-		self.assertTrue(TestLexer.test("T2K96u5u", "T2K96u5u,<EOF>", 137))
+		self.assertTrue(TestLexer.test("29E-52", "29E-52,<EOF>", 137))
 
 	def test_138(self):
-		self.assertTrue(TestLexer.test('''## )k]&*]xb''', '''Error Token #''', 138))
+		self.assertTrue(TestLexer.test("9e+35", "9e+35,<EOF>", 138))
 
 	def test_139(self):
-		self.assertTrue(TestLexer.test("w0Nnnsll", "w0Nnnsll,<EOF>", 139))
+		self.assertTrue(TestLexer.test("1&4HI", "1,Error Token &", 139))
 
 	def test_140(self):
-		self.assertTrue(TestLexer.test("b5262", "b5262,<EOF>", 140))
+		self.assertTrue(TestLexer.test("p_vXM3TN4k", "p_vXM3TN4k,<EOF>", 140))
 
 	def test_141(self):
-		self.assertTrue(TestLexer.test('''"
-;"''', '''
-;,<EOF>''', 141))
+		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 141))
 
 	def test_142(self):
-		self.assertTrue(TestLexer.test("jvLk", "jvLk,<EOF>", 142))
+		self.assertTrue(TestLexer.test('''## @b#H/fdlA-[(ty89JN''', '''Error Token #''', 142))
 
-	# def test_143(self):
-	# 	self.assertTrue(TestLexer.test('''"\\j'"E'"JJ"''', '''"\\j,Error Token '''', 143))
+	def test_143(self):
+		self.assertTrue(TestLexer.test('''"hj*G"''', '''hj*G,<EOF>''', 143))
 
 	def test_144(self):
-		self.assertTrue(TestLexer.test("e1", "e1,<EOF>", 144))
+		self.assertTrue(TestLexer.test('''## 6S5&]GOCQZ''', '''Error Token #''', 144))
 
 	def test_145(self):
-		self.assertTrue(TestLexer.test('''"X<~'", ''', '''Unclosed String: X<~'", ''', 145))
+		self.assertTrue(TestLexer.test("#L@EmY3k", "Error Token #", 145))
 
 	def test_146(self):
-		self.assertTrue(TestLexer.test('''## #(6WJou~$DjruK`fj''', '''Error Token #''', 146))
+		self.assertTrue(TestLexer.test('''## &ZORE61''', '''Error Token #''', 146))
 
-	# def test_147(self):
-	# 	self.assertTrue(TestLexer.test('''"\\j'""''', '''"\\j,Error Token '''', 147))
+	def test_147(self):
+		self.assertTrue(TestLexer.test('''## *VKi ''', '''Error Token #''', 147))
 
 	def test_148(self):
-		self.assertTrue(TestLexer.test('''## .Y->nsUb{5Z}L''', '''Error Token #''', 148))
+		self.assertTrue(TestLexer.test("g2fdt69K$0", "g2fdt69K,Error Token $", 148))
 
 	def test_149(self):
-		self.assertTrue(TestLexer.test("P8kYR^aZ", "P8kYR,Error Token ^", 149))
+		self.assertTrue(TestLexer.test("705", "705,<EOF>", 149))
 
 	def test_150(self):
-		self.assertTrue(TestLexer.test("251.139", "251.139,<EOF>", 150))
+		self.assertTrue(TestLexer.test('''## <VS;GxZwWrwQx''', '''Error Token #''', 150))
 
 	def test_151(self):
-		self.assertTrue(TestLexer.test("4", "4,<EOF>", 151))
+		self.assertTrue(TestLexer.test('''"@'"q"''', '''@'"q,<EOF>''', 151))
 
 	def test_152(self):
-		self.assertTrue(TestLexer.test("eCQ", "eCQ,<EOF>", 152))
+		self.assertTrue(TestLexer.test("9", "9,<EOF>", 152))
 
 	def test_153(self):
-		self.assertTrue(TestLexer.test("44", "44,<EOF>", 153))
+		self.assertTrue(TestLexer.test("0.554", "0.554,<EOF>", 153))
 
 	def test_154(self):
-		self.assertTrue(TestLexer.test('''## y4odMu@''', '''Error Token #''', 154))
+		self.assertTrue(TestLexer.test("9", "9,<EOF>", 154))
 
-	# def test_155(self):
-	# 	self.assertTrue(TestLexer.test('''"N/\\d'""''', '''"N/\\d,Error Token '''', 155))
+	def test_155(self):
+		self.assertTrue(TestLexer.test('''## [dR kJ[fv-[mr''', '''Error Token #''', 155))
 
 	def test_156(self):
-		self.assertTrue(TestLexer.test('''## oOjXzG}3''', '''Error Token #''', 156))
+		self.assertTrue(TestLexer.test('''## C''', '''Error Token #''', 156))
 
 	def test_157(self):
-		self.assertTrue(TestLexer.test('''## 6_".Au2#d2Q2_''', '''Error Token #''', 157))
+		self.assertTrue(TestLexer.test('''"'"dl'""''', '''\'"dl'",<EOF>''', 157))
 
 	def test_158(self):
-		self.assertTrue(TestLexer.test("cNU", "cNU,<EOF>", 158))
+		self.assertTrue(TestLexer.test('''"\\k'"#"''', '''"\\k,Error Token '''', 158))
 
 	def test_159(self):
-		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 159))
+		self.assertTrue(TestLexer.test("Uy", "Uy,<EOF>", 159))
 
 	def test_160(self):
-		self.assertTrue(TestLexer.test("663.057", "663.057,<EOF>", 160))
+		self.assertTrue(TestLexer.test('''## jbmc`4%*8{YlT!i$-gaU''', '''Error Token #''', 160))
 
 	def test_161(self):
-		self.assertTrue(TestLexer.test("jJ4", "jJ4,<EOF>", 161))
+		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 161))
 
 	def test_162(self):
-		self.assertTrue(TestLexer.test("$ZJK&nNWC1", "Error Token $", 162))
+		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 162))
 
 	def test_163(self):
-		self.assertTrue(TestLexer.test("&", "Error Token &", 163))
+		self.assertTrue(TestLexer.test("SCIhd1JC3k", "SCIhd1JC3k,<EOF>", 163))
 
 	def test_164(self):
-		self.assertTrue(TestLexer.test("G4137ms3", "G4137ms3,<EOF>", 164))
+		self.assertTrue(TestLexer.test("40.064", "40.064,<EOF>", 164))
 
 	def test_165(self):
-		self.assertTrue(TestLexer.test('''## 43j])0''', '''Error Token #''', 165))
+		self.assertTrue(TestLexer.test("l@Y", "l,Error Token @", 165))
 
 	def test_166(self):
-		self.assertTrue(TestLexer.test("SQkff", "SQkff,<EOF>", 166))
+		self.assertTrue(TestLexer.test('''## $q]TN)J>OO.''', '''Error Token #''', 166))
 
 	def test_167(self):
-		self.assertTrue(TestLexer.test("5.561", "5.561,<EOF>", 167))
+		self.assertTrue(TestLexer.test("b", "b,<EOF>", 167))
 
 	def test_168(self):
-		self.assertTrue(TestLexer.test("yGuZlo", "yGuZlo,<EOF>", 168))
+		self.assertTrue(TestLexer.test("340.084", "340.084,<EOF>", 168))
 
 	def test_169(self):
-		self.assertTrue(TestLexer.test('''## mn)B%o0 BNb^.n''', '''Error Token #''', 169))
+		self.assertTrue(TestLexer.test("f", "f,<EOF>", 169))
 
 	def test_170(self):
-		self.assertTrue(TestLexer.test("GPpd", "GPpd,<EOF>", 170))
+		self.assertTrue(TestLexer.test("651.783E-66", "651.783E-66,<EOF>", 170))
 
 	def test_171(self):
-		self.assertTrue(TestLexer.test("S^P", "S,Error Token ^", 171))
+		self.assertTrue(TestLexer.test('''"iya'""''', '''iya'",<EOF>''', 171))
 
 	def test_172(self):
-		self.assertTrue(TestLexer.test("X2pqGF", "X2pqGF,<EOF>", 172))
+		self.assertTrue(TestLexer.test("Ox", "Ox,<EOF>", 172))
 
-# 	def test_173(self):
-# 		self.assertTrue(TestLexer.test('''"'"
-# \\j'""''', '''"'"
-# \\j,Error Token '''', 173))
+	def test_173(self):
+		self.assertTrue(TestLexer.test("wr^@Wk&W", "wr,Error Token ^", 173))
 
 	def test_174(self):
-		self.assertTrue(TestLexer.test("f", "f,<EOF>", 174))
+		self.assertTrue(TestLexer.test('''"'"?"''', '''\'"?,<EOF>''', 174))
 
 	def test_175(self):
-		self.assertTrue(TestLexer.test('''## !xz.hO.oFDuO''', '''Error Token #''', 175))
+		self.assertTrue(TestLexer.test('''"
+H"''', '''
+H,<EOF>''', 175))
 
 	def test_176(self):
-		self.assertTrue(TestLexer.test("6.058E00", "6.058E00,<EOF>", 176))
+		self.assertTrue(TestLexer.test("Ez", "Ez,<EOF>", 176))
 
 	def test_177(self):
-		self.assertTrue(TestLexer.test("5", "5,<EOF>", 177))
+		self.assertTrue(TestLexer.test("Ro8", "Ro8,<EOF>", 177))
 
 	def test_178(self):
-		self.assertTrue(TestLexer.test("Xv9", "Xv9,<EOF>", 178))
+		self.assertTrue(TestLexer.test('''## DwJ^0tNNFfPx[J|_aY''', '''Error Token #''', 178))
 
 	def test_179(self):
-		self.assertTrue(TestLexer.test('''"o'"A ''', '''Unclosed String: o'"A ''', 179))
+		self.assertTrue(TestLexer.test('''""''', ''',<EOF>''', 179))
 
 	def test_180(self):
-		self.assertTrue(TestLexer.test('''"'" ''', '''Unclosed String: '" ''', 180))
+		self.assertTrue(TestLexer.test('''## G~YfN9,2-E4b5/BKVNb''', '''Error Token #''', 180))
 
 	def test_181(self):
-		self.assertTrue(TestLexer.test("ymG", "ymG,<EOF>", 181))
+		self.assertTrue(TestLexer.test('''"?P'": ''', '''Unclosed String: ?P'": ''', 181))
 
 	def test_182(self):
-		self.assertTrue(TestLexer.test('''## 0-S+D ~;WA&U%t|sU$''', '''Error Token #''', 182))
+		self.assertTrue(TestLexer.test('''"\\wT'"'"b"''', '''"\\w,T,Error Token '''', 182))
 
 	def test_183(self):
-		self.assertTrue(TestLexer.test('''"'"n'"P"''', '''\'"n'"P,<EOF>''', 183))
+		self.assertTrue(TestLexer.test('''"'"r\\v'"'"'""''', '''"'"r\\v,Error Token '''', 183))
 
 	def test_184(self):
-		self.assertTrue(TestLexer.test('''## 6j>OOLB7s>TL>c_VsR''', '''Error Token #''', 184))
+		self.assertTrue(TestLexer.test('''## t?c>WgQ[qG''', '''Error Token #''', 184))
 
 	def test_185(self):
-		self.assertTrue(TestLexer.test("f9fO$&7", "f9fO,Error Token $", 185))
+		self.assertTrue(TestLexer.test('''"\\a'"Q"''', '''"\\a,Error Token '''', 185))
 
 	def test_186(self):
-		self.assertTrue(TestLexer.test('''## k_icdHd0p<I51z[B0TX?''', '''Error Token #''', 186))
+		self.assertTrue(TestLexer.test("72.773", "72.773,<EOF>", 186))
 
 	def test_187(self):
-		self.assertTrue(TestLexer.test("233.450", "233.450,<EOF>", 187))
+		self.assertTrue(TestLexer.test('''"jt'" ''', '''Unclosed String: jt'" ''', 187))
 
-	# def test_188(self):
-	# 	self.assertTrue(TestLexer.test('''"\\l'"["''', '''"\\l,Error Token '''', 188))
+	def test_188(self):
+		self.assertTrue(TestLexer.test('''"e'"'"\\z'""''', '''"e'"'"\\z,Error Token '''', 188))
 
 	def test_189(self):
-		self.assertTrue(TestLexer.test('''"O'"'"N ''', '''Unclosed String: O'"'"N ''', 189))
+		self.assertTrue(TestLexer.test("45.089e+43", "45.089e+43,<EOF>", 189))
 
 	def test_190(self):
-		self.assertTrue(TestLexer.test("mmiD7b", "mmiD7b,<EOF>", 190))
+		self.assertTrue(TestLexer.test('''## !:>M.1=''', '''Error Token #''', 190))
 
 	def test_191(self):
-		self.assertTrue(TestLexer.test("44", "44,<EOF>", 191))
+		self.assertTrue(TestLexer.test("0", "0,<EOF>", 191))
 
 	def test_192(self):
-		self.assertTrue(TestLexer.test("2E+63", "2E+63,<EOF>", 192))
+		self.assertTrue(TestLexer.test('''"'"'""''', '''\'"'",<EOF>''', 192))
 
 	def test_193(self):
-		self.assertTrue(TestLexer.test('''## 0{tW|jxb%h_>b(Z''', '''Error Token #''', 193))
+		self.assertTrue(TestLexer.test("9.635E+73", "9.635E+73,<EOF>", 193))
 
-	# def test_194(self):
-	# 	self.assertTrue(TestLexer.test('''"\\i'""''', '''"\\i,Error Token '''', 194))
+	def test_194(self):
+		self.assertTrue(TestLexer.test('''"!'""''', '''!'",<EOF>''', 194))
 
 	def test_195(self):
-		self.assertTrue(TestLexer.test('''"'"'" "''', '''\'"'" ,<EOF>''', 195))
+		self.assertTrue(TestLexer.test("TKEPFUmc", "TKEPFUmc,<EOF>", 195))
 
 	def test_196(self):
-		self.assertTrue(TestLexer.test("pve6u", "pve6u,<EOF>", 196))
+		self.assertTrue(TestLexer.test('''"
+e,'""''', '''
+e,'",<EOF>''', 196))
 
 	def test_197(self):
-		self.assertTrue(TestLexer.test("966.281E04", "966.281E04,<EOF>", 197))
+		self.assertTrue(TestLexer.test("A@x&Rbl73", "A,Error Token @", 197))
 
 	def test_198(self):
-		self.assertTrue(TestLexer.test('''"\\pp"''', '''"\\p,p,Unclosed String: ''', 198))
+		self.assertTrue(TestLexer.test('''## ^MYmZ''', '''Error Token #''', 198))
+
+	def test_199(self):
+		self.assertTrue(TestLexer.test('''"'"'""''', '''\'"'",<EOF>''', 199))
+
+	def test_200(self):
+		self.assertTrue(TestLexer.test("7", "7,<EOF>", 200))

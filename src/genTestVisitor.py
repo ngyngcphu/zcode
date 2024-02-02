@@ -226,7 +226,7 @@ class ZCodeProgram(Visitor):
     def visitZCodeAssignStmt(self, mode):
         if mode == 'parser':
             return "{}{}".format(
-                self.visitZCodeID(mode) if random.randint(0, 1) == 0 else self.visitZCodeArrayCell(),
+                self.visitZCodeID(mode) if random.randint(0, 1) == 0 else self.visitZCodeArrayCell(mode),
                 ' <- ' + self.visitZCodeExpression(mode)
         )
 

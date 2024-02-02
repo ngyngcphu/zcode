@@ -1,0 +1,10 @@
+
+## |&
+func uPL ()
+	return false
+
+## 8+z,/r@V(f$*tvL@aCX
+func uzz2 (number sSH, var L287, var DyE)	begin
+		dynamic EfHN <- 3E+57
+	end
+

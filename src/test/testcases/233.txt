@@ -1,0 +1,4 @@
+
+func CNNF ()
+	return false
+

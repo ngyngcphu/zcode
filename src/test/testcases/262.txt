@@ -1,0 +1,4 @@
+
+func WE9 (string aAMu[67.825], number gW, string zLT[29.925e-02])	begin
+		kX[false] <- "2'"O"
+	end

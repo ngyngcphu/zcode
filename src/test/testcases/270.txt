@@ -1,0 +1,3 @@
+
+func E2X (var FVq[1E-20], dynamic Pn, bool Dm)	return "'"'"'""
+

@@ -1,0 +1,9 @@
+
+func A5 ()	return
+func Iy (var oSOp[4.594e29], dynamic E1S, var DNY9)	begin
+	end
+
+func Jif (var QMI, string Xsc6)
+	begin
+		## {Ew4RXOb
+	end

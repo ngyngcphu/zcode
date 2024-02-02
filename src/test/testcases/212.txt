@@ -1,0 +1,3 @@
+
+func hl_O (var qH)
+	return 32
