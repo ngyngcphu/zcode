@@ -1,8 +1,2 @@
 
-func Mnu (dynamic pqW, dynamic Kz2H)
-	return "V"
-
-func Ds (var MX4)	begin
-	end
-
-var i9W <- false ## /c
+bool L5w <- "'"A" ## 9!sbj

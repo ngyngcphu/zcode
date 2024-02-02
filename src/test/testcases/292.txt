@@ -1,7 +1,5 @@
 
-func tulO (string J1, var SE[322.401e12])
-	begin
-	end
+func Lrw (bool uR[9.677,3,3.208], var tYp[6e+81])	return
+func hY0 (bool eaI1, string JNHs)	return "'"iB]'""
 
-var trR
-## &G@ZcxJ4n[zitP.%
+var LG[2.027E+70] <- true ## |c}[B

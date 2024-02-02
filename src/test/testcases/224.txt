@@ -1,7 +1,4 @@
 
-string lX[87,522.809]
-func PAsA (string dBa, var s3[3.856], dynamic dJ[33.105E15])	begin
-		break
-		continue
+func qsn (dynamic dOgy, var kM, string yGY[104.684,5.545E+80,162.666E36])	begin
 	end
 

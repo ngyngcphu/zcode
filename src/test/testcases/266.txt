@@ -1,8 +1,6 @@
 
-var OmK3 <- EA ## uqW:KTi
-## r0*d8dmvg>gz
-func CU (number HXRm)	begin
-		return
+## ^}$"y{#)eXX/I_Gm
+func aE (number XUi9[37,8,49])	begin
 	end
-string S51[3.345e-13,1] <- "S" ## %>}q5to!GPiYE<
-## xydBu/;E&z
+func lqS (string mDF, var DtL, number t6j[5,60e-32,10e62])	return
+

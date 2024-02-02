@@ -1,8 +1,3 @@
 
-func Pd (bool Gt, number odSQ, string uld2[57.433e02,318])
-	begin
-		break
-		## y+LUP-AYoW7*;QftJvB
-	end
-
-var bn ## #0Z+Zw7)D6ZbA3g*w
+func cUV ()
+	return

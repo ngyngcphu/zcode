@@ -1,11 +1,6 @@
 
-## `T[;USso
-## R(+4m-z+j&`jQ
-func Sq (number a0fU[64e27,386e+41], var bjBj[4.501,485,3e08])
-	return
-func GsT (bool QgwW[5.984,5.665], number eF19, dynamic wM8k)	return
+func TP (var mFq[308.634E-14,548.766E+99,412e+95])	return "('"'"'""
 
-func zO ()
-	begin
-	end
+func bcV (number iO)	return
 
+number xT[260,3] <- nH ## )

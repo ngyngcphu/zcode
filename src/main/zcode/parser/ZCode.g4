@@ -19,36 +19,38 @@ varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 	| array_type (ASSIGN array_value)?;
 
 functionDecl:
-	FUNC IDENTIFIER LB paramList RB NEWLINE* functionBody?;
-functionBody: statement+;
+	FUNC IDENTIFIER LB paramList RB NEWLINE* statement_list?;
 
 paramList: paramPrime |;
 paramPrime: formalParameter COMMA paramPrime | formalParameter;
 formalParameter: (NUMBER | BOOL | STRING) IDENTIFIER
 	| array_type;
 
-statement: (
-		varDecl
-		| assign_stat
-		| if_stat
-		| for_stat
-		| BREAK
-		| CONTINUE
-		| return_stat
-		| func_call_stat
-		| block_stat
-	) NEWLINE+;
+statement_type:
+	varDecl
+	| assign_stat
+	| if_stat
+	| for_stat
+	| BREAK
+	| CONTINUE
+	| return_stat
+	| func_call_stat
+	| block_stat;
+
+statement_list:
+	statement_type NEWLINE+ statement_list
+	| statement_type NEWLINE*;
 
 assign_stat: lhs ASSIGN expr;
 lhs: IDENTIFIER | index_expr;
 
 if_stat: if_fragment elif_fragment*? else_fragment?;
-if_fragment: IF LB expr RB NEWLINE* statement+;
-elif_fragment: ELIF LB expr RB NEWLINE* statement+;
-else_fragment: ELSE statement+;
+if_fragment: IF LB expr RB NEWLINE* statement_list;
+elif_fragment: ELIF LB expr RB NEWLINE* statement_list;
+else_fragment: ELSE statement_list;
 
 for_stat:
-	FOR IDENTIFIER UNTIL expr BY expr NEWLINE* (statement+);
+	FOR IDENTIFIER UNTIL expr BY expr NEWLINE* statement_list?;
 
 return_stat: RETURN expr?;
 
@@ -56,7 +58,7 @@ func_call_stat: (IDENTIFIER LB arglist RB) | io_function;
 arglist: argprime |;
 argprime: expr COMMA argprime | expr;
 
-block_stat: BEGIN NEWLINE+ statement* END;
+block_stat: BEGIN NEWLINE+ statement_list? END;
 
 io_function:
 	read_number
@@ -103,11 +105,12 @@ expr:
 		| GREATER_EQUAL_OP
 	) expr
 	| expr CONCAT_OP expr
+	| array_value
+	| func_call_stat
 	| NUMBERLIT
 	| TRUE
 	| FALSE
 	| STRINGLIT
-	| array_value
 	| IDENTIFIER;
 
 TRUE: 'true';

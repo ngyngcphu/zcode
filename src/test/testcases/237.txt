@@ -1,9 +1,5 @@
 
-func A5 ()	return
-func Iy (var oSOp[4.594e29], dynamic E1S, var DNY9)	begin
-	end
-
-func Jif (var QMI, string Xsc6)
-	begin
-		## {Ew4RXOb
-	end
+string Zb7Q[51.921e+16] <- JQ ## #1MqZvT.,G m
+## dxNh7}(
+dynamic UC2V
+number WZ5[2.036] <- wYY ## ;3*B/SeM

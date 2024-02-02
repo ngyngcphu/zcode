@@ -1,8 +1,6 @@
 
-func aX_u ()
-	return 0E-06
-## `H:?1/ EsD`Hlr#fw
-func mfbd (bool lc, bool ctg)
-	return false
-string hoZF <- "AF" ## sX%B-p*~|R_2x^
-## ~ysr7WPZ)Y6n
+dynamic TuG <- false ## ONb?z
+## 0YbO=,H{[
+## kb-P/8SSNWI8
+bool H6i <- false
+var tF[2E17] ## CT~p.`Or`Hw

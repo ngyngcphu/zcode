@@ -1,6 +1,5 @@
 
-var LF
-## "vO
-string UUR
-var eDa[0.781E-83] <- Am4L
-dynamic rD
+func ZFIA (string Z52[863.824e03])
+	begin
+		continue
+	end

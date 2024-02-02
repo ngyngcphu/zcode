@@ -4,11 +4,16 @@ from TestUtils import TestParser
 class ParserSuite(unittest.TestCase):
 	def test_201(self):
 		input = '''
-## "2p]rC{^jQ197$<o4
-bool OZ7[8.469e-18,145] <- K0("2khs&", RREQ(5))["'"L"] == 69 ## iu}T
-number oB8[893,8.484]
-## A>dKyD$>ccZ<y6f37
-var zI[9.735]
+## ~rQ(Ccu/}b
+number rnMM[263.708E20] <- l2(rUr["'"uw", 5.982e89], true) = "'"t{U"
+## ^5I.]d
+## sY70{T8
+func Kj ()	begin
+		## `qFJ
+		begin
+		end
+	end
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -16,12 +21,11 @@ var zI[9.735]
 
 	def test_202(self):
 		input = '''
-## ;/wGB:XKiXD`W
-## LE
-func j9 (var sF[61,442.384e94,2.577E78])
-	return
-
-string Cab ## yR"
+func qkO1 (dynamic awZ[6.882E+92,73.718,83E-93])	begin
+	end
+## gON<8T)7f9orju{
+dynamic R2l ## e5S:_O2SrE=mceFO01_Y
+string VR[63.180e+88,0.901]
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -29,8 +33,14 @@ string Cab ## yR"
 
 	def test_203(self):
 		input = '''
-## lOwx%#hl
-bool ys[2.468] <- "'"z"
+func Tg8I ()	begin
+		## T_z*w"x(&eM1L=X^BCd7
+		## |msfL
+		break
+	end
+number vh[892e-84] <- "q'"" ## vKaRgC
+## yZ=,C
+var HNV[50,7e-13,4] <- 487.704E+03 ## /(/p%affo&A
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -38,15 +48,8 @@ bool ys[2.468] <- "'"z"
 
 	def test_204(self):
 		input = '''
-number wB[6.216E12,564.250,28] <- false
-func EI0C (string V5ja[7.245e-11], var sB1, number xdO5[307E+54,51e50,269.136])
-	return
-
-func KRD (string d9s[23,17,30.817E+31])
-	return
-
-bool jh <- 992 ## qRNfU53#H4)5
-string ttO[8.707,0.761,6e-26] <- 978.969 ## `
+## b=TH5A3wShN)zBQzTYL^
+## ?@lNtH(T2*XRBGXL[
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -54,8 +57,15 @@ string ttO[8.707,0.761,6e-26] <- 978.969 ## `
 
 	def test_205(self):
 		input = '''
-var idXN
-## 6&~Uv5`1]&jY
+## ^n.QAR#]]J
+func lYrV ()
+	begin
+		## ZU"2]I
+		## ^I<^`m&PY=E>nV
+		## cIKttFc<Dam%
+	end
+
+string qdw[825.802,25.007E-89] <- CUxp
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -63,11 +73,9 @@ var idXN
 
 	def test_206(self):
 		input = '''
-bool N39Z[76e38,71.631E+07,0.875] <- WI ## ,!oGx.k[5VC@tL
-func p7 (bool Ta[4e-83,17e+57])	begin
-		return "*"
-		## 3r#us4t`YU"p~979:%r
-	end
+## h)z;r)
+## lOO(M/0[!*Og/$249W
+## bn4W3hW3h!~gvhjR
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -75,10 +83,7 @@ func p7 (bool Ta[4e-83,17e+57])	begin
 
 	def test_207(self):
 		input = '''
-func a_lR (bool mi, dynamic mH[264,5.035])
-	return 223.276E42
-
-dynamic to5b[7.136] ## Ljj4*b8O
+## 4K?T-e9dBZJv9
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -86,11 +91,18 @@ dynamic to5b[7.136] ## Ljj4*b8O
 
 	def test_208(self):
 		input = '''
-## vm4;pC+0,y$
-## WL.
-func uTGW (bool DgA[32.031,711])	begin
-		return 44E-16
+func pj (number rXK[70.404,534.316], string fA[593E-63,3])
+	begin
+		## qDuwq7s@w
+		## |gA"~v)r|5.?K66qu
 	end
+
+func mhf (number MQXr)
+	begin
+		## tgKjOZ"
+		## xs
+	end
+## S=3@9P2pWnG!7!Mt? y
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -98,8 +110,9 @@ func uTGW (bool DgA[32.031,711])	begin
 
 	def test_209(self):
 		input = '''
-## /
-string uScU[1E60]
+dynamic fl8
+dynamic zf1e <- false
+var CVqt <- false
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -107,9 +120,11 @@ string uScU[1E60]
 
 	def test_210(self):
 		input = '''
-number gwva[9.723e-48,75.717E-86,1]
-func VNNM (dynamic ZZb, string IME)
-	return
+## Eb-mfN
+number ii08
+func jq (dynamic S5[717], string LaPp, bool WZ)	return
+var iNnv ## lyM!3;x0QK
+## $7cTiJu&XZ`X5uw
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -117,12 +132,11 @@ func VNNM (dynamic ZZb, string IME)
 
 	def test_211(self):
 		input = '''
-## ~)O
-func QN (number le[205.835E+31,904.947e+64])
-	return true
-
-var ut8V[25e+51,78.598,84.614]
-func epQ1 ()	return he
+## H]D_LEuFI!]"M
+dynamic j80c[82,366.111E07] ## 1YzJ
+number AO[35,95.624] <- true ## ct]~H]5CMVP3K76uwQ8#
+## mK?F
+func hG (bool NIB)	return
 
 '''
 		expect = '''Error on line 1 col 0: 
@@ -131,8 +145,10 @@ func epQ1 ()	return he
 
 	def test_212(self):
 		input = '''
-func hl_O (var qH)
-	return 32
+bool uFp[4,545.100]
+var LTOP[4,366]
+bool tre
+bool cu[70] <- true ## ([66a7KA]BQp{PO:^ 
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -140,11 +156,10 @@ func hl_O (var qH)
 
 	def test_213(self):
 		input = '''
-var LF
-## "vO
-string UUR
-var eDa[0.781E-83] <- Am4L
-dynamic rD
+func ZFIA (string Z52[863.824e03])
+	begin
+		continue
+	end
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -152,8 +167,12 @@ dynamic rD
 
 	def test_214(self):
 		input = '''
-## _Z5wbFGx"h
-func XIyM (dynamic ngLG, number SqS)	return "C_'"'""
+## $&$Sr)CW
+bool ja[24.294E71,33.409] <- "'"gu^"
+## jDrd
+func gEB (var kNiA, var bdv5, dynamic T9r)
+	begin
+	end
 
 '''
 		expect = '''Error on line 1 col 0: 
@@ -162,17 +181,15 @@ func XIyM (dynamic ngLG, number SqS)	return "C_'"'""
 
 	def test_215(self):
 		input = '''
-dynamic dd77 ## g@3k&v^@$*!bhQ^
-func XxH (bool OO, string ymy[0e-86,36.971,256], string wBPu)	begin
-		## <#"JZ4)ONj/5|J|q2]
-		## KA,CwzepI(h+0g@
-		## NE
+## R/
+func r9 (dynamic LEak[157e+50,9.464], string TU[821.938,2.990e66], dynamic N9)	begin
+		h2(true, "8'"?y", 5)
+		## )m[z
 	end
-number cqp
-## }I:rid+xFEN
-func G9m (bool wAR[806.481], var Tc7Z)
-	return "}*'"5"
-
+## M>FX
+func XZSs (bool yaDY[97,4.385,6.619e-66], string KLb[6.977,6.145E-30], string xYZY)
+	return
+string urkk <- false ## fHZE
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -180,14 +197,29 @@ func G9m (bool wAR[806.481], var Tc7Z)
 
 	def test_216(self):
 		input = '''
-func M4d6 (dynamic ldgQ, bool Uf[2.626,84.848e+35], var V9FJ[7e+86,134.394E-90,18.270])
+func hO9 (dynamic Ra8)
 	begin
+		if (7.454E38)
+		break
+		elif (false)
+		var a1Ej[583e-28,42]
+		elif (lPt) continue
+		elif (Te) return 7E-41
+		elif (d1Y) HLoH(true, "'"'"'"M'"", w0m)[42e+96] <- 736.941
+		else var Eo[446.673e-12,637.629e44] <- "oj-" ## 2Kle
+		continue
+		## +
 	end
-func fO (var gJXJ[7,97])
-	return true
 
-string XjbA[8.257e-06,9.328E69,0.163] <- FQkZ ## a^t:EG
-dynamic vA <- 897.305 ## jKlb.- [
+func i007 (number kJON[74E-62], string z1j, var dbE)
+	return
+func hGr ()	return false
+
+## ^
+func JEx (string G8mu, dynamic a5vO)	begin
+		zz()
+		string kHr[18.542e-46,39.755,97.049e+86] ## MyeDeY,Ewh9A
+	end
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -195,23 +227,12 @@ dynamic vA <- 897.305 ## jKlb.- [
 
 	def test_217(self):
 		input = '''
-func TPn (dynamic reb, bool sP[483E+21])	return XD
+## }k(4l_Bxg2XvS
+number b5[802.401] <- "@'":'"'""
+func g7 ()
+	return 542.926e-02
 
-## yr3/
-func aqHn (var S2[15.715e-34], dynamic CGb, string bcl[9.506,9,1E+42])	begin
-		begin
-			## .r"4kKh10:Fk-B;W:VN
-			## c79}38oA%L+|NA
-			VfQ <- 1.119
-		end
-		begin
-			continue
-			rj("'"'"'"{", false, "'"")
-			## V^(0VN
-		end
-	end
-
-string YDDX ## ,uTDV={F"LGUoc
+number JH ## gE6y}^{HNcdf1,j
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -219,13 +240,10 @@ string YDDX ## ,uTDV={F"LGUoc
 
 	def test_218(self):
 		input = '''
-var ezH <- false ## N1G5kFzOxTV;#O_b_Z
-## P I-+_yQ!,e<DF
-func wbJ (var YY[9.877E-47,93.982e-49], number GZx[458])	begin
-		break
+func vHQ (bool JL[41.855E+48], var qtP[10], string ZS)	return 8.611e-73
+func GnT (number dXx[9.827,6.999e74,553])	begin
 	end
-
-var HHI[4.404E01] ## 5:
+## MRHt#X23 ip,rm9
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -233,7 +251,9 @@ var HHI[4.404E01] ## 5:
 
 	def test_219(self):
 		input = '''
-bool Soc[0] <- Kg4 ## ){pQd
+dynamic P27m <- ojH
+number rFqG <- 3 ## !XB
+func YO0 (dynamic gyF)	return
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -241,13 +261,8 @@ bool Soc[0] <- Kg4 ## ){pQd
 
 	def test_220(self):
 		input = '''
-func Pd (bool Gt, number odSQ, string uld2[57.433e02,318])
-	begin
-		break
-		## y+LUP-AYoW7*;QftJvB
-	end
-
-var bn ## #0Z+Zw7)D6ZbA3g*w
+func cUV ()
+	return
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -255,16 +270,9 @@ var bn ## #0Z+Zw7)D6ZbA3g*w
 
 	def test_221(self):
 		input = '''
-func Ei (number RW[802.024E11,4,35.434])	return 802
-
-dynamic skWw[834E-29,0.131,1.766e+65] <- "y"
-number xSn[46.061,5E-55] <- x1o
-func P7tw (var eDt, string dlhZ)	begin
-		## ttJ]MlR
-		for E8 until 91.317 by 8e-95
-			continue
-		## >}9
-	end
+func qgJ (dynamic UcNt)	return
+## #QqF4Zhre-WvL
+## zT[
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -272,8 +280,17 @@ func P7tw (var eDt, string dlhZ)	begin
 
 	def test_222(self):
 		input = '''
-func w1lN (number pjZ[6.061E-19,689.960,73E+54])	begin
+func TK (string op[74.918e09,41E69], bool jMkl[313.966,0.983E54], bool nC[623.976])	return
+
+func mS (string xF, number gDf[2.212], dynamic YznU)
+	return NmkS
+
+func QuDF ()	begin
+		## |cJyQ&.*Se
+		E4(28.902, "s|'"'"'"")
 	end
+string Gvc[8e11] <- 85.431
+var ANY <- uM
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -281,9 +298,11 @@ func w1lN (number pjZ[6.061E-19,689.960,73E+54])	begin
 
 	def test_223(self):
 		input = '''
-string DPO3[1e+99,61.230E-36,51e+89] <- "/"
-## i8a
-var TIb[615E+01,33.218] <- j1 ## h gq!1j;B 8<|.OhlQn
+string Oq
+dynamic Tli[0,93,3] <- 694.236E-00
+func ZH (bool VjQu[9e+10,69e62,24.325e+87])	return
+string h5[93.912] <- SV ## .d>{.MMPwI9{bR;K9
+number v52[7.872] ## ^$D?bSte~8-7PaRT%S%W
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -291,10 +310,7 @@ var TIb[615E+01,33.218] <- j1 ## h gq!1j;B 8<|.OhlQn
 
 	def test_224(self):
 		input = '''
-string lX[87,522.809]
-func PAsA (string dBa, var s3[3.856], dynamic dJ[33.105E15])	begin
-		break
-		continue
+func qsn (dynamic dOgy, var kM, string yGY[104.684,5.545E+80,162.666E36])	begin
 	end
 
 '''
@@ -304,12 +320,12 @@ func PAsA (string dBa, var s3[3.856], dynamic dJ[33.105E15])	begin
 
 	def test_225(self):
 		input = '''
-func WCpR (number pOm[73.515], string RS_)
-	return jUB
-
-## $]3M+{fOwzG.t
-## <sfA/[Y
-string N6g[5.755,20.758,844.456e-12] ## XNq{E5IXBnjh9
+var MI6
+func Vkq ()
+	return
+## _C-G
+## [3Q&H!%sJ^
+## (2ryk4=K._
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -317,13 +333,9 @@ string N6g[5.755,20.758,844.456e-12] ## XNq{E5IXBnjh9
 
 	def test_226(self):
 		input = '''
-var oVnl <- 49.239E+87
-func Rd ()
-	begin
-		## 4OCQlW4[/}M^^*BLVS
-		## sc$7aid;]<?n:SeQ*
-	end
-
+bool p2F[9.546e48,894E+43,6E43] ## L0ZgrW:
+## jT
+bool cy <- " Nm['""
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -331,12 +343,7 @@ func Rd ()
 
 	def test_227(self):
 		input = '''
-## 3SqVe&(F~$"y
-func vqSD (dynamic Stx0[368.378E-80,50.914E+69,62.687E-53], var zI)	return
-
-## >S^O0!PyCGX{K^TGD
-## QR4bqD"+[u"kW#6?6.Vb
-dynamic b7 <- true ## Wj;sH7/4eFm(mXoqVF#q
+## t6Tl1:&O
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -344,11 +351,10 @@ dynamic b7 <- true ## Wj;sH7/4eFm(mXoqVF#q
 
 	def test_228(self):
 		input = '''
-## 9z4}ebuH2x7XLCXGNf
-## H=HIcXy
-func qy ()
-	return
-## Xgw&!.n4lP14eWo!qr
+func Mc ()	begin
+	end
+## v
+## 55
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -356,8 +362,10 @@ func qy ()
 
 	def test_229(self):
 		input = '''
-## r8rP2fti`Gygx(%p
-dynamic QJ[622.732,10e+20,54.354e-46] <- 0E+00 ## 33IM&
+string Il[4E89,91.095e91,3] <- EhZZ
+## X`|
+## ;hk}&xv>aMz"]/DXh
+## ZDR16hA1&z
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -365,8 +373,7 @@ dynamic QJ[622.732,10e+20,54.354e-46] <- 0E+00 ## 33IM&
 
 	def test_230(self):
 		input = '''
-## Gpk{e.HF4d;T}^
-## ^
+## V,7HR~O#,l1%U*
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -374,13 +381,15 @@ dynamic QJ[622.732,10e+20,54.354e-46] <- 0E+00 ## 33IM&
 
 	def test_231(self):
 		input = '''
-bool LAbG
-string yCa[3.571E-65,46.358,0.544E17] <- false
-## 8w<Ga`g;oT%Wf
-func G6gD (string kyOf[6e33,1E+98], var rR8e[30E60,33.230])
+func Rau (number Od3[88.836,48.053,79e+44], bool lVz[988,921.416,15e62], var aqED)
+	return 8.454e51
+bool Fki[235.877,3E+99,5E-67] ## >aEB4YvD?N
+func Z8 (string Mn[52E+05,31.168e+69], var Sfb[716.576,5E-84,361], dynamic RNX)	begin
+	end
+dynamic Fcb[8.743,4.921e+38] <- xs
+func ic (number YSh)
 	return
 
-## 69v*Xofl2aeE<F
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -388,12 +397,9 @@ func G6gD (string kyOf[6e33,1E+98], var rR8e[30E60,33.230])
 
 	def test_232(self):
 		input = '''
-func Ge0 (dynamic eAIn, var UnB, string CZXM)	return true
-func Kv (string wRI, var woVh, bool rtV[38.654E-77,8e-85,9e-92])
-	return Ah
-
-bool yN[34.900E-91,582.517,2.409] ## JSwUe|qQXU>=_/Qd=<
-dynamic en
+## E>
+## AzMY1(p!
+## Voae<:B:Y?&m
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -401,9 +407,10 @@ dynamic en
 
 	def test_233(self):
 		input = '''
-func CNNF ()
-	return false
-
+## V=t
+## eaU:_k
+## {eg&
+## ZchL({O3,%1){;3
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -411,7 +418,11 @@ func CNNF ()
 
 	def test_234(self):
 		input = '''
-## w^1)At1>Ae<JpPFW{]Zo
+var Vkf <- Xl ## <Nk)c.^J;wxoHbQVF 
+## *bRia
+string zPE <- false ## B&b2]3`~i$
+func Snc ()
+	return true
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -419,12 +430,8 @@ func CNNF ()
 
 	def test_235(self):
 		input = '''
-## +r_@xGJ
-## 1CfH,<xY
-## FbN*tTu}:H<)"U
-func Qm6 ()
-	return
-## 6CX6Vu_1-&LZ}0R2ch
+## L^2q`KXMz<G1`z&p
+bool JBzQ[573,57.026] <- CO1
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -432,13 +439,7 @@ func Qm6 ()
 
 	def test_236(self):
 		input = '''
-string coh[2,4,66e01] <- SU ## ~T__,C.Or7AU}!3L/R_X
-func lW1t (var Nt[14e11,8])
-	begin
-	end
-
-number YM <- "'"'"y" ## --Q
-## eDtUxEt9%J8En/
+func fS ()	return 8E-62
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -446,14 +447,10 @@ number YM <- "'"'"y" ## --Q
 
 	def test_237(self):
 		input = '''
-func A5 ()	return
-func Iy (var oSOp[4.594e29], dynamic E1S, var DNY9)	begin
-	end
-
-func Jif (var QMI, string Xsc6)
-	begin
-		## {Ew4RXOb
-	end
+string Zb7Q[51.921e+16] <- JQ ## #1MqZvT.,G m
+## dxNh7}(
+dynamic UC2V
+number WZ5[2.036] <- wYY ## ;3*B/SeM
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -461,11 +458,9 @@ func Jif (var QMI, string Xsc6)
 
 	def test_238(self):
 		input = '''
-## @SgapD35!NH
-## =t0&~eCh}
-## u-I
-string jFe <- F0u ## -gZuc@0]ShE_hi+a{+
-func BVpU (number jg[93,61e+32], dynamic XLk)	return
+dynamic GXVQ[93.526] ## qY)_1Q!
+## mLN<wf.o2y7:s
+dynamic LO[4E-20,190.117e67]
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -473,12 +468,12 @@ func BVpU (number jg[93,61e+32], dynamic XLk)	return
 
 	def test_239(self):
 		input = '''
-func tJ9J (number XP2[0E+91,96], string uU[15.886E+73,7E+18])
+## n~#R"%
+func tZ (bool m3l[717.683e-40,27])
 	begin
-		## _)y
-		number IPz[66.916E+85] <- false
 	end
 
+func eCB (dynamic Hf, bool CoBv[759.605e-97,38.667e79,7e-30], var ABF[8E+80,63])	return
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -486,13 +481,8 @@ func tJ9J (number XP2[0E+91,96], string uU[15.886E+73,7E+18])
 
 	def test_240(self):
 		input = '''
-func sYc (dynamic yw, var FH[861.693])	begin
-		## xjrK&}!`FL.1UbDWbLE9
-		CIb("B'"~'"(", "7Cu'"", skO)
-		continue
-	end
-## |5u@pH:+q+]KJ?IC
-## L::"?6>78
+var RA[310.482,0E73] <- true ## *_#t2rKiaqsGd{
+## PmVO.Z(2m]<
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -500,10 +490,15 @@ func sYc (dynamic yw, var FH[861.693])	begin
 
 	def test_241(self):
 		input = '''
-number Xue[1E+64,472] <- Rg ## HolQ;B`H
-dynamic jrK[5e+81,9.019E-18,518.696e+35] ## k&f|:`Cml
-## g
-## {Rzl_,
+func PhYi (dynamic REO[33.581,58,533E-02], var xK, var WJs[881.713])
+	return
+func Rxep (dynamic y5s)	return
+func OIgl (var XvQR)	return
+
+## ;5(pb&2 9I{F<Q
+func YZw (dynamic sm, string n7CD[59.320E+78,779.035], dynamic ts[0.228,0,414.150E-18])
+	return Kjv
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -511,15 +506,11 @@ dynamic jrK[5e+81,9.019E-18,518.696e+35] ## k&f|:`Cml
 
 	def test_242(self):
 		input = '''
-## w4d[ilU
-func enoA ()
+func Zxj (bool EXL)
 	begin
-		for fpFc until 994.369e76 by ":"
-			bool ybV[404,2] <- 4E-28 ## ~,OT
-		break
+		var Zq <- false
+		## &[DRZH]3nWZ
 	end
-bool Lo[86.906,94]
-bool FQ <- "'"'"'"'""
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -527,9 +518,11 @@ bool FQ <- "'"'"'"'""
 
 	def test_243(self):
 		input = '''
-## aa
-## l;+mpWy8QJ@WL:T1uN
-dynamic tzmB[931E-46]
+## ~
+func Jb (string Rj, bool cW, var nQ4M[9])	return
+func X6zL ()
+	return true
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -537,12 +530,10 @@ dynamic tzmB[931E-46]
 
 	def test_244(self):
 		input = '''
-func d0ks (bool iHL[5.829,292.428e+31,9.540e+23])
-	begin
-		##  o",96jBs0^/$
-		if (15E+07) return false
-	end
+func sx5 (dynamic f_5, bool r23[2e+77,66.161E75,3], number XRh7[1.172E+87,19])
+	return
 
+## mzKH
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -550,8 +541,8 @@ func d0ks (bool iHL[5.829,292.428e+31,9.540e+23])
 
 	def test_245(self):
 		input = '''
-## bDUV6kU=Z#0
-dynamic U1Vw <- true ## IhzXI3TA
+## <S= 1E)w]X
+## -iI|cntz^=R
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -559,10 +550,33 @@ dynamic U1Vw <- true ## IhzXI3TA
 
 	def test_246(self):
 		input = '''
-func e6bT (dynamic Tck[698.162e29,725.137,96.029E32], var S6Z9[2.932E+63,96.943E-05])
-	return MGF
-
-var FT <- pN6 ## =<MjJsT0Ggx_L!ac
+## n*&2j
+string Cwl <- true ## ;
+## Kwg=/wUwt>G
+func nK ()
+	return false
+func twQ (number UmEK[218E+64], bool pV[7.949,193.347,42], bool Wmn[6e31,6e-22,431e28])	begin
+		begin
+			## XqK=822-?
+			if (true) break
+			elif (true)
+			return a3
+			elif (54E-37)
+			string j_E1[9.133,744,8.640] <- xR1i
+			elif ("F")
+			OKI(S4J, yQ9)
+			elif (281) for agoL until 5e88 by rT_E
+				for XT until "'"'"'"" by ZXs
+					W68W[true, 189, true] <- 90.904
+			elif ("'"")
+			for c0f4 until XP by "<{NB"
+				begin
+					return 69.027E+45
+				end
+			## n:4nBb{f+%$ rU^{F[P
+		end
+		sn(false, Jo, "'"'"'"x ")[UB, 428.866] <- false
+	end
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -570,17 +584,9 @@ var FT <- pN6 ## =<MjJsT0Ggx_L!ac
 
 	def test_247(self):
 		input = '''
-func AL ()	begin
-		begin
-			Re2[63.022E-83] <- "'"x+"
-			## rtqqWXh
-			## <xEvR8_[[$>M@Fe%
-		end
-		## vfNSZJ($[lAr=QK,+7/
-		## D@
-	end
+func hhWY ()
+	return wVvr
 
-number a05 <- true ## plihN6UA}V8z,B
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -588,10 +594,12 @@ number a05 <- true ## plihN6UA}V8z,B
 
 	def test_248(self):
 		input = '''
-func OVAC (number FoV[0,3E96], bool et, var Xfhb[0e76,58.322e-31,85.350e+37])
-	return
+func gG (bool upXl, var B7[2.123,169.434], number r29[616.810,431.235])
+	begin
+		sH9j <- true
+	end
 
-number KH ## yg8gsed4Jf.Sk{t`w
+var gAbR <- 239 ## _=`fI/qheMv
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -599,11 +607,16 @@ number KH ## yg8gsed4Jf.Sk{t`w
 
 	def test_249(self):
 		input = '''
-## bTT3D4oj-3n(
-func dWj (string FPs[63.940,32.269e32,413.903e62], var OO, bool mj[1e+40])	return false
-func ZRk (string OWW[558.021])
-	return "CS'""
-string Ytsl[54.430] ## hLF~g7W#V]V~Q?
+var BJu[8.968E-56]
+func CMa (bool RBoa, number WrZE[1e30,59], dynamic sq[34.641E-60,797])	begin
+		dynamic LhI ## %e~
+	end
+
+func IoHU (string HlI3)	begin
+	end
+func r3LF (var oU, string ox[92.243,5.523E+93,15.721E-52])
+	return
+## $/TOm~H$pE6AlaJj
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -611,13 +624,11 @@ string Ytsl[54.430] ## hLF~g7W#V]V~Q?
 
 	def test_250(self):
 		input = '''
-func hzpX (bool uOC[637e10])
-	begin
-		number Cd[5E20,89e-77] <- 1.090E-32
-		s4 <- 2e-45
-		## _"Tdq?_!h
-	end
+dynamic bV6W <- Mcun
+func dY (string O7)	return
 
+string IUu4[124.675E+49] <- 0 ## gg7&q|1VKgp2+qi79d
+number mE_S
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -625,13 +636,13 @@ func hzpX (bool uOC[637e10])
 
 	def test_251(self):
 		input = '''
-func WE (number yWPh[8], dynamic ot[9E-39,1E+23])
-	return false
-var Ki_[94.677e-04]
-bool K4[18.274E+77,4E-82] <- true ## Sl.&0A$Q
-number DzE[32e07]
-func Gr (var AO[606], number Ir[5.549,181,6.898E-59], bool YV[76.794,22])
-	return
+var MlZc[4.550,3,890.152] <- F81
+func umE (dynamic TxEQ, dynamic v48[66.037,24.390,0e02], bool XVAF[12.702E15,96E-85])	return 382e-67
+
+func dVh (bool F1s)	begin
+		return
+		## QVUkmgek(]m>
+	end
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -639,7 +650,17 @@ func Gr (var AO[606], number Ir[5.549,181,6.898E-59], bool YV[76.794,22])
 
 	def test_252(self):
 		input = '''
-## :KnQ
+func b3 (bool nuQ[736], var rh[98.253e-28,57E-52])
+	begin
+		for YGkM until "'"'"k2'"" by "'"'""
+			for tk until 209.411 by m08t
+				WE(48.456, "H'"O'"-", false)
+		for iP until 595 by 6.244e84
+			break
+		break
+	end
+func f0 (string eG5[8,9e+33], bool A31[853,34.612E-53,0.469], dynamic QTz[65,53.210])
+	return
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -647,7 +668,9 @@ func Gr (var AO[606], number Ir[5.549,181,6.898E-59], bool YV[76.794,22])
 
 	def test_253(self):
 		input = '''
-## q6< )Hdx5Y`7`Y"9BU
+func YE ()	return
+
+## !(3$A3Gp$47%. 
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -655,11 +678,10 @@ func Gr (var AO[606], number Ir[5.549,181,6.898E-59], bool YV[76.794,22])
 
 	def test_254(self):
 		input = '''
-## #7De?d[{[R*8mvWES?3
-func lND4 ()
-	begin
-		## v]M-a.3T2rT{|
-	end
+number HS5[459.334,3e-56] <- 6
+func b9l1 (string ca[2e64,461,941])	return
+
+var Z7L <- true ## pEU2wLLIb)_w:!NL]m
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -667,10 +689,10 @@ func lND4 ()
 
 	def test_255(self):
 		input = '''
-bool RZn[3.127,0e+07] ## 0,7!&;F
-var jT ## @7:=X:/+u
-func xgN (string xEcy, number JOU6)
-	return oQ
+## W
+dynamic ZA[1.440] <- true ## 0zL,Ye%e8I
+string o8r[43.516,86E97,562e22]
+func PL4 (string rPC[4.250], dynamic iEL1[75.373e79])	return bPvm
 
 '''
 		expect = '''Error on line 1 col 0: 
@@ -679,13 +701,9 @@ func xgN (string xEcy, number JOU6)
 
 	def test_256(self):
 		input = '''
-dynamic Cj_[8]
-func rE (bool ACJg[33E25], string L2[5.538e96,5.183E+31,9E-85])	return
-
-dynamic EsI[653,260]
-func Fyb (dynamic iAl[650.001e+28])
+## "a]2v@.m:^Qvq)1L
+func dn9B (string tmX[103e40])
 	return
-dynamic tGAR[974e+87,58E65,35] ## m{E$C?A
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -693,15 +711,11 @@ dynamic tGAR[974e+87,58E65,35] ## m{E$C?A
 
 	def test_257(self):
 		input = '''
-bool sa[181.367] <- "1'"'"" ## X#Qf<?cW@d
-## )
-## ("}jg
-func lKeb (var pqT[67.489,42E12,82.170E+26])	begin
-	end
-func rr (var uF[103.061E+88,472,50])
-	begin
-	end
-
+## z^qm5D"g!iJ(o
+## 9AaV_pe?Si8=YN
+## *-%:rym?*g<kF?
+## >.RJ|:
+func kt ()	return 98.207e+39
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -709,9 +723,16 @@ func rr (var uF[103.061E+88,472,50])
 
 	def test_258(self):
 		input = '''
-dynamic hi ## )$:q-&Ri=)_)kC&lt*<
-dynamic dy
-func oP8 (dynamic ve[1e-72])	return
+func qAee (string ZsvX[764E-76,29], dynamic YFJ2[35,62.703e88])	return Pkg
+## u8$_Nw=>f"O{f9k>
+func pRw0 (dynamic Ai[69.500e+67], string ZkX[51.890,661,697], string QHO[309.937e+57,719.415])
+	begin
+		## `!Sl9djoQ}-w@px,T"
+		## 2MBjAbf@[ )}
+		## K&z,KT)`$&khE9/Dc6
+	end
+string UJ <- l1s
+number xGt[5.679,164E+75] ## gF1&ORf!7[v:+$%)
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -719,7 +740,21 @@ func oP8 (dynamic ve[1e-72])	return
 
 	def test_259(self):
 		input = '''
-var ZhY <- "'"'""
+## B{$
+func xN (bool rP, dynamic hnXT, dynamic Pw[11,324.379,65.697])
+	begin
+		## 7)xpwek=|Q[s(58]vsL`
+		## sE=eI^
+		bool UNwJ <- 889.595e22
+	end
+
+func jTNi (string HcG0, dynamic ZKas[411.469E-81,251E54,49.192E04], dynamic u6k[4.610,3,39.585])
+	begin
+		## ^SCHwJYt:?feM!y.]a2_
+		## F
+		## mzb^,p?wavDi
+	end
+## nBsdVo5$9,9
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -727,7 +762,8 @@ var ZhY <- "'"'""
 
 	def test_260(self):
 		input = '''
-## +[bJC1qWBv
+number Vlc[63.273] <- 857
+## H
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -735,7 +771,10 @@ var ZhY <- "'"'""
 
 	def test_261(self):
 		input = '''
-bool ERP8 ## :rns3d[YP_UG
+## DeOEY@(JM|x{whacuY&
+## 1]f<LNkqf v^udJ0*Y
+func EO (string NMrU[368.798e08], dynamic Se, bool saF)	return
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -743,9 +782,18 @@ bool ERP8 ## :rns3d[YP_UG
 
 	def test_262(self):
 		input = '''
-func WE9 (string aAMu[67.825], number gW, string zLT[29.925e-02])	begin
-		kX[false] <- "2'"O"
+func dh (dynamic rvD[7.554], bool gZ[81])
+	begin
+		for b5 until true by false
+			begin
+				## FFi;mdYLN6R7F"2Y
+				continue
+			end
 	end
+func o3 (string L2TX)
+	begin
+	end
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -753,13 +801,11 @@ func WE9 (string aAMu[67.825], number gW, string zLT[29.925e-02])	begin
 
 	def test_263(self):
 		input = '''
-func aX_u ()
-	return 0E-06
-## `H:?1/ EsD`Hlr#fw
-func mfbd (bool lc, bool ctg)
-	return false
-string hoZF <- "AF" ## sX%B-p*~|R_2x^
-## ~ysr7WPZ)Y6n
+dynamic TuG <- false ## ONb?z
+## 0YbO=,H{[
+## kb-P/8SSNWI8
+bool H6i <- false
+var tF[2E17] ## CT~p.`Or`Hw
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -767,7 +813,9 @@ string hoZF <- "AF" ## sX%B-p*~|R_2x^
 
 	def test_264(self):
 		input = '''
-## YP2K^lv: )_Os-qt?rN
+string l9cn <- "b" ## eTjA 
+func U8 (number nfxs[4E09,460.078], dynamic X2H2, bool Rve[694.512,3,431])	return
+func HdX (var Jj5[56,5e95,498.150E-03], var m3DM)	return true
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -775,10 +823,14 @@ string hoZF <- "AF" ## sX%B-p*~|R_2x^
 
 	def test_265(self):
 		input = '''
-number j6K[3E+66,519,35e97]
-string FEiP[64E75,50.564E87] ## FGiJ(^Zfm<M$@iW0
-## HO
-func Ya (string Lhfp)	return
+## G
+var YJHP[1,95e+02,90.573] <- mI
+bool ew[3.202,6.037E69]
+func EE94 (dynamic zau, var lBZ[68.135], bool h3xO)	begin
+		## OI%?G,-V $vH]0/[F
+		Nn <- "'"'"u:'""
+	end
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -786,13 +838,11 @@ func Ya (string Lhfp)	return
 
 	def test_266(self):
 		input = '''
-var OmK3 <- EA ## uqW:KTi
-## r0*d8dmvg>gz
-func CU (number HXRm)	begin
-		return
+## ^}$"y{#)eXX/I_Gm
+func aE (number XUi9[37,8,49])	begin
 	end
-string S51[3.345e-13,1] <- "S" ## %>}q5to!GPiYE<
-## xydBu/;E&z
+func lqS (string mDF, var DtL, number t6j[5,60e-32,10e62])	return
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -800,10 +850,17 @@ string S51[3.345e-13,1] <- "S" ## %>}q5to!GPiYE<
 
 	def test_267(self):
 		input = '''
-number mZT
-## B?a?8{J:94>PY^Xz@+v
-## Se9;RJjzOa^hcJT&j$<{
-## NU0DJ=U|3ufm]0t+p[
+string Dv
+number fN ## u31!]]g8P:kl@_= +
+## *O41mY VX G/2
+var AM[5e-74,6.213E76,0.943] <- "'"zc)'"" ## R
+func SA (var vq, number eJ)	begin
+		for Box until "'"'"'"'"" by false
+			continue
+		string kjRi[8.716,8.549e+52] <- true ## RYqJl/+1DK0nrq}]95
+		return
+	end
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -811,19 +868,8 @@ number mZT
 
 	def test_268(self):
 		input = '''
-func LHZ (dynamic oO, number t9)	begin
-		## zmpgOrA|%}syP<^VT!D
-		for Ye until zsV by 9.171E77
-			dynamic OoI[8.494,7,8E-67] ## Ds`:*J<
-	end
+func SvX (dynamic aWX[346.617], string je[2,5E-96])	return true
 
-func Sy ()	begin
-		for Q2o until SfE by 10
-			return ZiV9
-	end
-
-string eeVa[257E47]
-## j1:k&E;/ @yP/N
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -831,12 +877,7 @@ string eeVa[257E47]
 
 	def test_269(self):
 		input = '''
-func kk ()
-	return
-func xs ()	return
-
-number eIZ[618.969E+82,187,9.598E89] <- true
-string bmJN <- 9 ## f""-9!1}laMSJg"o":GJ
+## 4Ca0"5o
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -844,8 +885,8 @@ string bmJN <- 9 ## f""-9!1}laMSJg"o":GJ
 
 	def test_270(self):
 		input = '''
-func E2X (var FVq[1E-20], dynamic Pn, bool Dm)	return "'"'"'""
-
+func i2qH (string nh, bool ioCw[9,53e-31,3.814], bool YG)
+	return 8
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -853,16 +894,11 @@ func E2X (var FVq[1E-20], dynamic Pn, bool Dm)	return "'"'"'""
 
 	def test_271(self):
 		input = '''
-## `T[;USso
-## R(+4m-z+j&`jQ
-func Sq (number a0fU[64e27,386e+41], var bjBj[4.501,485,3e08])
-	return
-func GsT (bool QgwW[5.984,5.665], number eF19, dynamic wM8k)	return
+func TP (var mFq[308.634E-14,548.766E+99,412e+95])	return "('"'"'""
 
-func zO ()
-	begin
-	end
+func bcV (number iO)	return
 
+number xT[260,3] <- nH ## )
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -870,98 +906,16 @@ func zO ()
 
 	def test_272(self):
 		input = '''
-func rB ()	begin
-		for dHZ until "K'"'"" by cp
-			break
-		if ("'"'"'"P7") for aKu until "E'"'"'"'"" by "'"t'"'";"
-			return
-		elif (2.093e+39) if (T7Tv) break
-		elif (false) eExG(10, true)[false] <- 45.115E+38
-		elif (td)
-		for pc until "R]" by false
-			begin
-				if (true)
-				return
-				elif ("'"'"4")
-				if (false)
-				break
-				elif ("^") if (Tl4v)
-				X9(gm, true, true)["'"'"w"] <- "'""
-				elif ("'"/'"")
-				continue
-				elif (uyd)
-				break
-				elif (3) begin
-					dv()
-				end
-				elif (true) t1[EIMU, 9.902E-99, le] <- eg
-				elif (799e04)
-				return
-				else IjX_()[1.800, false] <- "C"
-				elif (31.218e88)
-				begin
-					continue
-					dynamic EY_o <- false
-					## Oz^I{0p@
-				end
-				elif ("V'".$")
-				Na <- 75E+67
-				elif (949)
-				continue
-				elif (sTIa) for XZhM until "OG" by true
-					if (false) continue
-					elif (true)
-					if (true)
-					continue
-					elif (37.871E-54) break
-					elif (6.173E52)
-					GGU()
-					elif (false) SZDK(885.950E+74)
-				elif (QQtz)
-				break
-				elif (false)
-				if (KCn) continue
-				elif ("'"'"") if ("q") break
-				elif (cn1)
-				for Lel until giZx by "O;F'""
-					dynamic nCW[7,5] <- 51e08 ## v^#m
-				elif (false)
-				begin
-				end
-				elif (wZbf)
-				dynamic BYH
-				elif (371.113)
-				if ("'"'"'"")
-				break
-				elif (true) zmR(false, NYN, true)[86.199E+97] <- CLxj
-				elif ("h") begin
-					gO(13.600E-49, true)
-				end
-				elif (325.787)
-				if (24.968E+63)
-				if (2)
-				return
-				else begin
-					return
-					if (true) Yl(qj)
-					else Ayhi("'"'"BM'"")
-					break
-				end
-			end
-		else for qK3 until "'"'"|'"" by 4.028e+94
-			return
-		elif ("'"'"$") begin
-			## bctl*zVB_ZOL{yGIB6SS
-		end
-		## swZ7/
+func PJ (string RI3o[136.409E+50], var RtJN, var wO)	return jP1
+
+func so6 (number ZDYB)	begin
+		for Ovl until 75e+10 by "'"o'"('""
+			continue
+		GYM <- R5J
+		break
 	end
-## "TG<Z=~s(cN,M!xy}V`O
-func TarY (number TT0[87], string HDvE[1.452,2.342])	begin
-		## DG) .sluTy@ F k
-		## V27fUe8lGQiwDR;82
-		## {@c7ba0:3W
-	end
-## ?{yLM*s[EQY
+
+## IyglIjppD
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -969,16 +923,10 @@ func TarY (number TT0[87], string HDvE[1.452,2.342])	begin
 
 	def test_273(self):
 		input = '''
-func XI (bool y4Y)
-	return true
-func wm (bool Y1qm)
-	return
-var i6SB ## ">{;?b`
-func oq5 ()
-	return true
-func KXbd (dynamic Zvz)
-	return cFB0
-
+## YC|Z-.Y"
+## 5p~n`b
+string XzUN[930.684,486e12] <- "F"
+number f9 ## oHVR6jT*oD;]yRA[
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -986,11 +934,7 @@ func KXbd (dynamic Zvz)
 
 	def test_274(self):
 		input = '''
-## i9YsfdwJNj
-func j8 (dynamic UP9[8])	begin
-	end
-
-## X8_/MKT3e:OMHxuu{
+## Dm*@re>0BvCkxIG
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -998,7 +942,11 @@ func j8 (dynamic UP9[8])	begin
 
 	def test_275(self):
 		input = '''
-dynamic j0[38E45,594] ## h-w#*]c6dLm*[n&G
+var E39b ## >Z!x1GW8Vs)}XVcHS
+string MJ <- 7 ## H<X/__?U1$:/vs.
+dynamic daQ2
+func c4e ()	return true
+func fu0 ()	return
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1006,9 +954,12 @@ dynamic j0[38E45,594] ## h-w#*]c6dLm*[n&G
 
 	def test_276(self):
 		input = '''
-string ZLU[97,4.233e+37] <- saG ## 7n;l$FuX$
-func sArZ (number WHN)
-	return V4
+dynamic f8P[4.841] <- "'"'"'"Y" ## I7?N.Ok
+## qJ:zU}WTeBm/d
+## xM
+bool yJ_W[48.264E-62,12]
+func BG (bool hssm[332.603], bool jl6[9.547E-70])	return
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1016,8 +967,7 @@ func sArZ (number WHN)
 
 	def test_277(self):
 		input = '''
-dynamic FyKF[703E+78,8.503]
-## b*uF/IeWwMjj;r
+dynamic zr <- 876.382
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1025,10 +975,16 @@ dynamic FyKF[703E+78,8.503]
 
 	def test_278(self):
 		input = '''
-## [f
-dynamic Ms5 <- 0e+02
-func kgv (dynamic x7A[6.020e34])	return false
-var Gv[0,46.185,928e53] ## *cmyiQ|7{_IB#,
+func qQaJ (var Yz)	return false
+
+func Nd (number sct[250,4.190], bool PVFd, dynamic vIh)
+	return "w'"'""
+## /7p(H~qV<]
+dynamic Le ## 0hZJ#7>_a(jL#8ob 3J!
+func quLg (string CY[418.083E67,866.569e+13])	begin
+		return true
+	end
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1036,7 +992,10 @@ var Gv[0,46.185,928e53] ## *cmyiQ|7{_IB#,
 
 	def test_279(self):
 		input = '''
-var Hut <- 83.242e+23
+string U7J3 <- true ## ^  bVx>2,4>%-yGt7
+## Y K7WGH
+## K0{P-:Oircd}D
+string De4G ## 7Yr#
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1044,8 +1003,10 @@ var Hut <- 83.242e+23
 
 	def test_280(self):
 		input = '''
-## ?Z?!
-dynamic q_w[17] <- "'"us9'"" ## 5P= 
+## jN*a)T5*
+## KvB,S
+string C4qS[1e+76,98,5]
+string yP[12,540.443E28] <- "'"'"z" ## .fB3Y4%y5mudx3x0bN=^
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1053,9 +1014,7 @@ dynamic q_w[17] <- "'"us9'"" ## 5P=
 
 	def test_281(self):
 		input = '''
-## 7AQ^KU!k93lA
-## ZV10kCu^5d&<p5
-## UsHy(hz*+;"qoG_t,c
+dynamic Ge[425] <- "m" ## s*T?<;BWO7)s
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1063,12 +1022,10 @@ dynamic q_w[17] <- "'"us9'"" ## 5P=
 
 	def test_282(self):
 		input = '''
-number Xd[87.622,95E-72,7] <- 72.393
-## O SsFIY!rqh~J]dy
-func eJ (var DP[2.630,20.552,46E+37])
-	return
-
-## !t
+## ma}y
+## AWMPMu6
+## &b2MIk1
+dynamic kS[91.554E+09,239e+37,17] ## j-v6
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1076,14 +1033,13 @@ func eJ (var DP[2.630,20.552,46E+37])
 
 	def test_283(self):
 		input = '''
-func yNQr (string M28, string B79I)
-	return
+dynamic fs
+number NCYX[990e09]
+## m
+func XhvA (var yHc[35.268E97,2.719], number nLHQ[85.781e+27,4.203e+38], number a91[60E+10])
+	return false
 
-## ajRB8B.
-func AP8n (bool I_, string f7V[3.438E-06])	return "T'"|o"
-
-## ,C"-ZRvN@Y9ri%^nOf
-## 1b^m$
+dynamic n8d <- false ## rP.Lr:`Po~`vn
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1091,49 +1047,12 @@ func AP8n (bool I_, string f7V[3.438E-06])	return "T'"|o"
 
 	def test_284(self):
 		input = '''
-func XF19 ()	begin
-		if ("Ib('"3") break
-		elif (true)
-		g24 <- 5E08
-		elif (true) string uevY[8E-70]
-		elif ("'"i&") if (SE) if (Ne)
-		for pjK until 678 by bga
-			continue
-		elif (DB_4) continue
-		elif (fRGL)
-		th[UC, "Jt'"", "'"l"] <- GV5K
-		elif (287e+37) Gb4g <- "'"v'""
-		elif (93E-70)
-		begin
-			if ("'"C") string D3I4[0e98,2,4.196e97] <- "W"
-			elif (true) for sy2 until false by 66.161
-				begin
-					continue
-					## ZOb}pT%(mAP>
-				end
-			elif (Ae)
-			for M0 until C2 by true
-				begin
-					if (643.576)
-					return
-					elif (KmuC) for h_ until true by "{L"
-						begin
-							## J5Kd(7N
-						end
-					elif ("w'"")
-					break
-					## BM?M=6B]PH-fUKQaV$TA
-				end
-			break
-			## (8Nk=BgP
-		end
-		## nU>$LeQs1={K&A9
-	end
+func oBkE ()
+	return
 
-dynamic yiD ## VGSShQw @b!IKr+OEY
-dynamic Sg <- "s('"S"
-## X!
-func xUrr (string xTDZ, var OQV[1E-65,430e-12,1.484], dynamic sUx[74.121E-94,43.881,527.682E14])	return "'"dd"
+## wA)f1
+number Fudw ## S(%tK.
+## ,Su
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1141,15 +1060,11 @@ func xUrr (string xTDZ, var OQV[1E-65,430e-12,1.484], dynamic sUx[74.121E-94,43.
 
 	def test_285(self):
 		input = '''
-## |&
-func uPL ()
-	return false
+number lc4b[812,45e62,467.184E-79] <- false ## xgh>A_I
+## 6 o7OoyA@YJ$3?BN/^`
+func Fy8 ()	return
 
-## 8+z,/r@V(f$*tvL@aCX
-func uzz2 (number sSH, var L287, var DyE)	begin
-		dynamic EfHN <- 3E+57
-	end
-
+string LNyC[748.208E+05,2,6e-59] <- 86e+53 ## Y?V@8}C{&sc~r1P-
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1157,7 +1072,14 @@ func uzz2 (number sSH, var L287, var DyE)	begin
 
 	def test_286(self):
 		input = '''
-dynamic rf <- "("
+func LvU (var ky71, dynamic Zu)
+	return
+
+dynamic c5 <- 7E-24
+func gVPv ()
+	begin
+	end
+func yG57 (dynamic e03, number D30[0,4.684E34], number gVCM[1.530])	return Hn
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1165,11 +1087,13 @@ dynamic rf <- "("
 
 	def test_287(self):
 		input = '''
-func OIvp ()	begin
-		if ("(&6'"") ngQ <- 34.479
-		elif (false)
-		break
+func py (var DZ[78,6e05,7.201])	begin
+		## y|=#6h2
 	end
+
+number MmaO <- xh9
+## K(#_`%.,0$-q9TY!{bV
+## L-IM$8N
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1177,7 +1101,12 @@ func OIvp ()	begin
 
 	def test_288(self):
 		input = '''
-dynamic s1a[689E+58,96.611E93]
+number BAF <- Wkw ## L)B
+string LAj
+func Dh ()
+	return 2.709
+## .6)Ws"/lcFgUznz]:/CN
+string y6WB[1.744E69,211.567,6.562]
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1185,14 +1114,11 @@ dynamic s1a[689E+58,96.611E93]
 
 	def test_289(self):
 		input = '''
-func LDl (string Mu, bool E5Zq[7.643], dynamic sI)
-	begin
-		continue
-		continue
-	end
-## h&T!M~2CVtpmZP_CI
-func xie (var KQN)	return "3n'""
-
+## e
+## XNDPn#+@P]M
+## -3$6g
+## #jXYho;=;,:_gmj-609
+number He[737.499,32e-33] <- IYmG ## 6QIvhR8`8|
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1200,14 +1126,9 @@ func xie (var KQN)	return "3n'""
 
 	def test_290(self):
 		input = '''
-string tMxU[9e-09] ## I[J""V#jlr;g
-## +]
-func ev ()	begin
-		continue
-	end
-func DLeS (dynamic r0[1], bool cZR, bool Dn[7.434e+35,95.771])	return 988E+90
-
-var T10 <- rX4 ## z: 
+func GSO (dynamic Yg, bool Z1[74.493E95,4.234E-97])
+	return Umt
+func Kbf (bool JPI)	return
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1215,8 +1136,10 @@ var T10 <- rX4 ## z:
 
 	def test_291(self):
 		input = '''
-func Uf (number P4oA[69e20])
-	return "L"
+## k*Y9PLC]1)UC
+dynamic xsp[458E-83,452] <- 556 ## x;qu1<jwq
+## Y+l#f
+func T7Lc (string wiL[53,23e-54])	return
 
 '''
 		expect = '''Error on line 1 col 0: 
@@ -1225,12 +1148,10 @@ func Uf (number P4oA[69e20])
 
 	def test_292(self):
 		input = '''
-func tulO (string J1, var SE[322.401e12])
-	begin
-	end
+func Lrw (bool uR[9.677,3,3.208], var tYp[6e+81])	return
+func hY0 (bool eaI1, string JNHs)	return "'"iB]'""
 
-var trR
-## &G@ZcxJ4n[zitP.%
+var LG[2.027E+70] <- true ## |c}[B
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1238,13 +1159,7 @@ var trR
 
 	def test_293(self):
 		input = '''
-func Mnu (dynamic pqW, dynamic Kz2H)
-	return "V"
-
-func Ds (var MX4)	begin
-	end
-
-var i9W <- false ## /c
+bool L5w <- "'"A" ## 9!sbj
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1252,7 +1167,14 @@ var i9W <- false ## /c
 
 	def test_294(self):
 		input = '''
-bool VP[70e-54,99.806e-36,7.654e-27] <- 8.643E+92 ## z^Yy6J/oI.c`K>./Rwi
+dynamic cff <- false
+bool VTZl <- true ## ~5vBr_~CdSC6=]
+func E5 ()
+	return
+
+## .j/ x<_tKy%/,G#oC!8
+func ur8 (number Qydd)	return
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1260,16 +1182,7 @@ bool VP[70e-54,99.806e-36,7.654e-27] <- 8.643E+92 ## z^Yy6J/oI.c`K>./Rwi
 
 	def test_295(self):
 		input = '''
-dynamic XvA <- i19O ## ,oKEM=L<5Mtpr%cMMM
-string Mb8B <- 59e10 ## a~k
-func CMX ()
-	begin
-		return "hK'""
-		## <.cO/~-z8FHg@#:.>`*u
-		number l92[2.896,63.499e+30,15.841] <- "'"M'"9&" ## S
-	end
-
-## Ku`,I
+## tMtg_W)%+"p4
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1277,7 +1190,8 @@ func CMX ()
 
 	def test_296(self):
 		input = '''
-## >eX1l Tia0Aj
+## JDc7h~;:4
+number Esk[5] ## iloD#pE]
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1285,9 +1199,11 @@ func CMX ()
 
 	def test_297(self):
 		input = '''
-number u7r7
-var HokR[37.118E+01,94.283e+62,71E-95] <- Jz ## |;LLqPk_,AxMA?ug?^s*
-number rY40[217e+93] <- true ## :$1`|1E,uB;^an
+string Mg
+func CO (dynamic PL9[18,60e-08], var a6o1, string tM[8])	return
+## -jWx-[Pbxz,#R3>u
+## HuVTK&dhgf<zw&a)=
+var u81[1.583e-98] <- YfI
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1295,7 +1211,9 @@ number rY40[217e+93] <- true ## :$1`|1E,uB;^an
 
 	def test_298(self):
 		input = '''
-string cq
+func N0eu (string yAD, dynamic x8)
+	return "'"'"_'""
+
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1303,10 +1221,7 @@ string cq
 
 	def test_299(self):
 		input = '''
-dynamic Cmtr[2.329E-20,86] <- oa
-## a|*JN6:_JafIv5EKV,wy
-number zvei
-## Hd/g
+string yf <- 28
 '''
 		expect = '''Error on line 1 col 0: 
 '''
@@ -1314,9 +1229,9 @@ number zvei
 
 	def test_300(self):
 		input = '''
-func MjQ (var UI[1])	return
-
-dynamic pona ## Rz?-EqGObi|+$rq5tJ
+bool TvMs
+## <uu
+## i
 '''
 		expect = '''Error on line 1 col 0: 
 '''

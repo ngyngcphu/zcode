@@ -1,8 +1,5 @@
 
-var ezH <- false ## N1G5kFzOxTV;#O_b_Z
-## P I-+_yQ!,e<DF
-func wbJ (var YY[9.877E-47,93.982e-49], number GZx[458])	begin
-		break
+func vHQ (bool JL[41.855E+48], var qtP[10], string ZS)	return 8.611e-73
+func GnT (number dXx[9.827,6.999e74,553])	begin
 	end
-
-var HHI[4.404E01] ## 5:
+## MRHt#X23 ip,rm9

@@ -1,10 +1,3 @@
 
-number wB[6.216E12,564.250,28] <- false
-func EI0C (string V5ja[7.245e-11], var sB1, number xdO5[307E+54,51e50,269.136])
-	return
-
-func KRD (string d9s[23,17,30.817E+31])
-	return
-
-bool jh <- 992 ## qRNfU53#H4)5
-string ttO[8.707,0.761,6e-26] <- 978.969 ## `
+## b=TH5A3wShN)zBQzTYL^
+## ?@lNtH(T2*XRBGXL[

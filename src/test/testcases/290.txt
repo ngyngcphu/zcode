@@ -1,9 +1,4 @@
 
-string tMxU[9e-09] ## I[J""V#jlr;g
-## +]
-func ev ()	begin
-		continue
-	end
-func DLeS (dynamic r0[1], bool cZR, bool Dn[7.434e+35,95.771])	return 988E+90
-
-var T10 <- rX4 ## z: 
+func GSO (dynamic Yg, bool Z1[74.493E95,4.234E-97])
+	return Umt
+func Kbf (bool JPI)	return

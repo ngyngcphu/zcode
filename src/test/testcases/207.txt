@@ -1,5 +1,2 @@
 
-func a_lR (bool mi, dynamic mH[264,5.035])
-	return 223.276E42
-
-dynamic to5b[7.136] ## Ljj4*b8O
+## 4K?T-e9dBZJv9

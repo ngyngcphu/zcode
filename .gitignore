@@ -1,3 +1,5 @@
 .antlr
-target
+target/*
+src/main/zcode/parser/target/*
+!src/main/zcode/parser/target/lexererr.py
 __pycache__

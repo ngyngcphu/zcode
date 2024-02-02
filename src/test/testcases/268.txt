@@ -1,14 +1,3 @@
 
-func LHZ (dynamic oO, number t9)	begin
-		## zmpgOrA|%}syP<^VT!D
-		for Ye until zsV by 9.171E77
-			dynamic OoI[8.494,7,8E-67] ## Ds`:*J<
-	end
+func SvX (dynamic aWX[346.617], string je[2,5E-96])	return true
 
-func Sy ()	begin
-		for Q2o until SfE by 10
-			return ZiV9
-	end
-
-string eeVa[257E47]
-## j1:k&E;/ @yP/N

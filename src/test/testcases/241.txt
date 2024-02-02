@@ -1,5 +1,10 @@
 
-number Xue[1E+64,472] <- Rg ## HolQ;B`H
-dynamic jrK[5e+81,9.019E-18,518.696e+35] ## k&f|:`Cml
-## g
-## {Rzl_,
+func PhYi (dynamic REO[33.581,58,533E-02], var xK, var WJs[881.713])
+	return
+func Rxep (dynamic y5s)	return
+func OIgl (var XvQR)	return
+
+## ;5(pb&2 9I{F<Q
+func YZw (dynamic sm, string n7CD[59.320E+78,779.035], dynamic ts[0.228,0,414.150E-18])
+	return Kjv
+

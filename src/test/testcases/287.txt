@@ -1,6 +1,8 @@
 
-func OIvp ()	begin
-		if ("(&6'"") ngQ <- 34.479
-		elif (false)
-		break
+func py (var DZ[78,6e05,7.201])	begin
+		## y|=#6h2
 	end
+
+number MmaO <- xh9
+## K(#_`%.,0$-q9TY!{bV
+## L-IM$8N

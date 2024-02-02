@@ -1,3 +1,4 @@
 
-## /
-string uScU[1E60]
+dynamic fl8
+dynamic zf1e <- false
+var CVqt <- false

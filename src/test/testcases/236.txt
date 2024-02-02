@@ -1,8 +1,2 @@
 
-string coh[2,4,66e01] <- SU ## ~T__,C.Or7AU}!3L/R_X
-func lW1t (var Nt[14e11,8])
-	begin
-	end
-
-number YM <- "'"'"y" ## --Q
-## eDtUxEt9%J8En/
+func fS ()	return 8E-62

@@ -1,10 +1,6 @@
 
-## |&
-func uPL ()
-	return false
+number lc4b[812,45e62,467.184E-79] <- false ## xgh>A_I
+## 6 o7OoyA@YJ$3?BN/^`
+func Fy8 ()	return
 
-## 8+z,/r@V(f$*tvL@aCX
-func uzz2 (number sSH, var L287, var DyE)	begin
-		dynamic EfHN <- 3E+57
-	end
-
+string LNyC[748.208E+05,2,6e-59] <- 86e+53 ## Y?V@8}C{&sc~r1P-

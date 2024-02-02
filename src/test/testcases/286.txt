@@ -1,2 +1,9 @@
 
-dynamic rf <- "("
+func LvU (var ky71, dynamic Zu)
+	return
+
+dynamic c5 <- 7E-24
+func gVPv ()
+	begin
+	end
+func yG57 (dynamic e03, number D30[0,4.684E34], number gVCM[1.530])	return Hn

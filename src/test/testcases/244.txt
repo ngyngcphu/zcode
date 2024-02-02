@@ -1,7 +1,5 @@
 
-func d0ks (bool iHL[5.829,292.428e+31,9.540e+23])
-	begin
-		##  o",96jBs0^/$
-		if (15E+07) return false
-	end
+func sx5 (dynamic f_5, bool r23[2e+77,66.161E75,3], number XRh7[1.172E+87,19])
+	return
 
+## mzKH

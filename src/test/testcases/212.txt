@@ -1,3 +1,5 @@
 
-func hl_O (var qH)
-	return 32
+bool uFp[4,545.100]
+var LTOP[4,366]
+bool tre
+bool cu[70] <- true ## ([66a7KA]BQp{PO:^ 
