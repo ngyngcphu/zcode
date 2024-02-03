@@ -162,7 +162,7 @@ fragment INT: [0-9]+;
 fragment EXP: [eE] [+\-]? INT;
 
 STRINGLIT: '"' CHAR_LIT*? '"' {self.text = self.text[1:-1]};
-fragment CHAR_LIT: (ESC | ~[\\"]);
+fragment CHAR_LIT: (ESC | ~[\\\n"]);
 fragment ESC: '\\' [bfrnt'\\] | '\'"';
 
 IDENTIFIER: [a-zA-Z_] [a-zA-Z0-9_]*;
@@ -174,8 +174,11 @@ COMMENT: '##' .*? ('\r'? '\n')+ -> skip;
 WS: [ \t\b\f\r]+ -> skip;
 
 UNCLOSE_STRING:
-	'"' CHAR_LIT*? UNTERMINATED {raise UncloseString(self.text[1:])};
-fragment UNTERMINATED: '\r'? '\n' | EOF;
+	'"' CHAR_LIT*? UNTERMINATED {
+			unclosed_part = self.text[1:-1] if self.text[-1] == '\n' else self.text[1:]
+			raise UncloseString(unclosed_part)
+		};
+fragment UNTERMINATED: NEWLINE | EOF;
 
 ILLEGAL_ESCAPE:
 	'"' CHAR_LIT*? ('\\' ~[bfrnt'\\]) {IllegalEscape(self.text[1:])};

@@ -44,3 +44,21 @@ class LexerSuite_VoTien(unittest.TestCase):
         input = """ "' \\b \\f \\r \\n \\t \\\\ Vo \\b \\f \\r \\n \\t \\\\  Tien \\b \\f \\r \\n \\t \\\\" """
         expect = "' \\b \\f \\r \\n \\t \\\\ Vo \\b \\f \\r \\n \\t \\\\  Tien \\b \\f \\r \\n \\t \\\\,<EOF>"
         self.assertTrue(TestLexer.test(input,expect,311))
+        
+    def test_312(self):
+        self.assertTrue(TestLexer.test(""" "'"Vo '" Tien '' '"" ""","'\"Vo '\" Tien '' '\",<EOF>",312))
+        
+    def test_313(self):
+        self.assertTrue(TestLexer.test(""" "Vo \n" """, "Unclosed String: Vo ", 313))
+        
+    def test_314(self):
+        self.assertTrue(TestLexer.test(""" "Vo \n Tien" """, "Unclosed String: Vo ", 314))
+        
+    def test_315(self):
+        self.assertTrue(TestLexer.test(""" "Vo  """, "Unclosed String: Vo  ", 315))
+        
+    def test_316(self):
+        self.assertTrue(TestLexer.test(""" "Vo \\n \n """, "Unclosed String: Vo \\n ", 316))
+        
+    def test_317(self):
+        self.assertTrue(TestLexer.test(""" "Vo ' \\n \\b """, "Unclosed String: Vo ' \\n \\b ", 317))
