@@ -10,16 +10,16 @@ options {
 	language = Python3;
 }
 
-program: ((varDecl | functionDecl) NEWLINE*)+ EOF;
+program: NEWLINE* ((varDecl | functionDecl) NEWLINE*)+ EOF;
 
 varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 		ASSIGN expr
 	)?
 	| VAR IDENTIFIER ASSIGN expr
-	| array_type (ASSIGN array_value)?;
+	| array_type (ASSIGN expr)?;
 
 functionDecl:
-	FUNC IDENTIFIER LB paramList RB NEWLINE* statement_list?;
+	FUNC IDENTIFIER LB paramList RB NEWLINE* (statement_list | NEWLINE);
 
 paramList: paramPrime |;
 paramPrime: formalParameter COMMA paramPrime | formalParameter;
