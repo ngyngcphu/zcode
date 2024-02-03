@@ -13,10 +13,10 @@ options {
 program: NEWLINE* ((varDecl NEWLINE+ | functionDecl))+ EOF;
 
 varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
-		ASSIGN expr
+		ASSIGN expression
 	)?
-	| VAR IDENTIFIER ASSIGN expr
-	| array_type (ASSIGN expr)?;
+	| VAR IDENTIFIER ASSIGN expression
+	| array_type (ASSIGN expression)?;
 
 functionDecl:
 	FUNC IDENTIFIER LB paramList RB NEWLINE* (
@@ -44,22 +44,22 @@ statement_list:
 	statement_type NEWLINE+ statement_list
 	| statement_type NEWLINE*;
 
-assign_stat: lhs ASSIGN expr;
+assign_stat: lhs ASSIGN expression;
 lhs: IDENTIFIER | index_expr;
 
 if_stat: if_fragment elif_fragment*? else_fragment?;
-if_fragment: IF LB expr RB NEWLINE* statement_list;
-elif_fragment: ELIF LB expr RB NEWLINE* statement_list;
+if_fragment: IF LB expression RB NEWLINE* statement_list;
+elif_fragment: ELIF LB expression RB NEWLINE* statement_list;
 else_fragment: ELSE statement_list;
 
 for_stat:
-	FOR IDENTIFIER UNTIL expr BY expr NEWLINE* statement_list;
+	FOR IDENTIFIER UNTIL expression BY expression NEWLINE* statement_list;
 
-return_stat: RETURN expr?;
+return_stat: RETURN expression?;
 
 func_call_stat: (IDENTIFIER LB arglist RB) | io_function;
 arglist: argprime |;
-argprime: expr COMMA argprime | expr;
+argprime: expression COMMA argprime | expression;
 
 block_stat: BEGIN NEWLINE+ statement_list? END;
 
@@ -72,11 +72,11 @@ io_function:
 	| write_string;
 
 read_number: 'readNumber' LB RB;
-write_number: 'writeNumber' LB expr RB;
+write_number: 'writeNumber' LB expression RB;
 read_bool: 'readBool' LB RB;
-write_bool: 'writeBool' LB expr RB;
+write_bool: 'writeBool' LB expression RB;
 read_string: 'readString' LB RB;
-write_string: 'writeString' LB expr RB;
+write_string: 'writeString' LB expression RB;
 
 array_type: (NUMBER | STRING | BOOL) IDENTIFIER LS dimension_list RS;
 dimension_list: NUMBERLIT COMMA dimension_list | NUMBERLIT;
@@ -87,18 +87,12 @@ array_elements:
 	| array_nested_or_expression;
 array_nested_or_expression: array_value | exprlist;
 
-exprlist: expr COMMA exprlist | expr;
+exprlist: expression COMMA exprlist | expression;
 index_expr: (IDENTIFIER | func_call_stat) LS exprlist RS;
 
-expr:
-	LB expr RB
-	| index_expr
-	| <assoc = right> SUB_OF expr
-	| <assoc = right> NOT_OP expr
-	| expr (MUL_OF | DIV_OF | MOD_OF) expr
-	| expr (ADD_OF | SUB_OF) expr
-	| expr (AND_OP | OR_OP) expr
-	| expr (
+expression: expression_1 CONCAT_OP expression_1 | expression_1;
+expression_1:
+	expression_2 (
 		EQUAL_OP
 		| STRING_COMPARE_OP
 		| NOT_EQUAL_OP
@@ -106,10 +100,24 @@ expr:
 		| GREATER_THAN_OP
 		| LESS_EQUAL_OP
 		| GREATER_EQUAL_OP
-	) expr
-	| expr CONCAT_OP expr
-	| array_value
+	) expression_2
+	| expression_2;
+expression_2:
+	expression_2 (AND_OP | OR_OP) expression_3
+	| expression_3;
+expression_3:
+	expression_3 (ADD_OF | SUB_OF) expression_4
+	| expression_4;
+expression_4:
+	expression_4 (MUL_OF | DIV_OF | MOD_OF) expression_5
+	| expression_5;
+expression_5: NOT_OP expression_5 | expression_6;
+expression_6: SUB_OF expression_6 | expression_7;
+expression_7:
+	array_value
+	| index_expr
 	| func_call_stat
+	| LB expression RB
 	| NUMBERLIT
 	| TRUE
 	| FALSE
