@@ -579,3 +579,64 @@ class ParserSuite_VoTien(unittest.TestCase):
         """
         expect = "successful"
         self.assertTrue(TestParser.test(input, expect, 452))
+        
+    def test_453(self):
+        input = """ func areDivisors(number num1, number num2)
+                        return ((num1 % num2 = 0) or (num2 % num1 = 0))
+
+                    func main()
+                        begin
+                            var num1 <- readNumber()
+                            var num2 <- readNumber()
+                            if (areDivisors(num1, num2)) writeString("Yes")
+                            else writeString("No")
+                        end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 453))
+        
+    def test_454(self):
+        input = """ func isPrime(number x)
+
+                    func main()
+                        begin
+                            number x <- readNumber()
+                            if (isPrime(x)) writeString("Yes")
+                            else writeString("No")
+                        end
+
+                    func isPrime(number x)
+                        begin
+                            if (x <= 1) return false
+                            var i <- 2
+                            for i until i > x / 2 by 1
+                            begin
+                                if (x % i = 0) return false
+                            end
+                            return true
+                        end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 454))
+        
+    def test_455(self):
+        input = """ func foo(number a[5], string b)
+                    begin
+                        var i <- 0
+                        for i until i >= 5 by 1
+                        begin
+                            a[i] <- i * i + 5
+                        end
+                        return -1
+                    end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 455))
+        
+    def test_456(self):
+        input = """
+        number a[5] <- [1, 2, 3, 4, 5]
+        number b[2, 3] <- [[1, 2, 3], [4, 5, 6]]
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 456))
