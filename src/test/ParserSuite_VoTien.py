@@ -263,7 +263,7 @@ class ParserSuite_VoTien(unittest.TestCase):
         
     def test_430(self):
         input = """ 
-            var VoTien <- a() + ++1 / 2 *3 <= 3 ... "v" >= 2
+            var VoTien <- a() + 1 / 2 *3 <= 3 ... "v" >= 2
             var VoTien <- a(1,2)[1,2,3 ... 2] + false + true
             var VoTien <- a(z,k[2,3,"2"] ... 2)[true]
             var VoTien <- (a ... 3) ... b and (a >= b) < b[1, b[1]]
@@ -272,3 +272,310 @@ class ParserSuite_VoTien(unittest.TestCase):
         """
         expect = "successful"
         self.assertTrue(TestParser.test(input, expect, 430))
+        
+    def test_431(self):
+        input = """var VoTien <- a[1]()
+        """
+        expect = "Error on line 1 col 18: ("
+        self.assertTrue(TestParser.test(input, expect, 431))
+        
+    def test_432(self):
+        input = """
+        ## comment
+        func main()
+
+            ## comment
+            begin
+            aPI <- 3.14
+            end
+            ## comment
+            
+        ## comment
+        
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 432))
+        
+    def test_433(self):
+        input = """
+        func main() begin 
+        end
+        func main() 
+            begin 
+                ## comment0
+            end
+        func main()
+            ## comment1
+            begin
+                ## comment2
+                
+                ## comment3
+                VoTien <- 1 + 2 + fun()
+                VoTien[1+a] <- 1
+                
+                ## comment4
+                VoTien[3+4,2,4] <- 1
+                
+                ## comment5
+            end
+            ## comment
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 433))
+        
+    def test_434(self):
+        input = """
+        func main()
+            begin
+            aPI + 1 <- 3.14
+            end
+        """
+        expect = "Error on line 4 col 16: +"
+        self.assertTrue(TestParser.test(input, expect, 434))
+        
+    def test_435(self):
+        input = """
+        func main()
+            begin
+            aPI()<- 3.14
+            end
+        """
+        expect = "Error on line 4 col 17: <-"
+        self.assertTrue(TestParser.test(input, expect, 435))
+        
+    def test_436(self):
+        input = """
+        func main()
+            begin
+            (aPI)[2]<- 3.14
+            end
+        """
+        expect = "Error on line 4 col 12: ("
+        self.assertTrue(TestParser.test(input, expect, 436))
+        
+    def test_437(self):
+        input = """
+        func main()
+            begin   
+                if(1+1) api <- 1
+                ## comment0
+                
+                if(1+1) 
+                    ## comment1
+                    
+                    api <- 1
+                    ## comment2
+                else api <- 1
+                ## comment3
+                
+                if (1) api <- 1
+                elif (1 ... 2)
+                    ## comment1
+                    
+                    api <- 1
+                    ## comment2
+                elif (1) api <- 1
+                
+                if (1) api <- 1
+                elif (1 ... 2) api <- 1
+                elif (1) api <- 1
+                else api <- 1   
+            end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 437))
+        
+    def test_438(self):
+        input = """
+        func main()
+            begin   
+                if (api <- 1)
+            end
+        """
+        expect = "Error on line 4 col 24: <-"
+        self.assertTrue(TestParser.test(input, expect, 438))
+        
+    def test_439(self):
+        input = """
+        func main()
+            begin
+            for i until i >= 10 by 1 + 1
+                ## comment
+                
+                a <- 1
+            ## comment
+            end
+            
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 439))
+        
+    def test_440(self):
+        input = """
+        func main()
+            begin
+            for i[1] until i >= 10 by 1 + 1
+                a <- 1
+            end
+        """
+        expect = "Error on line 4 col 17: ["
+        self.assertTrue(TestParser.test(input, expect, 440))
+        
+    def test_441(self):
+        input = """
+        func main()
+            begin
+            for i+1 until i >= 10 by 1 + 1
+                a <- 1
+            end
+        """
+        expect = "Error on line 4 col 17: +"
+        self.assertTrue(TestParser.test(input, expect, 441))
+        
+    def test_442(self):
+        input = """
+        func main()
+        begin 
+            break
+            continue
+            for i until i >= 10 by 1 + 1 ... 3 / 2
+                begin
+                    break
+                    continue
+                end
+                
+            for i until i >= 10 by 1 print(1)
+            for i until i >= 10 by 1 
+                print(1)
+        end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 442))
+        
+    def test_443(self):
+        input = """
+        func main()
+            begin
+            for i until i >= 10 by 1 + 1
+            end
+        """
+        expect = "Error on line 5 col 12: end"
+        self.assertTrue(TestParser.test(input, expect, 443))
+        
+    def test_444(self):
+        input = """
+        func main()
+            return 1 + 1
+        """    
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 444))
+        
+    def test_445(self):
+        input = """
+        func main()
+            begin
+            main()
+            end
+        """    
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 445))
+        
+    def test_446(self):
+        input = """
+        func main()
+        begin 
+            return ([1,2,3]) + 1
+            return main()
+            main(1,2)
+            fun()
+            main([1,2,3], 1+2, a, c ... e)
+        end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 446))
+        
+    def test_447(self):
+        input = """
+        func main()
+            return func()
+        """
+        expect = "Error on line 3 col 19: func"
+        self.assertTrue(TestParser.test(input, expect, 447))
+        
+    def test_448(self):
+        input = """
+        func main()
+            return break
+        """
+        expect = "Error on line 3 col 19: break"
+        self.assertTrue(TestParser.test(input, expect, 448))
+        
+    def test_449(self):
+        input = """
+        func main()
+            begin
+                begin
+                    begin
+                        x <- 1
+                    end
+                    
+                    begin
+                        return true
+                    end
+                    
+                    return false
+                end
+                
+                begin
+                end
+                return true
+            end
+        """    
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 449))
+        
+    def test_450(self):
+        input = """var aPI <- 3.14"""
+        expect = "Error on line 1 col 15: <EOF>"
+        self.assertTrue(TestParser.test(input, expect, 450))
+        
+    def test_451(self):
+        input = """
+        func areDivisors(number num1, number num2)
+            return (num1 % num2 = 0 ... num2 % num1 = 0)
+        func main()
+            begin
+                var num1 <- readNumber()
+                var num2 <- readNumber()
+                if (areDivisors(num1, num2)) printString("Yes")
+                else printString("No")
+            end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 451))
+        
+    def test_452(self):
+        input = """
+            func isPrime(number x)
+            func main()
+                begin
+                    number x <- readNumber()
+                    if (isPrime(x)) printString("Yes")
+                    else printString("No")
+                end
+            func isPrime(number x)
+            begin
+            if (x <= 1) return false
+            var i <- 2
+            for i until i > x / 2 by 1
+            begin
+            if (x % i = 0) return false
+            end
+            return true
+            
+            
+            for i until i > x / 2 by 1 + 1 var c <- 1
+            end
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 452))
