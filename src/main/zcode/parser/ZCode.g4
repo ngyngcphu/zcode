@@ -169,7 +169,7 @@ IDENTIFIER: [a-zA-Z_] [a-zA-Z0-9_]*;
 
 NEWLINE: '\r'? '\n';
 
-COMMENT: '##' .*? ('\r'? '\n')+ -> skip;
+COMMENT: '##' ~[\n]* -> skip;
 
 WS: [ \t\b\f\r]+ -> skip;
 
@@ -181,5 +181,5 @@ UNCLOSE_STRING:
 fragment UNTERMINATED: NEWLINE | EOF;
 
 ILLEGAL_ESCAPE:
-	'"' CHAR_LIT*? ('\\' ~[bfrnt'\\]) {IllegalEscape(self.text[1:])};
+	'"' CHAR_LIT*? ('\\' ~[bfrnt'\\]) {raise IllegalEscape(self.text[1:])};
 ERROR_CHAR: . {raise ErrorToken(self.text)};

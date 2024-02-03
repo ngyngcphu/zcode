@@ -62,3 +62,39 @@ class LexerSuite_VoTien(unittest.TestCase):
         
     def test_317(self):
         self.assertTrue(TestLexer.test(""" "Vo ' \\n \\b """, "Unclosed String: Vo ' \\n \\b ", 317))
+        
+    def test_318(self):
+        self.assertTrue(TestLexer.test(""" "Tien ' \\1  """, "Illegal Escape In String: Tien ' \\1", 318))
+        
+    def test_319(self):
+        self.assertTrue(TestLexer.test(""" "Tien \\2 \\n \n """, "Illegal Escape In String: Tien \\2", 319))
+        
+    def test_320(self):
+        self.assertTrue(TestLexer.test(""" "Tien \\e \\n \\r """, "Illegal Escape In String: Tien \\e", 320))
+        
+    def test_321(self):
+        self.assertTrue(TestLexer.test("## Vo tien","<EOF>",321))
+    
+    def test_322(self):
+        self.assertTrue(TestLexer.test("###","<EOF>",322))
+        
+    def test_323(self):
+        self.assertTrue(TestLexer.test("a##1","a,<EOF>",323))
+        
+    def test_324(self):
+        self.assertTrue(TestLexer.test("a#","a,Error Token #",324))
+        
+    def test_325(self):
+        self.assertTrue(TestLexer.test("a\n##1\nb","a,\n,\n,b,<EOF>",325))
+        
+    def test_326(self):
+        self.assertTrue(TestLexer.test("a\n\n\n#","a,\n,\n,\n,Error Token #",326))
+        
+    def test_327(self):
+        input = """a
+                    ## comment
+                """
+        expect = """a,
+,
+,<EOF>"""
+        self.assertTrue(TestLexer.test(input,expect,327))
