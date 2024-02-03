@@ -1,1 +1,1 @@
-S,Error Token ^
+'"'",<EOF>

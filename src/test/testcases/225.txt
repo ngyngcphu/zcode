@@ -1,7 +1,8 @@
 
-var MI6
-func Vkq ()
-	return
-## _C-G
-## [3Q&H!%sJ^
-## (2ryk4=K._
+func YyT ()
+	begin
+		continue
+		break
+	end
+
+string o1e[27,40,3E63] <- true

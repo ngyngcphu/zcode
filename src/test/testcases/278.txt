@@ -1,11 +1,2 @@
 
-func qQaJ (var Yz)	return false
-
-func Nd (number sct[250,4.190], bool PVFd, dynamic vIh)
-	return "w'"'""
-## /7p(H~qV<]
-dynamic Le ## 0hZJ#7>_a(jL#8ob 3J!
-func quLg (string CY[418.083E67,866.569e+13])	begin
-		return true
-	end
-
+dynamic C_H[529.720] <- 2e+90

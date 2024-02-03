@@ -1,5 +1,12 @@
 
-func ZFIA (string Z52[863.824e03])
+## X:
+func b8Iz ()
 	begin
-		continue
+		## Iv0sy
+		number KEtx ## NRRk ?O>LBft{ZZ
+		if (DPqk) break
+		else break
 	end
+
+func A_Xu (number tLb)	return
+## e"[+N-C%1qxP

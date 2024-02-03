@@ -1,8 +1,4 @@
 
-dynamic fs
-number NCYX[990e09]
-## m
-func XhvA (var yHc[35.268E97,2.719], number nLHQ[85.781e+27,4.203e+38], number a91[60E+10])
-	return false
-
-dynamic n8d <- false ## rP.Lr:`Po~`vn
+bool FCA[61,888] <- false
+func Gw ()	begin
+	end

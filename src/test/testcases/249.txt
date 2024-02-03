@@ -1,11 +1,2 @@
 
-var BJu[8.968E-56]
-func CMa (bool RBoa, number WrZE[1e30,59], dynamic sq[34.641E-60,797])	begin
-		dynamic LhI ## %e~
-	end
-
-func IoHU (string HlI3)	begin
-	end
-func r3LF (var oU, string ox[92.243,5.523E+93,15.721E-52])
-	return
-## $/TOm~H$pE6AlaJj
+## (|OO5

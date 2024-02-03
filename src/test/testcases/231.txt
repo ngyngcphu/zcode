@@ -1,10 +1,5 @@
 
-func Rau (number Od3[88.836,48.053,79e+44], bool lVz[988,921.416,15e62], var aqED)
-	return 8.454e51
-bool Fki[235.877,3E+99,5E-67] ## >aEB4YvD?N
-func Z8 (string Mn[52E+05,31.168e+69], var Sfb[716.576,5E-84,361], dynamic RNX)	begin
-	end
-dynamic Fcb[8.743,4.921e+38] <- xs
-func ic (number YSh)
-	return
+func iP (bool yP[110E+49,90e+65,3], string u6Hs[451.116,656.366E73,436.088e06], var K3)
+	return true
 
+bool MoGF <- "'"^'"'"p" ## q3

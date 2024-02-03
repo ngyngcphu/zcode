@@ -1,6 +1,5 @@
 
-## Eb-mfN
-number ii08
-func jq (dynamic S5[717], string LaPp, bool WZ)	return
-var iNnv ## lyM!3;x0QK
-## $7cTiJu&XZ`X5uw
+func Ol (var Tl, dynamic QlT, bool Cqe)
+	return "+"
+
+## A

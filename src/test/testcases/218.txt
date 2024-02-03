@@ -1,5 +1,2 @@
 
-func vHQ (bool JL[41.855E+48], var qtP[10], string ZS)	return 8.611e-73
-func GnT (number dXx[9.827,6.999e74,553])	begin
-	end
-## MRHt#X23 ip,rm9
+bool eg59 ## K"l<Pt~4bY/+

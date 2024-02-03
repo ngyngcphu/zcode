@@ -1,5 +1,4 @@
 
-bool uFp[4,545.100]
-var LTOP[4,366]
-bool tre
-bool cu[70] <- true ## ([66a7KA]BQp{PO:^ 
+var ao[60E-72,87.007,3.593] <- 4.802
+func SQwx ()
+	return 9

@@ -1,6 +1,9 @@
 
-string Mg
-func CO (dynamic PL9[18,60e-08], var a6o1, string tM[8])	return
-## -jWx-[Pbxz,#R3>u
-## HuVTK&dhgf<zw&a)=
-var u81[1.583e-98] <- YfI
+## p=k
+func kW ()	begin
+		## _$}[+n<sRK]v
+		number t4 <- "+'"hm^" ## nvW+"%<a
+	end
+
+bool d5G[13.575] ## dyU
+number OuL[5,57e29,4.828E-02] <- ug0u ## 1u=@#^1=R%!"~D-@sKD

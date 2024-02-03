@@ -1,5 +1,7 @@
 
-func sx5 (dynamic f_5, bool r23[2e+77,66.161E75,3], number XRh7[1.172E+87,19])
-	return
+func BA (bool Y8qQ[925.128E+51,27e90,820.267e-51], var f_Y)
+	begin
+	end
 
-## mzKH
+string V5Bo[1e+84,58e-96] <- "'""
+func V1_O ()	return

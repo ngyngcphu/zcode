@@ -1,12 +1,7 @@
 
-string Dv
-number fN ## u31!]]g8P:kl@_= +
-## *O41mY VX G/2
-var AM[5e-74,6.213E76,0.943] <- "'"zc)'"" ## R
-func SA (var vq, number eJ)	begin
-		for Box until "'"'"'"'"" by false
-			continue
-		string kjRi[8.716,8.549e+52] <- true ## RYqJl/+1DK0nrq}]95
-		return
+func Tp (number EnX[25], dynamic iuBM[8.385E-72,989.862e+30])	begin
+		## 8og$-KA
+		break
+		## ,S:sv.($sw<]Nb|wL!`
 	end
-
+bool ui[5,1e62,34.410E48]

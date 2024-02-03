@@ -1,4 +1,3 @@
 
-string l9cn <- "b" ## eTjA 
-func U8 (number nfxs[4E09,460.078], dynamic X2H2, bool Rve[694.512,3,431])	return
-func HdX (var Jj5[56,5e95,498.150E-03], var m3DM)	return true
+bool r1[2,14.475e-92] <- 837.968E-62
+bool smzd[505,5.259,354E-83]

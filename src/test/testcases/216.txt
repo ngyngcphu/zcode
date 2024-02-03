@@ -1,24 +1,3 @@
 
-func hO9 (dynamic Ra8)
-	begin
-		if (7.454E38)
-		break
-		elif (false)
-		var a1Ej[583e-28,42]
-		elif (lPt) continue
-		elif (Te) return 7E-41
-		elif (d1Y) HLoH(true, "'"'"'"M'"", w0m)[42e+96] <- 736.941
-		else var Eo[446.673e-12,637.629e44] <- "oj-" ## 2Kle
-		continue
-		## +
-	end
-
-func i007 (number kJON[74E-62], string z1j, var dbE)
-	return
-func hGr ()	return false
-
-## ^
-func JEx (string G8mu, dynamic a5vO)	begin
-		zz()
-		string kHr[18.542e-46,39.755,97.049e+86] ## MyeDeY,Ewh9A
+func qvS (bool Tj6t, var rSZ, var KYnl[0])	begin
 	end

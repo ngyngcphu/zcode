@@ -1,7 +1,6 @@
 
-## }k(4l_Bxg2XvS
-number b5[802.401] <- "@'":'"'""
-func g7 ()
-	return 542.926e-02
+func rCi (bool gg2[167.094,919,591.652], string pa2[241.540,790.224,62], dynamic V0gH)
+	begin
+	end
 
-number JH ## gE6y}^{HNcdf1,j
+bool RE2[582e-70,70.730e56] <- 70

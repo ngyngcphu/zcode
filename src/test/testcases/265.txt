@@ -1,9 +1,4 @@
 
-## G
-var YJHP[1,95e+02,90.573] <- mI
-bool ew[3.202,6.037E69]
-func EE94 (dynamic zau, var lBZ[68.135], bool h3xO)	begin
-		## OI%?G,-V $vH]0/[F
-		Nn <- "'"'"u:'""
-	end
+## c?2/14TDuj6e,
+func wrJ (number rIA[74.681E41], string JO[74.429E-55,5e-88,689e+38])	return
 

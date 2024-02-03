@@ -1,8 +1,5 @@
 
-## $&$Sr)CW
-bool ja[24.294E71,33.409] <- "'"gu^"
-## jDrd
-func gEB (var kNiA, var bdv5, dynamic T9r)
-	begin
-	end
-
+func y_Cb (number JF, number mgt)	return
+## t_>_Ns`U1iqG7
+## dy,a [_= 
+bool cSXW <- 542.825

@@ -1,5 +1,4 @@
 
-## DeOEY@(JM|x{whacuY&
-## 1]f<LNkqf v^udJ0*Y
-func EO (string NMrU[368.798e08], dynamic Se, bool saF)	return
-
+func c3y (var zJlo, number tqf)	begin
+		TZF <- true
+	end

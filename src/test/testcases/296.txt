@@ -1,3 +1,8 @@
 
-## JDc7h~;:4
-number Esk[5] ## iloD#pE]
+bool zl6_[4,166.954,9.726] ## _^7%L;2vN}1ZRze?Y<@m
+number CQHE
+func CQzJ (number h5U[90], var TNe[7.955E-05,743.195], dynamic Uoh[49e30])
+	begin
+		continue
+		## D "H@hjz ?P^x$<@si>#
+	end

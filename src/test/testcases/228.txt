@@ -1,5 +1,4 @@
 
-func Mc ()	begin
-	end
-## v
-## 55
+dynamic mw <- 64
+func SGm (var uh3O[26.964,89.116,201.632e67], dynamic OC8)
+	return

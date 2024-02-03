@@ -1,9 +1,4 @@
 
-dynamic cff <- false
-bool VTZl <- true ## ~5vBr_~CdSC6=]
-func E5 ()
-	return
-
-## .j/ x<_tKy%/,G#oC!8
-func ur8 (number Qydd)	return
-
+string Xg[7e-76,96.109,578.942E+57] <- 42.007e73
+## {wvFkR5/c><qBg=t8N1a
+func em ()	return

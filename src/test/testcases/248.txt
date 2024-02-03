@@ -1,7 +1,6 @@
 
-func gG (bool upXl, var B7[2.123,169.434], number r29[616.810,431.235])
-	begin
-		sH9j <- true
-	end
+## j,E;c[" 1Kx@]k<%Q
+func SH (var YuvM[54.946E09,3.026], bool O1tX[697.246E+12,50E47], dynamic sHc_)
+	return
 
-var gAbR <- 239 ## _=`fI/qheMv
+## Bl7#a5GhW2`)qZr0~*
