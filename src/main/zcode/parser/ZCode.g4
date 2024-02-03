@@ -10,7 +10,7 @@ options {
 	language = Python3;
 }
 
-program: NEWLINE* ((varDecl | functionDecl) NEWLINE*)+ EOF;
+program: NEWLINE* ((varDecl NEWLINE+ | functionDecl))+ EOF;
 
 varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 		ASSIGN expr
@@ -19,7 +19,10 @@ varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 	| array_type (ASSIGN expr)?;
 
 functionDecl:
-	FUNC IDENTIFIER LB paramList RB NEWLINE* (statement_list | NEWLINE);
+	FUNC IDENTIFIER LB paramList RB NEWLINE* (
+		return_stat
+		| block_stat
+	)? (NEWLINE+ statement_list NEWLINE+ | NEWLINE+);
 
 paramList: paramPrime |;
 paramPrime: formalParameter COMMA paramPrime | formalParameter;
@@ -50,7 +53,7 @@ elif_fragment: ELIF LB expr RB NEWLINE* statement_list;
 else_fragment: ELSE statement_list;
 
 for_stat:
-	FOR IDENTIFIER UNTIL expr BY expr NEWLINE* statement_list?;
+	FOR IDENTIFIER UNTIL expr BY expr NEWLINE* statement_list;
 
 return_stat: RETURN expr?;
 

@@ -98,3 +98,70 @@ class ParserSuite_VoTien(unittest.TestCase):
         """
         expect = "Error on line 2 col 22: var"
         self.assertTrue(TestParser.test(input, expect, 410))
+        
+    def test_411(self):
+        input = """ 
+            ##12
+            ##12
+            
+            func main(number a) var c <- 1
+        """
+        expect = "Error on line 5 col 32: var"
+        self.assertTrue(TestParser.test(input, expect, 411))
+        
+    def test_412(self):
+        input = """ 
+            func main(string a) 
+                begin 
+                    break ## 12
+                end
+            func main(dynamic a) 
+        """
+        expect = "Error on line 6 col 22: dynamic"
+        self.assertTrue(TestParser.test(input, expect, 412))
+        
+    def test_413(self):
+        input = """ 
+            func main(number a[1,2,3]) ##12
+                break
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 413))
+        
+    def test_414(self):
+        input = """ 
+            ##12
+            func main(number a) 
+                ##12
+                
+                begin 
+                    break
+                end
+                
+                ##12
+                ##12
+            func main(number a)
+            ##12        
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 414))
+        
+    def test_415(self):
+        input = """ 
+            ## 12
+            
+            var a <- 1 ## 12
+            ## 12
+        """
+        expect = "successful"
+        self.assertTrue(TestParser.test(input, expect, 415))
+        
+    def test_416(self):
+        input = """var a <- 1"""
+        expect = "Error on line 1 col 10: <EOF>"
+        self.assertTrue(TestParser.test(input, expect, 416))
+        
+    def test_417(self):
+        input = """func main(number a) """
+        expect = "Error on line 1 col 20: <EOF>"
+        self.assertTrue(TestParser.test(input, expect, 417))
