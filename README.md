@@ -25,3 +25,7 @@
    python3 run.py test LexerSuite
    python3 run.py test ParserSuite
    ```
+
+## 2. Result
+1. Lexer: 100/100
+2. Parser: 96/100
