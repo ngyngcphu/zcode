@@ -1,8 +1,6 @@
 
-bool zl6_[4,166.954,9.726] ## _^7%L;2vN}1ZRze?Y<@m
-number CQHE
-func CQzJ (number h5U[90], var TNe[7.955E-05,743.195], dynamic Uoh[49e30])
-	begin
-		continue
-		## D "H@hjz ?P^x$<@si>#
-	end
+## f9>>,Q`?Ek?
+## )TipTVYN9j=pBKQc
+func zvai (number eQ[0E+52,292.685e19,1.788E-82])
+	return Wiw
+

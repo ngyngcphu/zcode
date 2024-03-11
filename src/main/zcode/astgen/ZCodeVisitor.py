@@ -64,6 +64,11 @@ class ZCodeVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by ZCodeParser#elif_stat.
+    def visitElif_stat(self, ctx:ZCodeParser.Elif_statContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by ZCodeParser#if_fragment.
     def visitIf_fragment(self, ctx:ZCodeParser.If_fragmentContext):
         return self.visitChildren(ctx)

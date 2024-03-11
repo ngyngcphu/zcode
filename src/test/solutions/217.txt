@@ -1,1 +1,1 @@
-Error on line 2 col 73: dynamic
+successful

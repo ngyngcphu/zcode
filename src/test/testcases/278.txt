@@ -1,2 +1,10 @@
 
-dynamic C_H[529.720] <- 2e+90
+## LhTTSARw+2
+## ;r>th+i#v>HM;rUpzf^2
+dynamic SVDh
+func LOR (bool KU[8], bool fE[437.015e46,23e-16,5e33])
+	begin
+		raqZ(3.128, vLG, 804e+05)
+		zC0(fv, U0kD, oHYm)
+	end
+

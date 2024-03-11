@@ -1,2 +1,8 @@
 
-bool t2[364.206E-07] ## {SC
+func FZlT ()
+	begin
+		for ux until false by "'"L'"'""
+			return Z6OG
+		continue
+	end
+

@@ -1,4 +1,8 @@
 
-func c3y (var zJlo, number tqf)	begin
-		TZF <- true
-	end
+## - lX|W>K5$)pUM
+func Lt (number JOf[280.846E+23,5,57.862E76], dynamic uli, number Yjw)
+	return "'"y"
+func Ko (number OG[2e36,2,26.921])
+	return
+
+## n}y

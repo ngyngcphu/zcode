@@ -1,10 +1,4 @@
 
-bool dmk[87] <- true
-func FF (var bnDs[7], var Li3d)	return 4E-29
-
-## 8MQ)"Q7Z|$O!N,=*
-func C2Fh (number dYVY[68.843E-25], string h_[87E+42])	begin
-	end
-func WJ (string Zp1D, dynamic P53)
-	return 10.284E63
-
+number AKv[3E-95,315.658,92E+28]
+func o56 ()
+	return

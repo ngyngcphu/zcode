@@ -1,7 +1,35 @@
 
-var hc[73,278e47] <- false ## 0SG)n.
-dynamic DnhY[7.035E-84,289e-41,4.429] <- "'"'"" ## zF%E*4qg-.vA5zv?
-func FH (var pWO[5,218.529E05], bool hbQy[3,7e-32], bool SAU)
-	return
-func eW7 (string TVk1[17.014], var heQ, dynamic bNn[295])	return
+func fvx (number pk, var VL6C, number He[172.420e-30,789e+22])
+	return 82.408
+bool Ezs <- true ## =(
+func d_s ()
+	begin
+		continue
+	end
+func SrqF (dynamic Jy, string C3, bool Cr[83.613E-71,7.954E07])
+	begin
+		for nOA until "t" by joDn
+			begin
+				if (b5)
+				break
+				elif (true)
+				if (z6ak)
+				begin
+					## gS."H Z1T!*T
+					## CDon
+				end
+				elif (Pmh6) for jZ until Em0 by 4.094
+					begin
+						## H,=BneX!(J7r&
+						return true
+						rQR <- 870.318
+					end
+				elif (298E-11) EL(3e28, 23E63, false)[244e22, uH, 30.731e-15] <- true
+				elif (false) dynamic zz9[43E28,0,2.207]
+				continue
+				## @n
+			end
+		## Rv!3}ojb<tc;RUjE
+		break
+	end
 

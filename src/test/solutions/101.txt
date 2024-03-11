@@ -1,1 +1,1 @@
-ni,Error Token $
+0.086,<EOF>

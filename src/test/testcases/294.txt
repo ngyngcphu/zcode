@@ -1,4 +1,3 @@
 
-string Xg[7e-76,96.109,578.942E+57] <- 42.007e73
-## {wvFkR5/c><qBg=t8N1a
-func em ()	return
+number i8[2e+26,11E85,16.290] ## #u~
+bool z3[49.010,3E+01] <- 36 ## ;]h,8X>zxlQfjVlmE

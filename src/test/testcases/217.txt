@@ -1,6 +1,7 @@
 
-func rCi (bool gg2[167.094,919,591.652], string pa2[241.540,790.224,62], dynamic V0gH)
+## BzOD>AZN&@PNwS[
+number ZkRt[96.621E+29] <- true
+func ScHT (number hmR, string t3H[307.993,19,1], string NAy)
 	begin
 	end
 
-bool RE2[582e-70,70.730e56] <- 70

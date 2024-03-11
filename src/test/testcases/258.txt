@@ -1,6 +1,3 @@
 
-func ipW (var FH7J, dynamic Cp[7E14])	begin
-		## mJX@rnn
-		## ?5}GESQf??z/bGjc&
-	end
-
+var xce[1E42,0] <- 9.812 ## Mnct.]h<^[pH
+## ".T!=sm<,WL/w=c@b

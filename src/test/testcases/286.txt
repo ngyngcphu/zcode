@@ -1,11 +1,5 @@
 
-string vm[9e75,86.471,59] ## gxl{&A)Q(u&>j(R7B(h
-## #w|ao6d
-bool fz <- 0
-## 9;u"W[>>
-func DbKL ()
-	begin
-		## eYKP|}/>
-		## 5f-Kij:XbeAQZx
-	end
-
+dynamic Sm ## +W
+## fx%KeR>Y)0*S7T;c
+func P9 ()
+	return

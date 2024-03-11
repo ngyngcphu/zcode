@@ -1,1 +1,1 @@
-A,Error Token &
+0,<EOF>

@@ -1,5 +1,14 @@
 
-## E.3F,UR]M11c"^a%39E=
-func wR (number XaS)
-	return
-## ;)F1:o?|y{YoAgL 
+func NfW (number L0v, bool HA)
+	begin
+		begin
+			break
+			for jT7v until zB by true
+				sX("'"lK'"%", "z'"'"")
+		end
+	end
+
+dynamic jjE <- 874 ## )|ckWgn9DzF"|Q.v8G
+bool Kf[32.872E92,132.898,36.028] <- 184.527e-57
+bool JKD[68e13,34E-08]
+## !9>"O"

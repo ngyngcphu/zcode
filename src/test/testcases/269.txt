@@ -1,2 +1,5 @@
 
-dynamic xzK[338.577E+82,2.925,9.273E04] <- false ## =q_p]iue {
+func tt (string waj4[899,2.864e+07,27.074e64])	begin
+		begin
+		end
+	end

@@ -1,7 +1,6 @@
 
-func jc (number NT, number ubum)
-	return
+## U3[Bz:~dF
+bool zcz1 <- false ## bJwRY`%ROhRFt5t3z
+bool Nekc[48.129] <- noNb ## [_RYLa[4ed%R-e,D^,O
+func Fcph ()	return
 
-number ph[967,231e24,2.146e+47] <- false
-var bDj[57E-60] ## )SbTC4-Hyk"~F ;*95XQ
-number HM[73.136]

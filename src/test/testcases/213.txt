@@ -1,12 +1,10 @@
 
-## X:
-func b8Iz ()
+## nC
+var hfQs[181E+35] <- true ## 6HLfJ6a4>1;MB.G9r
+number zmoa ## )VXJM
+func QMPw ()
 	begin
-		## Iv0sy
-		number KEtx ## NRRk ?O>LBft{ZZ
-		if (DPqk) break
-		else break
+		## 5f:EL9S
+		Eo9 <- "U1"
+		dLMI()
 	end
-
-func A_Xu (number tLb)	return
-## e"[+N-C%1qxP

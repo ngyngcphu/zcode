@@ -1,9 +1,5 @@
 
-func ELC ()
-	return
-
-func dVj (string mQRs, bool w8_e[6E+83,481.563])	begin
-		number NBE4[1e26,15.734e82,43] <- true
-		## WMx,_u/+exa
-	end
-
+func hO ()
+	return 479.018
+number cfJy ## z$L`B3.Vi,U:Eb
+## ?T7%$32JNv`p

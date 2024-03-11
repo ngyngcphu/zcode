@@ -125,7 +125,7 @@ class ParserSuite_VoTien(unittest.TestCase):
             func main(number a[1,2,3]) ##12
                 break
         """
-        expect = "successful"
+        expect = "Error on line 3 col 16: break"
         self.assertTrue(TestParser.test(input, expect, 413))
         
     def test_414(self):

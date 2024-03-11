@@ -1,10 +1,10 @@
 
-dynamic c0
-func qa (var DpXO[133.360E-11], dynamic RFq, bool UtJ[864.557E+17,3E+70,927E+64])
-	return
-string LV[3.498e-57,6.232e13,8.127e77] <- "E_"
-func KEO (string U2po[575.341,34])
+func zm (string OKM[4.423,86.824,5e83], var wh[359.883e98,7,820.154e+86], var Q5[3E+35,8.196,25])
 	begin
-		aTI()
+		break
+		return true
+		for DjK until false by crh
+			begin
+			end
 	end
-## #MCy8
+## B]2/l{$Z!`;

@@ -1,8 +1,3 @@
 
-bool qdl0 <- 2e20 ## GX!cSv,^! D1i
-func Nc (bool LQ[778E54,2E+61,1.418])	return
+func Jqu ()	return "'"'"I'"M"
 
-func kA (number Chs, string qM[356.321,359,42.296])
-	return true
-
-bool StV3 <- true ## dH$I82ml7)n^|kAGm

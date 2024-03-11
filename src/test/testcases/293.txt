@@ -1,13 +1,5 @@
 
-func hUJt (string Yqi[4.523E80])
-	begin
-		## =RJ}FCbWbw
-		## %h<]SU^%1?{
-		## 7BYBDkF93
-	end
-## x0IE=aHpF&zTLY}cH^
-func Bq ()	begin
-		## Z?_6U-E
-		begin
-		end
-	end
+## |@
+func czxY (bool c6p, number N36b, string KZo[43.076e+58,408.909E+56])
+	return
+

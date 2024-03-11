@@ -1,16 +1,7 @@
 
-func Ir (string il4[4,262,624.054], var XB)
+func wRj (string DrBN[909,1.082])
 	begin
-		for HW until 409.536 by ixs4
-			rFD(true, "'"", "q'"]")["K'"'"'"Q", false] <- true
-		## `i3
-		begin
-			## >ldh
-			## /v$RCSx
-			## pIHST7@pxH`Ly>Kr<
-		end
+		bh(true, vs)
 	end
-
-func UQsm (string kPO[47e+32,93e41,125.202E-18])	begin
-		## K$|80>]J9#&?mC%P`
-	end
+## 7m}`>
+## o~{I27O7D[bd

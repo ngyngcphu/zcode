@@ -10,7 +10,8 @@ options {
 	language = Python3;
 }
 
-program: NEWLINE* ((varDecl NEWLINE+ | functionDecl))+ EOF;
+program:
+	NEWLINE* ((varDecl NEWLINE+ | functionDecl NEWLINE+))+ EOF;
 
 varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 		ASSIGN expression
@@ -22,7 +23,7 @@ functionDecl:
 	FUNC IDENTIFIER LB paramList RB NEWLINE* (
 		return_stat
 		| block_stat
-	)? (NEWLINE+ statement_list NEWLINE+ | NEWLINE+);
+	)?;
 
 paramList: paramPrime |;
 paramPrime: formalParameter COMMA paramPrime | formalParameter;
@@ -47,13 +48,21 @@ statement_list:
 assign_stat: lhs ASSIGN expression;
 lhs: IDENTIFIER | index_expr;
 
-if_stat: if_fragment elif_fragment*? else_fragment?;
-if_fragment: IF LB expression RB NEWLINE* statement_list;
-elif_fragment: ELIF LB expression RB NEWLINE* statement_list;
-else_fragment: ELSE statement_list;
+if_stat:
+	if_fragment elif_stat
+	| if_fragment elif_stat else_fragment
+	| if_fragment else_fragment
+	| if_fragment;
+elif_stat: elif_fragment | elif_fragment elif_stat;
+
+if_fragment:
+	IF LB expression RB NEWLINE* statement_type NEWLINE*;
+elif_fragment:
+	ELIF LB expression RB NEWLINE* statement_type NEWLINE*;
+else_fragment: ELSE statement_type NEWLINE*;
 
 for_stat:
-	FOR IDENTIFIER UNTIL expression BY expression NEWLINE* statement_list;
+	FOR IDENTIFIER UNTIL expression BY expression NEWLINE* statement_type NEWLINE*;
 
 return_stat: RETURN expression?;
 
@@ -116,7 +125,7 @@ expression_6: SUB_OF expression_6 | expression_7;
 expression_7:
 	array_value
 	| index_expr
-	| func_call_stat
+	| (IDENTIFIER LB arglist RB | io_function)
 	| LB expression RB
 	| NUMBERLIT
 	| TRUE

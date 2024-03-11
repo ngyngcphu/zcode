@@ -1,13 +1,9 @@
 
-## L[]X9],{CN
-var iZR[1.929E-81] <- true
-func hjm ()	begin
-	end
+func fzzF ()
+	return
 
-func kSTp ()	return
+## Rp%tt[q~L.IfMxT RO2u
+func kGS (bool s6, bool mnmG[56.958e+40,58.886E-95], number Loj[9.531,5.369,10.290])	return
 
-func ku (number yKFr)	begin
-		continue
-		## ^t!I.kydAh,U)qy~s
-	end
-
+func Onxj (dynamic pyg[6,75], string fr[517], dynamic Mf)	return
+dynamic KQm

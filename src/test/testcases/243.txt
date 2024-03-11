@@ -1,8 +1,3 @@
 
-bool fS[1e+68] <- "'"b"
-## F)|?<(0eJ@virKY[
-## o]o<>HD%|r
-func cjK (bool pIJ)	begin
-		## LjAKg_(JvTf Aga
-		## Gi.L`a(
-	end
+string HvR5[7.512e76]
+## /K:Ey4[S@"=e

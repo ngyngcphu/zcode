@@ -1,5 +1,4 @@
 
-string pViM ## z
-string kc8V <- 1.417e58 ## {tO
-func dUj (var owjd, string jzyq[1.592E+13,297.483e41], var Vm2)
-	return
+string G7x <- "H'"65." ## R?`P3f Uet+0|q
+func sr (number NtwE)	begin
+	end

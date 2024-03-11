@@ -1,5 +1,3 @@
 
-func Ol (var Tl, dynamic QlT, bool Cqe)
-	return "+"
-
-## A
+dynamic zGxR <- false ## kS^L
+string yR <- "J" ## >

@@ -1,7 +1,2 @@
 
-bool Yp
-func AT ()
-	return 40E+97
-
-## ZYLU$DriR0U(
-var Uy2J[26E+59] ## _4H9Ttx
+number ox[36e-11,943E-73,882] <- 4.540e-21

@@ -1,5 +1,2 @@
 
-string zC
-number Voc ## T
-## FwNTg]
-var okH[6.198e+14,57,9] ## 9plrK
+func NDA ()	return 837.428

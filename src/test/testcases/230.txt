@@ -1,7 +1,2 @@
 
-## a/_`
-## jcF$^&k1
-func L0 (bool J5[9.733,541.951e78,659.164e43])	return
-
-func v_Qx (dynamic CfD[81.484E37])
-	return false
+string rX[3.385,75]
