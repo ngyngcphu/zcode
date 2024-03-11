@@ -1,0 +1,1 @@
+Program([VarDecl(Id(QCR), ArrayType([52.58, 58.72], NumberType), None, None)])

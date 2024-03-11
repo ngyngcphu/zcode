@@ -1,0 +1,4 @@
+
+string zx[16.63] <- "ftdYd"
+func Ja6 (number f3[71.13,41.59])	return
+

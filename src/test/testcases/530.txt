@@ -1,0 +1,7 @@
+
+func F92 (number IE, string mzMn[35.7,10.0])	return false
+
+bool F7[46.35]
+number DE <- false
+func cFMD ()	return
+number tT[1.13,35.27,96.84]

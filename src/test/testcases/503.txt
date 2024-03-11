@@ -1,0 +1,6 @@
+
+func OlhB (bool tD[15.49,46.51], number T5)	return "ki"
+number rLXp
+func Uvlv ()
+	begin
+	end

@@ -1,0 +1,1 @@
+Program([VarDecl(Id(LT), ArrayType([36.12], StringType), None, NumLit(28.17))])

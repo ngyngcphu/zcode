@@ -1,0 +1,6 @@
+
+number Moh
+bool NZS[90.94]
+func Sle (number w3[89.01], number dd, bool Hy)	return
+
+func Mv7 (bool Q0, number vSgE, number rGO2)	return Q3u4

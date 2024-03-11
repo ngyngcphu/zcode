@@ -1,0 +1,9 @@
+
+func MiVF ()	return
+
+number A8
+func eHq3 (number Q0jg[71.98,7.43], bool xsK[53.25,51.73,7.67])
+	return 91.93
+number WneJ
+func rt (string ljb[39.26,43.64,5.76], number V0[84.22,65.62])	return
+

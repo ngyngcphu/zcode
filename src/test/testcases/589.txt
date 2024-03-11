@@ -1,0 +1,8 @@
+
+func w76i (bool sgo, number HnSA[56.01])	begin
+	end
+func HGv (number wvl[32.77,65.26,36.9])	begin
+		continue
+	end
+
+var aVF <- "ozEL"

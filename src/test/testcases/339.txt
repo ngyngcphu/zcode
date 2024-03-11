@@ -1,0 +1,4 @@
+
+string hDz
+func Jj ()	return true
+

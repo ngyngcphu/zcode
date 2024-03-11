@@ -1,5 +1,3 @@
 
-dynamic Po[84,8,74.906] <- "<" ## mx_W*&TMbaQDUkh
-## mA5<
-## 1a5
-number Bb <- true ## WLUWDLPsRA
+func sez (number NMv[7.519E-79,60.985E-77], var MQJd, var BQ[7.237])	return "B'"'""
+dynamic PB <- zVM2

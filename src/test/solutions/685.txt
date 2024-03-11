@@ -1,0 +1,1 @@
+Program([VarDecl(Id(jzus), None, var, StringLit(aNpFy)), FuncDecl(Id(tF), [], Return(BooleanLit(False))), VarDecl(Id(Q7uC), None, dynamic, None)])

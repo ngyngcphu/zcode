@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(zSS), [], Block([Block([CallStmt(Id(eOl), []), For(Id(T1as), Id(tTOM), NumLit(53.65), Return()), For(Id(OQ), NumLit(78.75), NumLit(12.45), CallStmt(Id(ocw), [Id(bnB), NumLit(87.15), BooleanLit(False)]))]), Return(NumLit(32.89))])), FuncDecl(Id(ga), [VarDecl(Id(Ob), ArrayType([28.16, 8.72], StringType), None, None)], Return(Id(FU)))])

@@ -1,0 +1,4 @@
+
+func J7 ()	return true
+func qEi (bool g4u, number It)	return
+dynamic RZD <- c1cO

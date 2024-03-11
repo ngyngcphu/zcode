@@ -1,0 +1,6 @@
+
+func t8QF (number cv[13.5,45.93,18.06], string VWB[73.44,63.76,88.8], number cl8J[3.77])
+	return
+
+func LT4 (number FiyW, string R2c)
+	return 42.22

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(GEQC), [VarDecl(Id(qm), StringType, None, None), VarDecl(Id(oC3G), ArrayType([7.18, 18.62, 95.2], NumberType), None, None), VarDecl(Id(RP), BoolType, None, None)], Block([])), VarDecl(Id(Oc_w), None, dynamic, None), VarDecl(Id(KS), None, var, Id(o5))])

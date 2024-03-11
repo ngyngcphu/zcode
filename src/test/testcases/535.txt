@@ -1,0 +1,6 @@
+
+number II
+string ylS[12.47,97.78]
+func nPgG (string z97, string NG[36.35])
+	begin
+	end

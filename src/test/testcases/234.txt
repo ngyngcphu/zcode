@@ -1,11 +1,5 @@
 
-func oE ()
-	return
-
-## |[)A
-var bDi <- 875.079 ##  K/l
-dynamic PkP[3.232] <- "'"?"
-func hb (number zjv[67], string X7)	begin
-		## EDSAWphLt;20
-	end
+string pk ## Q
+func Dc (string a5)
+	return true
 

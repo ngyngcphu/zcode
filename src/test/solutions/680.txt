@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(s5M), [VarDecl(Id(ma), StringType, None, None), VarDecl(Id(R0), BoolType, None, None)], Block([Continue]))])

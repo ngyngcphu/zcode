@@ -1,0 +1,4 @@
+
+string Gd <- 15.09
+func QvFA ()	return "sCX"
+

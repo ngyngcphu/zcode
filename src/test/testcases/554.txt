@@ -1,0 +1,12 @@
+
+func nIrY (number nb[11.77,77.68], number GG[82.74,48.18])
+	return 4.06
+dynamic a0ra
+func Ljqc ()	return false
+
+func mYKO (number rQcX)
+	begin
+		for RY until 8.65 by 80.5
+			return
+	end
+string Dk[79.47] <- true

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(Kgm), [], Return(StringLit(ZwPDa))), VarDecl(Id(Jy), ArrayType([2.16, 26.15, 44.63], NumberType), None, StringLit(ah))])

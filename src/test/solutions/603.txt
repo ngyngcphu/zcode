@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(pIYM), [VarDecl(Id(Fq), ArrayType([5.23, 74.14], StringType), None, None), VarDecl(Id(gKS), StringType, None, None), VarDecl(Id(Iu21), BoolType, None, None)], Return()), FuncDecl(Id(TAGs), [], Block([]))])

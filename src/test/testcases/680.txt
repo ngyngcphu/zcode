@@ -1,0 +1,6 @@
+
+func s5M (string ma, bool R0)
+	begin
+		continue
+	end
+

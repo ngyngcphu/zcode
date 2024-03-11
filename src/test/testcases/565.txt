@@ -1,0 +1,9 @@
+
+func luF (number Kv, string tBpY[30.6,98.53], bool XN[63.69,28.43])
+	begin
+		b5Y <- 95.94
+		for ObK until "OmpF" by 92.22
+			return
+		for puDx until true by gik
+			rFx1 <- NI
+	end

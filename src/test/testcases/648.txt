@@ -1,0 +1,5 @@
+
+func GEQC (string qm, number oC3G[7.18,18.62,95.2], bool RP)	begin
+	end
+dynamic Oc_w
+var KS <- o5

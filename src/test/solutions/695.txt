@@ -1,0 +1,1 @@
+Program([VarDecl(Id(Rok0), NumberType, None, Id(uy_I)), FuncDecl(Id(Qb), [VarDecl(Id(H4Z), NumberType, None, None)], Block([Break])), FuncDecl(Id(Uf), [], Return(NumLit(99.33)))])

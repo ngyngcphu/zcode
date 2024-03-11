@@ -1,0 +1,1 @@
+Program([VarDecl(Id(wY), StringType, None, None), VarDecl(Id(UpM), NumberType, None, NumLit(58.28))])

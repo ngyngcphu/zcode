@@ -1,0 +1,6 @@
+
+func UNOk (string OPe, bool cPzi[72.22,29.06])
+	return
+dynamic xX
+func Ots ()	return
+string oN[6.53,21.04,3.63]

@@ -1,0 +1,5 @@
+
+dynamic H2
+string qLDT[25.99,3.2,33.01]
+func Yr (bool vCTO, number kWA[11.62,69.2,66.04], string U5xz[27.03])
+	return

@@ -1,0 +1,8 @@
+
+bool y2[62.31]
+func V9XQ (number A_[89.04,69.83,76.94])	begin
+		return
+	end
+
+func Zy0 (string Ug9, number yiVb, number wy4a)	return
+

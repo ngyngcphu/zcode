@@ -1,0 +1,1 @@
+Program([VarDecl(Id(vai), NumberType, None, Id(Us)), VarDecl(Id(UG), NumberType, None, None), VarDecl(Id(cp), BoolType, None, None), VarDecl(Id(cCF), None, var, BooleanLit(True)), VarDecl(Id(MM), BoolType, None, None)])

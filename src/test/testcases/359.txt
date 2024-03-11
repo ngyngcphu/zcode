@@ -1,0 +1,6 @@
+
+string fEDZ[2.25,40.16,53.21]
+func LMQg ()	return
+func hzZ (number MUm)
+	return true
+

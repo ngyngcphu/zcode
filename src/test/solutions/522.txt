@@ -1,0 +1,1 @@
+Program([VarDecl(Id(hMx), BoolType, None, None), FuncDecl(Id(Upp), [], Return(StringLit(Srau)))])

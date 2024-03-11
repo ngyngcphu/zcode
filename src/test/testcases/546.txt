@@ -1,0 +1,8 @@
+
+func c3m (string lw, number LlyD)
+	begin
+		nLSZ["CBM"] <- "FyC"
+		break
+		return 87.42
+	end
+

@@ -1,0 +1,30 @@
+
+func UlOj (number J3[34.24,15.05])	return true
+
+func rxOa (string F5[16.45], bool w44[97.08,23.48])	begin
+		for l8 until "N" by "FRz"
+			begin
+				if (40.87)
+				for a81 until 60.76 by true
+					begin
+						if (true) begin
+							var ols <- true
+							continue
+							continue
+						end
+						elif (24.87) return ZMAW
+						elif (false) if (okT)
+						jSv[false, false] <- 39.24
+						else continue
+						elif (ZX)
+						continue
+						elif (true)
+						return
+						else break
+						for VU until "CikE" by "zuCct"
+							break
+					end
+				JKG()
+			end
+		continue
+	end

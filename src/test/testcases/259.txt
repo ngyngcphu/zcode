@@ -1,6 +1,10 @@
 
-## U3[Bz:~dF
-bool zcz1 <- false ## bJwRY`%ROhRFt5t3z
-bool Nekc[48.129] <- noNb ## [_RYLa[4ed%R-e,D^,O
-func Fcph ()	return
+func v_Q2 ()	return
 
+dynamic LCGy[2] <- false
+func Xi (number Cf)
+	return YtmH
+
+var tp[47.311,708.295,4.420] <- FP
+func D7 (string AO6G[2.005,732.758])	begin
+	end

@@ -1,0 +1,4 @@
+
+func Qn (string iX[4.27,8.65,60.93])	begin
+	end
+

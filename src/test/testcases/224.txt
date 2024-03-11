@@ -1,5 +1,2 @@
 
-bool FA_p[8,1.237E-97,94.261] ## p35%&>J
-func QXVz ()
-	return
-
+var O2PJ[0,9.996E40] <- false ## ixeyPC`SGX( %>|N}

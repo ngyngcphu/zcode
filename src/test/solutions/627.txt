@@ -1,0 +1,1 @@
+Program([VarDecl(Id(eC), StringType, None, None), VarDecl(Id(EcK), ArrayType([57.29], StringType), None, None)])

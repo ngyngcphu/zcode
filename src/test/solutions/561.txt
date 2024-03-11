@@ -1,0 +1,1 @@
+Program([VarDecl(Id(Rlo), ArrayType([2.07], BoolType), None, Id(Xf7)), VarDecl(Id(vK), ArrayType([62.15], NumberType), None, BooleanLit(True)), VarDecl(Id(Pt), None, var, BooleanLit(True)), FuncDecl(Id(gCMB), [VarDecl(Id(uc), ArrayType([52.34, 85.45], BoolType), None, None), VarDecl(Id(NUge), BoolType, None, None)], Return()), FuncDecl(Id(iMdm), [], Return())])

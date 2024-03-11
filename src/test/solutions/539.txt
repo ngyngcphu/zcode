@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(DOCW), [VarDecl(Id(qxw), BoolType, None, None), VarDecl(Id(Spoh), ArrayType([84.33, 54.33, 49.6], StringType), None, None), VarDecl(Id(I93), ArrayType([94.08], BoolType), None, None)], Block([VarDecl(Id(fj), None, dynamic, Id(hT4k)), CallStmt(Id(yTZ), [NumLit(23.76), StringLit(qdnTa), Id(PW)]), Break])), VarDecl(Id(mPwr), BoolType, None, NumLit(28.35))])

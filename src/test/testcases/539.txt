@@ -1,0 +1,7 @@
+
+func DOCW (bool qxw, string Spoh[84.33,54.33,49.6], bool I93[94.08])	begin
+		dynamic fj <- hT4k
+		yTZ(23.76, "qdnTa", PW)
+		break
+	end
+bool mPwr <- 28.35

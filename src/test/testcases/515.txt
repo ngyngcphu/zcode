@@ -1,0 +1,5 @@
+
+number nGb[98.97,33.8]
+number MB4[30.06,47.64] <- false
+bool K3[85.76]
+dynamic RWl <- "OjnPT"

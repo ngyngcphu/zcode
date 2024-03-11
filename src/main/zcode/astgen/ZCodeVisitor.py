@@ -14,6 +14,11 @@ class ZCodeVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by ZCodeParser#decl.
+    def visitDecl(self, ctx:ZCodeParser.DeclContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by ZCodeParser#varDecl.
     def visitVarDecl(self, ctx:ZCodeParser.VarDeclContext):
         return self.visitChildren(ctx)

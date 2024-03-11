@@ -1,0 +1,14 @@
+
+func vD ()	return
+func Pq0 (string tQHk, string NfH6[41.57,79.6], string Io91[80.12,38.06])
+	return false
+
+var O4P <- "X"
+func Xy (number IB0[55.27,42.37], bool DqsZ[36.9], string Uc)
+	begin
+		if (B0b) number Vrcf[85.24,39.83]
+		elif (true)
+		break
+		elif (false)
+		return
+	end

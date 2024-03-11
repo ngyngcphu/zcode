@@ -1,0 +1,12 @@
+
+var ro4R <- XU
+func qT (string J_[63.99], bool dK[95.54,63.82], number xyc)
+	return "gN"
+
+bool CWql <- true
+func hYMM (string ieO0[91.84,51.89,74.38], bool y7H)	begin
+		continue
+		break
+	end
+
+string xQ6[50.35,26.1]

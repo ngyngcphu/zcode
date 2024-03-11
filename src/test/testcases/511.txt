@@ -1,0 +1,8 @@
+
+func VQ (string KFl, string IT, string jZ)	begin
+	end
+func Wz (number KT2T[45.63,31.09], number In6V)	begin
+		wb()
+		return true
+	end
+

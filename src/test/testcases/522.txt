@@ -1,0 +1,3 @@
+
+bool hMx
+func Upp ()	return "Srau"

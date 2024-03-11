@@ -12,7 +12,7 @@ for path in ['./test/', '../target', './main/zcode/parser/', './main/zcode/utils
 from ZCodeLexer import ZCodeLexer
 from ZCodeParser import ZCodeParser
 from lexererr import *
-# from ASTGeneration import *
+from ASTGeneration import *
 # from StaticChecker import *
 # from StaticError import *
 # from CodeGenerator import *
@@ -297,7 +297,7 @@ def main(argv):
     
     elif argv[0] == 'ASTGenSuite':
         ast = ASTGenerator()
-        for test in range(301, 401):
+        for test in range(501, 601):
             ast.gen(test)
 
 if __name__ == '__main__':

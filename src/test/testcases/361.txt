@@ -1,0 +1,8 @@
+
+func G6 (number sQy_[11.99,22.84], bool PZ)	begin
+		for yx until 31.12 by CH
+			continue
+		break
+	end
+number mMnp[37.6,72.95]
+number seM[77.8,26.62] <- 10.41

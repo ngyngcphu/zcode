@@ -1,0 +1,6 @@
+
+func WyY (number Hil7[16.59,12.49])
+	begin
+		for kRnr until K3Of by gT
+			break
+	end

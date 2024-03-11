@@ -1,0 +1,1 @@
+Program([VarDecl(Id(Ks), ArrayType([93.19], StringType), None, None)])

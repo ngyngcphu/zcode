@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(k5), [], Block([If((Id(zR), Return()), [], VarDecl(Id(Yu), ArrayType([93.85, 41.41], BoolType), None, None)), For(Id(rP), StringLit(GDm), BooleanLit(True), CallStmt(Id(mQ), [StringLit(TUPlp), NumLit(41.89), StringLit(lqu)]))]))])

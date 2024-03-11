@@ -1,0 +1,11 @@
+
+func ia (number vp4[14.1,42.83,73.16], number OKXM, number AAW[5.38,86.16,23.45])
+	return
+dynamic Md
+func Re ()
+	return false
+
+func tb (bool cKl, string DGx)
+	return
+
+number S6[32.87]

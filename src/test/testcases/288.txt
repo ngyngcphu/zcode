@@ -1,3 +1,7 @@
 
-func Am (number E0eJ[84e97], bool Z4qT[45e50,3.320e-82])	return
-
+func AnAt (var N7I[88.267e-40], var FaW[65.528,854], var vA[38E-56,33.523,9])	begin
+		## ?)XA;iNv6{05B_6O[
+		Pa(82.453, 198.099, false)
+	end
+## +?ki["Xf.
+dynamic enSN <- 324

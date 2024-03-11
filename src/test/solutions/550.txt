@@ -1,0 +1,1 @@
+Program([VarDecl(Id(js7), NumberType, None, None), FuncDecl(Id(XJ), [VarDecl(Id(eMC1), StringType, None, None)], Return()), VarDecl(Id(Om), ArrayType([57.58, 83.32], NumberType), None, None)])

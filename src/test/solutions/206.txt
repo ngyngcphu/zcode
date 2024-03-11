@@ -1,1 +1,1 @@
-Error on line 4 col 41: var
+Error on line 2 col 10: dynamic

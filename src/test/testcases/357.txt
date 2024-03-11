@@ -1,0 +1,5 @@
+
+var wv1v <- 31.43
+bool bko
+var vRIO <- true
+bool ukV[25.86] <- iV7

@@ -1,2 +1,10 @@
 
-bool QXs[79.255,92] ## H4g@<;Y/o2ylj@ME6
+func Rc (number Ud0F)
+	return
+
+func tz8 (string Wb, number foLP[68,976,4e-93])
+	return "'"'""
+func BZ ()	begin
+		## zA,cy0/;{z+ J
+	end
+

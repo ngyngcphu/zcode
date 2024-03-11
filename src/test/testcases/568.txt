@@ -1,0 +1,13 @@
+
+func zSS ()	begin
+		begin
+			eOl()
+			for T1as until tTOM by 53.65
+				return
+			for OQ until 78.75 by 12.45
+				ocw(bnB, 87.15, false)
+		end
+		return 32.89
+	end
+func ga (string Ob[28.16,8.72])	return FU
+

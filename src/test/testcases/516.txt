@@ -1,0 +1,9 @@
+
+func i86S (number NPIu)
+	return "L"
+
+func PfP4 (string Sm)	return 49.26
+bool MGjR[36.04,3.13,2.38]
+func zam (string XMT[84.29,4.41], number WBS[86.16], string avfe)	return true
+func SpR ()	return
+

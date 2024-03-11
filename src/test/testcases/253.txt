@@ -1,8 +1,2 @@
 
-number yj3[80.970E-01] <- er
-func Qqs (bool Ap, var MX)	begin
-		## zrNV<oN>*us&ERBp
-	end
-
-## gyDsjQQt=F@
-var ajCV ## eZ2[dd)GL5?vDzfaq(h
+func tCx (dynamic VL[9.619], var XB[22])	return myrK

@@ -1,0 +1,8 @@
+
+number Yb[76.7] <- "RugkN"
+func WWi (string BOe)	begin
+		dynamic PXes <- false
+	end
+func co7 (bool FjaP, number brT, bool rNP)	return true
+var nc <- "rFmVx"
+bool a7 <- "pQAM"

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(WyY), [VarDecl(Id(Hil7), ArrayType([16.59, 12.49], NumberType), None, None)], Block([For(Id(kRnr), Id(K3Of), Id(gT), Break)]))])

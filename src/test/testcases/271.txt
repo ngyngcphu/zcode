@@ -1,8 +1,6 @@
 
-dynamic k6 <- true ## L?WB
-func j8 (dynamic pG, bool rgyn)
-	begin
-		## J^$MTqHH;n`|r%(E$]
-		## dqV%$pssy.dLW=@
-	end
-
+func eCvg ()
+	return 7e-84
+func YUit (dynamic m3l, bool vwrb)	return false
+bool uFl[27.529E83,811e25] <- false
+bool PGR ## N$;l#:.{5q |

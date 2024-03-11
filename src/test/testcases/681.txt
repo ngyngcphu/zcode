@@ -1,0 +1,4 @@
+
+bool fO[30.58]
+func ouM ()	begin
+	end

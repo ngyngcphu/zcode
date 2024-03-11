@@ -1,0 +1,11 @@
+
+func I8oI (bool fML[15.23,98.54], number im, bool r5)
+	return true
+
+string yP[55.73,21.43,97.23]
+bool OHVL[88.14,12.77,34.17]
+func Txx (bool pB[63.08,32.01], number P4m[92.17,26.81])	return "gFON"
+func d7 ()
+	begin
+	end
+

@@ -1,0 +1,10 @@
+
+var Bx <- true
+number pZE3[15.53,12.57]
+func y_ (string J39[71.51,88.49], bool Ma, bool G6[32.68])
+	begin
+		continue
+		break
+	end
+func Drvj ()	return "Rz"
+

@@ -1,0 +1,3 @@
+
+string yT4R[84.06] <- false
+string RYG <- "E"

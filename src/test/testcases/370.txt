@@ -1,0 +1,7 @@
+
+func fdM (bool ifJ, string Fo)	begin
+		dynamic Ug
+	end
+func ec (number tg[7.27,2.21,43.84], string c1P, number bn[0.85])	begin
+	end
+

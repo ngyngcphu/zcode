@@ -1,0 +1,10 @@
+
+func J8T9 (number VN[42.1,51.09], bool U02b)
+	return "LXSN"
+func IfT ()	begin
+	end
+
+string IgY[2.33,14.81,87.69] <- Cuw9
+func thKW (bool He)
+	return If
+

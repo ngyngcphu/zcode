@@ -1,0 +1,10 @@
+
+func LC (bool BY3[66.67,87.79], string vKo, number IyH[36.34,51.2])
+	return Odi
+func Uc ()
+	begin
+	end
+func bPdX ()
+	begin
+	end
+bool oN[71.4,89.89]

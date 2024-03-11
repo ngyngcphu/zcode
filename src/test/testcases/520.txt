@@ -1,0 +1,7 @@
+
+func a6 (bool PR[37.52,26.65], number o3f6)	begin
+	end
+number w4X8[77.34,8.04] <- true
+func M3B ()
+	return true
+

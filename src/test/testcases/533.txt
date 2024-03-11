@@ -1,0 +1,8 @@
+
+func sj (bool P1w)	return
+
+var dlL <- false
+func Fb8N ()	return
+
+number TbG9[71.73,94.06,94.5] <- Rd0k
+bool uVc[66.33,56.8,53.51]

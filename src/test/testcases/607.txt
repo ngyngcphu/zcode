@@ -1,0 +1,16 @@
+
+func bFu (number uMc[1.79,49.76,18.32], number kG2[54.68], bool yaV)	begin
+		break
+		XVl(Yxm5, false, 99.4)
+		continue
+	end
+
+bool nuHv
+bool cY
+func F9 (bool apD)
+	begin
+		for NPXd until u6 by 47.36
+			continue
+		break
+		kd[false] <- "Vv"
+	end

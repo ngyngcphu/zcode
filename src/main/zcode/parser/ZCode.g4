@@ -10,14 +10,17 @@ options {
 	language = Python3;
 }
 
-program:
-	NEWLINE* ((varDecl NEWLINE+ | functionDecl NEWLINE+))+ EOF;
+program: NEWLINE* (decl NEWLINE+)+ EOF;
+
+decl: varDecl | functionDecl;
 
 varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
 		ASSIGN expression
 	)?
 	| VAR IDENTIFIER ASSIGN expression
-	| array_type (ASSIGN expression)?;
+	| (NUMBER | STRING | BOOL) IDENTIFIER LS dimension_list RS (
+		ASSIGN expression
+	)?;
 
 functionDecl:
 	FUNC IDENTIFIER LB paramList RB NEWLINE* (

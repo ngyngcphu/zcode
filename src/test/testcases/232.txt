@@ -1,5 +1,11 @@
 
-dynamic rlb8[803.148] ## TB=cv=G/X(|%Gp"G=vm
-func jwpK (var pzz[3.198e+60,13.747,222], bool TezP)
+bool tn
+## Qa
+func njOI ()	return true
+
+func W7 (bool KK, bool Zur[1.435,9e11])
 	return
-## S!SE0!
+
+func B_H (var NY_J[5.017E45,55.050E51,549], var tsa[20.970E+66,3.787,784E36])	begin
+	end
+

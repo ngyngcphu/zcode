@@ -1,0 +1,5 @@
+
+func uI1S (bool J6K, string FVFN[65.03,93.13])
+	return 44.38
+
+number k0

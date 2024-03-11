@@ -1,0 +1,4 @@
+
+number js7
+func XJ (string eMC1)	return
+number Om[57.58,83.32]

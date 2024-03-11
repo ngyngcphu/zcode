@@ -1,8 +1,3 @@
 
-func XNgg ()	begin
-	end
-
-func ELas (number swQN[3.689e14,16.954,41.440], bool rKBq[761], bool Od[178.053])	return
-
-func qVQ ()	return rAO
-## -eZ`UXCdmRJWz<..w%
+var Xwi <- false
+## JC4J^

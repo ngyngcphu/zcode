@@ -1,4 +1,3 @@
 
-func zuA9 (string VT, dynamic ZO, bool HTnH)
+func MT (var uAI, dynamic na)
 	return
-

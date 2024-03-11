@@ -1,4 +1,12 @@
 
-number aFWq <- false ## *pWNEJ/
-## pr`0zar}nc%28^z+[a~
-bool pYTd[96E+82,7.097]
+number Bxf1 <- jy
+func eD (bool lW9[65.586,529])	begin
+	end
+
+func O37U (bool LMh)
+	return "g h"
+func bb (number FJm)
+	return
+
+func GP ()
+	return

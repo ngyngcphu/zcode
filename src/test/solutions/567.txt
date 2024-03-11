@@ -1,0 +1,1 @@
+Program([VarDecl(Id(fdr), None, var, BooleanLit(True))])

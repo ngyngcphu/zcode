@@ -1,0 +1,9 @@
+
+bool f6Gd[51.39,67.02]
+dynamic gQ
+var Cz <- "BD"
+number Z4_R[60.01]
+func N1T (string kss)
+	begin
+	end
+

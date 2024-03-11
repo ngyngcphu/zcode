@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(put), [VarDecl(Id(R_L), StringType, None, None)], Block([Block([AssignStmt(Id(OPw), Id(TH)), Continue]), Return(StringLit(FQjs)), If((Id(PY), Break), [], CallStmt(Id(ORN), [NumLit(43.96)]))])), FuncDecl(Id(YA), [VarDecl(Id(IkBI), NumberType, None, None)], Return()), VarDecl(Id(wQw8), NumberType, None, Id(Kto))])

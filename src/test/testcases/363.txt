@@ -1,0 +1,7 @@
+
+func Fx (string D7[78.25,7.82])
+	return 29.16
+
+func ABB3 (number Qz, number Ja[24.88,55.9], number cCh[71.26,44.66])
+	return true
+var cHB <- true

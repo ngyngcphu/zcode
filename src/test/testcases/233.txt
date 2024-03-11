@@ -1,2 +1,3 @@
 
-dynamic XFk2
+func mdI (string NN[63], string bb, var BKX[2E+66,72.638e13,7.456])	return false
+

@@ -1,0 +1,1 @@
+Program([VarDecl(Id(jaE), BoolType, None, None), FuncDecl(Id(V9D), [], Block([])), FuncDecl(Id(gfC), [], Return()), FuncDecl(Id(zqHO), [], Block([For(Id(wxLc), Id(xNN), BooleanLit(False), Block([])), CallStmt(Id(hX5t), [BooleanLit(True), Id(ZK1p)])])), FuncDecl(Id(DjG), [], Return())])

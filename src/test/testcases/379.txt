@@ -1,0 +1,11 @@
+
+func txq (bool oiNW)	return po
+
+string VWH[33.56,21.17,64.39] <- f4xy
+bool maJ
+func Nua ()
+	begin
+	end
+func QZ ()	begin
+		return true
+	end

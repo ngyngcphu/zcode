@@ -1,0 +1,14 @@
+
+func put (string R_L)	begin
+		begin
+			OPw <- TH
+			continue
+		end
+		return "FQjs"
+		if (PY) break
+		else ORN(43.96)
+	end
+
+func YA (number IkBI)
+	return
+number wQw8 <- Kto

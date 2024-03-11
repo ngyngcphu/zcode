@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(uPO), [], Return(StringLit(HgS)))])

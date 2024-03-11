@@ -1,4 +1,4 @@
 
-bool hV[95.522e-69,50e+29,671.262e+17] <- true
-## L!na<V"4YCB&:B88f
-number uYN <- false ## T`Hn(zLfu= 
+dynamic ZcHA <- true
+func h3p ()	begin
+	end

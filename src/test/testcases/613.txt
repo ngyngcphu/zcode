@@ -1,0 +1,6 @@
+
+func A4Tm (string X8J[62.57], bool iqwv[1.21,29.43,22.09])
+	return 42.24
+
+bool uR
+bool Dqg[66.7,23.4] <- false

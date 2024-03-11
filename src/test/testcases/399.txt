@@ -1,0 +1,11 @@
+
+dynamic hSqY
+bool lH0Y
+func HcxG (bool iL7[36.24,22.7,48.66], number vX[77.62,88.83])	begin
+		return 83.6
+	end
+
+func rE4O ()	return
+func avFx (bool lE[66.54], bool AcGf, bool CF[0.25])
+	return "Pfk"
+

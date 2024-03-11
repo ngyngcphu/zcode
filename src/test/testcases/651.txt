@@ -1,0 +1,7 @@
+
+number UgMJ[22.15,16.52,61.85] <- false
+number Lx[64.69,28.91,3.36]
+func Mg (bool CoZ0, string feNd[7.03,40.36])	return false
+
+func cHo7 (number tB, number JXR)	return true
+bool lv0[83.3] <- iSd

@@ -1,0 +1,6 @@
+
+bool tPNF[77.13,5.3]
+func kRpo ()
+	return false
+number ZR[76.59,25.52,73.75]
+bool xLo5 <- xp

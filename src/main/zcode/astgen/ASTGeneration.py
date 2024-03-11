@@ -3,24 +3,27 @@ from ZCodeParser import ZCodeParser
 from AST import *
 
 class ASTGeneration(ZCodeVisitor):
-    # program: NEWLINE* ((varDecl NEWLINE+ | functionDecl))+ EOF;
+    # program: NEWLINE* (decl NEWLINE+)+ EOF;
     def visitProgram(self, ctx:ZCodeParser.ProgramContext):
-        listVarDecls = list(map(lambda x: self.visit(x), ctx.varDecl())) if ctx.varDecl() else []
-        listFuncDecls = list(map(lambda x: self.visit(x), ctx.functionDecl())) if ctx.functionDecl() else []
-        
-        return Program(listVarDecls + listFuncDecls)
+        return Program(list(map(lambda x: self.visit(x), ctx.decl())))
+    
+    # decl: varDecl | functionDecl;
+    def visitDecl(self, ctx:ZCodeParser.DeclContext):
+        if ctx.varDecl():
+            return self.visit(ctx.varDecl())
+        else:
+            return self.visit(ctx.functionDecl())
 
     # varDecl: (NUMBER | BOOL | STRING | DYNAMIC) IDENTIFIER (
     #         ASSIGN expression
     #     )?
     #     | VAR IDENTIFIER ASSIGN expression
-    #     | array_type (ASSIGN expression)?;
+    #     | (NUMBER | STRING | BOOL) IDENTIFIER LS dimension_list RS (
+    #         ASSIGN expression
+    #     )?;
     def visitVarDecl(self, ctx:ZCodeParser.VarDeclContext):
-        if ctx.array_type():
-            if ctx.ASSIGN():
-                return Assign(self.visit(ctx.array_type()), self.visit(ctx.expression()))
-            else:
-                return self.visit(ctx.array_type())
+        if ctx.dimension_list():
+            return VarDecl(Id(ctx.IDENTIFIER().getText()), ArrayType(self.visit(ctx.dimension_list()), NumberType() if ctx.NUMBER() else StringType() if ctx.STRING() else BoolType()), None, self.visit(ctx.expression()) if ctx.ASSIGN() else None)
         elif ctx.VAR():
             return VarDecl(Id(ctx.IDENTIFIER().getText()), None, ctx.VAR().getText(), self.visit(ctx.expression()))
         else:
@@ -217,9 +220,9 @@ class ASTGeneration(ZCodeVisitor):
     # dimension_list: NUMBERLIT COMMA dimension_list | NUMBERLIT;
     def visitDimension_list(self, ctx:ZCodeParser.Dimension_listContext):
         if ctx.getChildCount() == 3:
-            return [NumberLiteral(float(ctx.NUMBERLIT().getText()))] + self.visit(ctx.dimension_list())
+            return [float(ctx.NUMBERLIT().getText())] + self.visit(ctx.dimension_list())
         else:
-            return [NumberLiteral(float(ctx.NUMBERLIT().getText()))]
+            return [float(ctx.NUMBERLIT().getText())]
 
     # array_value: LS array_elements RS;
     def visitArray_value(self, ctx:ZCodeParser.Array_valueContext):

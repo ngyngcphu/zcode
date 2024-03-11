@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(MN), [VarDecl(Id(Fbm8), ArrayType([38.63, 76.11], NumberType), None, None)], Block([]))])

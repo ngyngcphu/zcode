@@ -1,0 +1,6 @@
+
+number vai <- Us
+number UG
+bool cp
+var cCF <- true
+bool MM

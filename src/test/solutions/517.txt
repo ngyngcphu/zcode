@@ -1,0 +1,1 @@
+Program([VarDecl(Id(xr2), StringType, None, Id(a0dw)), VarDecl(Id(TvK), NumberType, None, None), FuncDecl(Id(MiV), [VarDecl(Id(f6kD), ArrayType([64.57, 27.96], NumberType), None, None), VarDecl(Id(TTTU), StringType, None, None), VarDecl(Id(rYRp), BoolType, None, None)], Return())])

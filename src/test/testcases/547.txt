@@ -1,0 +1,7 @@
+
+func SG7U (bool NF9[9.85,8.28,56.42], number OEe)	begin
+		TXo(hM, true)
+		return
+	end
+
+dynamic uP <- 61.55

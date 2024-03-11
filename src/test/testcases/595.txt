@@ -1,0 +1,3 @@
+
+bool ksQ[22.97,35.58]
+dynamic qb

@@ -1,0 +1,1 @@
+Program([VarDecl(Id(Qgb), ArrayType([23.23], StringType), None, BooleanLit(True)), VarDecl(Id(fw), StringType, None, None)])

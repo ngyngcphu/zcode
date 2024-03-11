@@ -1,0 +1,25 @@
+
+bool inL8[67.18,11.89] <- Nkt
+func iE8 ()
+	return Oa
+
+func GS ()
+	return
+
+func OS (number bf47[4.94,23.32,2.93], bool d5m)
+	return
+
+func zs (number MW[90.05], number fFIH, bool x9)	begin
+		begin
+			t81[6.98] <- true
+			break
+			return
+		end
+		if ("VUuTS") return
+		elif ("EK") begin
+		end
+		elif ("qqOE")
+		continue
+		else dCE(true)
+	end
+

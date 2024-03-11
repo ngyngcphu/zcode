@@ -1,0 +1,8 @@
+
+func EL4R (number Ez[54.76,77.16], string eGu[3.37,15.22,11.64])	return
+var d0 <- Aafw
+var mx2u <- false
+func Hu ()
+	return 68.53
+
+bool Xb[36.59,35.89,15.63]

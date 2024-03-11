@@ -1,0 +1,6 @@
+
+func smi ()	return "Ggvrv"
+
+number dS3
+func cyB (string a0b)	return
+

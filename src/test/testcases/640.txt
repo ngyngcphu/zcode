@@ -1,0 +1,4 @@
+
+string gg
+number rb[87.43,38.3,80.08]
+bool XFP0[75.16] <- "zTupi"

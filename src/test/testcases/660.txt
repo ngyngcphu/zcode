@@ -1,0 +1,7 @@
+
+dynamic ZoKR <- false
+func rRP (bool Jf[67.35,73.62], string RF, bool ihp8[35.98,39.3,93.42])
+	return 18.85
+string p9R[94.75,16.98]
+bool kaaP[20.45]
+bool MCX <- 99.85

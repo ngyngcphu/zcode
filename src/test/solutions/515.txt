@@ -1,0 +1,1 @@
+Program([VarDecl(Id(nGb), ArrayType([98.97, 33.8], NumberType), None, None), VarDecl(Id(MB4), ArrayType([30.06, 47.64], NumberType), None, BooleanLit(False)), VarDecl(Id(K3), ArrayType([85.76], BoolType), None, None), VarDecl(Id(RWl), None, dynamic, StringLit(OjnPT))])

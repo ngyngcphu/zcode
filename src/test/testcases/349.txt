@@ -1,0 +1,8 @@
+
+string VVqC
+string ge[24.38,37.07] <- "Ik"
+func ak (string lL)
+	return
+func L1 (number UA_[13.38,13.89,7.09])
+	return
+

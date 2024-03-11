@@ -1,0 +1,9 @@
+
+func k_72 (bool YDjd[77.68,91.36,95.77], number FSv[55.11])
+	begin
+		for luUF until true by "AoXNt"
+			for VzZ until 48.03 by "j"
+				TuN[47.38, true] <- 39.92
+		ey2 <- "GBC"
+	end
+

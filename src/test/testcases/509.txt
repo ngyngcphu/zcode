@@ -1,0 +1,12 @@
+
+func fZT (bool wV)
+	begin
+		begin
+		end
+	end
+
+func Oa ()	return false
+func qcp_ (bool ssL[27.01,80.97,34.55])	return
+var MmjY <- JXY
+func T5O (bool S2i)	return
+

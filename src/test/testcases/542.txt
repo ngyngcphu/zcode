@@ -1,0 +1,9 @@
+
+bool tf[18.88]
+func BnY (number qk, number l2aD[38.86,35.11])
+	return
+func MWO (bool fk0j[0.23], number FRjt, bool D3[88.6])
+	begin
+		continue
+		return 89.86
+	end

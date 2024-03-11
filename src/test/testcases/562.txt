@@ -1,0 +1,6 @@
+
+func bEK ()	begin
+		continue
+		break
+		OlZ("J")
+	end

@@ -1,0 +1,6 @@
+
+func dPHB ()	return
+
+func As (bool y7oG)	begin
+		number Mf
+	end

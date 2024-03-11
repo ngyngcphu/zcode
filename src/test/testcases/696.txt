@@ -1,0 +1,7 @@
+
+number Ko[64.69]
+func Ovi (number BdQf, number Wqv[91.48,91.84,72.23], number Wbj)	begin
+		break
+	end
+func c7 (string Jy, bool EP[80.41,64.32,8.86])
+	return

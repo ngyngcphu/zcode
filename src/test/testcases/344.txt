@@ -1,0 +1,9 @@
+
+func fuuT (bool JI[33.2,90.96,15.85], number m8R[96.83,57.17])
+	begin
+		l5Qj(false)
+		for oKTa until "oxop" by jlBd
+			break
+		begin
+		end
+	end

@@ -1,0 +1,5 @@
+
+dynamic Kwp <- "UAGN"
+func BV (bool NgNb[7.65,46.08,80.64])
+	return qz33
+

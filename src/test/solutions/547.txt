@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(SG7U), [VarDecl(Id(NF9), ArrayType([9.85, 8.28, 56.42], BoolType), None, None), VarDecl(Id(OEe), NumberType, None, None)], Block([CallStmt(Id(TXo), [Id(hM), BooleanLit(True)]), Return()])), VarDecl(Id(uP), None, dynamic, NumLit(61.55))])

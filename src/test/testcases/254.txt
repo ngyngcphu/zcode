@@ -1,7 +1,5 @@
 
-func K_W9 (dynamic hu[4.637e-62,7e87,5], dynamic mZr[0.417E13,708e+29], bool Bcz[24.723])	begin
-	end
+string r7
+func Vz (string XyF[3.320,8])
+	return
 
-## 2?/,zLb{x1U
-var Lw ##  n?F5aycW>$1dA[6f|*
-## /s"LJHp]"^8U

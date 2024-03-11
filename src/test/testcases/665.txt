@@ -1,0 +1,7 @@
+
+string Jpt[45.39,40.77,42.76] <- 0.06
+string l0[69.56,26.54,49.2] <- YM
+bool DU[52.93]
+func L5 (bool rq5c)	return "w"
+
+dynamic N0k

@@ -1,0 +1,4 @@
+
+dynamic nukr
+var kvSK <- false
+dynamic kn6r

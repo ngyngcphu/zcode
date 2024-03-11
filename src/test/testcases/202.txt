@@ -1,6 +1,3 @@
 
-func Ry ()	return [- ([not false]), Yz8]
-number pn0Z[309E+91,2,4] ## a/I^$7f:c^9C,2s
-func np (number Rdy, var ROU[8e+44,86.003e70,3.091e+48], bool ufN4)
-	return WUw0
-
+func Ohf (string Qf6)	return
+## Y=5>zQmuT3i2N

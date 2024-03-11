@@ -1,0 +1,1 @@
+Program([VarDecl(Id(sql), None, var, NumLit(61.89)), VarDecl(Id(Vs), StringType, None, None), VarDecl(Id(R9OV), ArrayType([53.04, 75.82], NumberType), None, BooleanLit(True)), VarDecl(Id(Z24m), None, dynamic, None), VarDecl(Id(R1pm), StringType, None, NumLit(73.26))])

@@ -1,0 +1,8 @@
+
+func vKk (bool CE[90.24], string P0[91.17,88.72,69.3])	begin
+		bool zG[95.26,73.61]
+	end
+
+func ZRbi (bool I4g[67.24,20.24])	return
+func i6K (bool LYHP, string lP[58.3])	return PGNK
+

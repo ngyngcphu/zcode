@@ -1,0 +1,3 @@
+
+func gZ (bool Nq)	return
+

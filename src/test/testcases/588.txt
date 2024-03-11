@@ -1,0 +1,7 @@
+
+func izQ ()
+	return
+string xK[46.25,10.86]
+func tUm ()
+	return "O"
+

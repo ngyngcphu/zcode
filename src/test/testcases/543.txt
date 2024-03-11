@@ -1,0 +1,5 @@
+
+func F0K (string C8Ga[76.19,18.95], string ie)
+	return 29.6
+
+string sxA1[45.5] <- false

@@ -1,0 +1,1 @@
+Program([VarDecl(Id(dqlw), BoolType, None, Id(SZwb)), FuncDecl(Id(KTO), [VarDecl(Id(GK), ArrayType([41.95, 62.91], StringType), None, None)], Block([]))])

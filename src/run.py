@@ -23,7 +23,7 @@ def main(argv):
         subprocess.run(["java", "-jar", ANTLR_JAR, "-o", '../target',
                     "-no-listener", "-visitor", "-Xexact-output-dir", "main/zcode/parser/ZCode.g4"])
         
-        if argv[1] in ['LexerSuite', 'ParserSuite', 'ASTGenSuite', 'LexerSuite_VoTien', 'ParserSuite_VoTien']:
+        if argv[1] in ['LexerSuite', 'ParserSuite', 'ASTGenSuite', 'LexerSuite_VoTien', 'ParserSuite_VoTien', 'ASTGenSuite_TanNguyen']:
             exec(f'from {argv[1]} import {argv[1]}')
             exec(f'getAndTest({argv[1]})')
 

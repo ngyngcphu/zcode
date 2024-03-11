@@ -1,0 +1,6 @@
+
+string zh[30.54,74.59] <- 60.07
+string i_X[52.87]
+func r_ (string Ml[91.8,8.63], number lXHd)
+	return
+

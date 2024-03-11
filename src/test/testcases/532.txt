@@ -1,0 +1,8 @@
+
+func k5 ()	begin
+		if (zR)
+		return
+		else bool Yu[93.85,41.41]
+		for rP until "GDm" by true
+			mQ("TUPlp", 41.89, "lqu")
+	end

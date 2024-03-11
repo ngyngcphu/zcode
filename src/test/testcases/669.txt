@@ -1,0 +1,18 @@
+
+dynamic ihF
+number e5DW <- true
+func Wl3 (string Tnh)	begin
+		begin
+			oO[false, true, DU6i] <- "KD"
+		end
+		return
+		break
+	end
+
+func Db (string qa7[95.06], number Tl8q[20.26,31.62,81.79])
+	begin
+		break
+	end
+
+func ZAG (string pK, string kP[10.07], string jB)	begin
+	end

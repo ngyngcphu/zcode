@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(luF), [VarDecl(Id(Kv), NumberType, None, None), VarDecl(Id(tBpY), ArrayType([30.6, 98.53], StringType), None, None), VarDecl(Id(XN), ArrayType([63.69, 28.43], BoolType), None, None)], Block([AssignStmt(Id(b5Y), NumLit(95.94)), For(Id(ObK), StringLit(OmpF), NumLit(92.22), Return()), For(Id(puDx), BooleanLit(True), Id(gik), AssignStmt(Id(rFx1), Id(NI)))]))])

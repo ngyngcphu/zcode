@@ -1,0 +1,7 @@
+
+func YQt ()	return sB
+
+number xA[50.88,74.82,95.84]
+string vRT <- "qm"
+number yCx[80.72,76.82,22.66] <- "Z"
+bool ZAu[17.56,52.61]

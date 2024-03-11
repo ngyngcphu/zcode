@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(oA), [VarDecl(Id(o0R), ArrayType([37.93, 79.28], BoolType), None, None)], Return(Id(ejs))), VarDecl(Id(a5), None, dynamic, None), FuncDecl(Id(JXfs), [VarDecl(Id(ghs2), BoolType, None, None)], Return())])

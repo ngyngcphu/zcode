@@ -99,7 +99,7 @@ class ZCodeProgram(Visitor):
         else:
             is_array_type = random.randint(0, 1) == 0
             kw = random.choice(keywords) if is_array_type == False else random.choice(keywords[2:])
-            expr = ' <- ' + self.visitZCodeExpression(mode) if random.randint(0, 1) == 1 else ""
+            expr = ' <- ' + self.visitZCodeExpression(mode) if random.randint(0, 1) == 1 or kw == "var" else ""
             if is_array_type:
                 len = random.randint(1, 3)
                 arr = "[{}]".format(
@@ -147,6 +147,7 @@ class ZCodeProgram(Visitor):
             is_array_type = random.randint(0, 1) == 0
             kw = random.choice(keywords[2:])
             if is_array_type:
+                len = random.randint(1, 3)
                 arr = "[{}]".format(
                     ",".join([self.visitZCodeNumberLit(mode) for i in range(len)])
                 )
@@ -317,7 +318,9 @@ class ZCodeProgram(Visitor):
         for i in range(random.randint(1, 3)):
             iden = iden + charSet[random.randint(0, len(charSet) - 1)]
         
-        return iden
+        kw = ['break', 'continue', 'if', 'else', 'elif', 'for', 'until', 'by', 'true', 'false', 'number', 'bool', 'string',
+              'return', 'dynamic', 'var', 'not', 'and', 'or', 'begin', 'end', 'func']
+        return iden if mode == 'parser' else (iden if iden not in kw else self.visitZCodeID(mode))
 
     def visitZCodeComment(self, mode):
         cmt = '## '

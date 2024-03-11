@@ -1,0 +1,7 @@
+
+func Tx_ (string OR[48.25], bool tQfD, number ES[52.67,37.13,24.68])	begin
+	end
+
+func ts (bool uB)
+	return
+

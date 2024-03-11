@@ -1,0 +1,1 @@
+Program([VarDecl(Id(ReMJ), ArrayType([15.77, 46.74], BoolType), None, StringLit(GS))])

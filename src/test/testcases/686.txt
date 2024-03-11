@@ -1,0 +1,7 @@
+
+dynamic E2
+func xx (bool Sqt[65.43,39.26,5.3], bool EI[46.23,56.78,78.65])
+	return 10.98
+func S2 (number tal)	return
+
+dynamic jKw0

@@ -1,0 +1,6 @@
+
+func nw (number lQ2Y[15.91])	begin
+	end
+func DqP (bool l0ov[81.75,61.22,39.94], number lRK[28.57,13.86])	begin
+	end
+number Od <- 59.2

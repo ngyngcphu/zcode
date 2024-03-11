@@ -1,0 +1,8 @@
+
+func Ci (string fnQG[80.43], bool og)	begin
+		return
+	end
+
+number kXyg <- true
+func w3 ()	return 78.26
+string Ey4o[71.07,47.43,24.98]

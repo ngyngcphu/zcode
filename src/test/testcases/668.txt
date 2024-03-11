@@ -1,0 +1,10 @@
+
+string tR[18.24]
+func ARFq ()	return
+bool klp[89.57] <- false
+func YO (string fHp[78.86,98.5])	begin
+	end
+
+func lC8i (bool Cqu)
+	begin
+	end

@@ -1,0 +1,10 @@
+
+dynamic iENh <- "Unqh"
+number lc <- JeOt
+func txu (number Ao[51.97,14.73], number Qct)	return 97.81
+
+func duD (number ye[3.27,42.71], number Pv[91.0,47.56], number tdLr[95.25])
+	return
+func V0 ()
+	return vW
+

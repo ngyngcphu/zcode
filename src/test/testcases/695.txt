@@ -1,0 +1,8 @@
+
+number Rok0 <- uy_I
+func Qb (number H4Z)	begin
+		break
+	end
+
+func Uf ()
+	return 99.33

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(PdNi), [VarDecl(Id(pdp), BoolType, None, None)], Return())])

@@ -1,0 +1,6 @@
+
+func qkn (string Wr[70.56,58.68], bool EC[64.36,14.09,42.65], bool WpW)	return true
+func DHp5 (bool X5[50.8,34.56,82.01], bool Vu)	return
+
+string rZ1Y <- false
+bool AT <- "hNhSc"

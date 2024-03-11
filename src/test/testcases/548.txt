@@ -1,0 +1,15 @@
+
+func H4 (bool w4)	begin
+		EW_(ny, DUzk, 33.69)
+		for dfR until tD4M by pQiD
+			return true
+		begin
+			return
+			break
+			Bn <- true
+		end
+	end
+
+var euE <- false
+dynamic LL
+number AL[87.67,93.53] <- false

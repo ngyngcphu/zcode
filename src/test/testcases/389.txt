@@ -1,0 +1,5 @@
+
+bool c_6F
+func hj (bool WaIp, string nN[50.8])
+	return Kq3
+

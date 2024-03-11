@@ -1,7 +1,2 @@
 
-## kZk#?>rBb3lj
-func WI (number IzNZ, number PzI)
-	begin
-		## j_|F3bsU
-	end
-
+number L2[0.964,9,8.740E91]

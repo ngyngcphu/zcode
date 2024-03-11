@@ -1,5 +1,3 @@
 
-func hO ()
-	return 479.018
-number cfJy ## z$L`B3.Vi,U:Eb
-## ?T7%$32JNv`p
+string WAh[40.902] <- 14e38
+## fPZH*P

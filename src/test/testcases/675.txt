@@ -1,0 +1,3 @@
+
+string op[27.25]
+number jw[38.38]

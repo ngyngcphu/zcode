@@ -1,0 +1,10 @@
+
+number Ny
+dynamic A1
+func bYF ()	return "mTtpf"
+func kb (bool X4[35.53,21.56,73.38], number HHl)
+	begin
+		if (Jh8D) continue
+		else MDi <- aM
+	end
+

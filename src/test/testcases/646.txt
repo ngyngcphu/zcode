@@ -1,0 +1,7 @@
+
+number aSO[45.07,30.36,46.74] <- 52.8
+bool y9[54.58,54.58] <- "HoX"
+func oM0 (bool R999, bool S1, bool JrN)	return 45.32
+var Yd1 <- "KSy"
+func bnx ()	return 95.42
+

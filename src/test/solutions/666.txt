@@ -1,0 +1,1 @@
+Program([VarDecl(Id(wkV), None, dynamic, None)])

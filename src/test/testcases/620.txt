@@ -1,0 +1,16 @@
+
+func xaqW (string Lkj)	begin
+		return
+		bool am <- true
+	end
+func NK8S ()
+	begin
+		g5LE(true, "VgNoA", false)
+		break
+		return
+	end
+
+bool Ae[4.61,50.58]
+func AUis ()	return
+
+string lfI[35.86] <- 70.03

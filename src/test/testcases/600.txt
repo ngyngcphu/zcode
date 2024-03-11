@@ -1,0 +1,6 @@
+
+func Ra (string tnAN[68.23,83.98], number dXj[12.69,23.42], string Mt[39.83,47.94,56.32])
+	return TT
+
+func NI (bool qT[70.64,38.41])	begin
+	end

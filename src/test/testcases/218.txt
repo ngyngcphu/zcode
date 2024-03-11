@@ -1,8 +1,4 @@
 
-func cgRN (number vro[4,443.085E+26], number aH, var zH1[21,1E+83,52.766])	return
-
-## ~AJnQ?NKtiDX
-func HC2 ()	return true
-
-func UWDB (var qZv, dynamic K2LW[3,7])	return
-
+number Xii <- false ## @h
+## O<! Du"+22nT8f
+bool kkiu[0.988E-85,0.228]

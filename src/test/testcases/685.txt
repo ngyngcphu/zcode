@@ -1,0 +1,6 @@
+
+var jzus <- "aNpFy"
+func tF ()
+	return false
+
+dynamic Q7uC

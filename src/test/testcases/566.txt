@@ -1,0 +1,4 @@
+
+func gfuA (number Vsr)
+	return Yw
+number Rq <- true

@@ -1,5 +1,4 @@
 
-dynamic oW[2e+25] <- 6.561 ## @;oB`1N="7
-func qf5 ()
-	return
-
+func nUh (var Nu)
+	begin
+	end

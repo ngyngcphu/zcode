@@ -1,0 +1,7 @@
+
+string mT
+number Wdlx
+func uizn (bool D3Z)	return
+
+number O01[2.65,35.75,49.15] <- "oC"
+bool hQrJ[89.69,31.84]

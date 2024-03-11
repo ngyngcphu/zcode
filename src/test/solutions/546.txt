@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(c3m), [VarDecl(Id(lw), StringType, None, None), VarDecl(Id(LlyD), NumberType, None, None)], Block([AssignStmt(ArrayCell(Id(nLSZ), [StringLit(CBM)]), StringLit(FyC)), Break, Return(NumLit(87.42))]))])
