@@ -81,7 +81,7 @@ class StaticChecker(BaseVisitor, Utils):
         '''
         o = reduce(lambda acc, cur: self.visit(cur, acc), ast.decl, param)
         if self.func_no_body:
-            raise NoDefinition(self.func_no_body[0].name.name)
+            raise NoDefinition(self.func_no_body[0].name)
         found_main_function = next((True for symbol in o[-1] if type(
             symbol) is FuncSymbol and symbol.name == 'main' and type(symbol.rettype) is VoidType and symbol.param == []), None)
         if not found_main_function:
@@ -95,7 +95,8 @@ class StaticChecker(BaseVisitor, Utils):
         - `modifier`: str = None - None if there is no modifier
         - `varInit`: Expr = None - None if there is no initial
         '''
-        if self.lookup(ast.name.name, param[0], lambda symbol: symbol.name):
+        var = self.lookup(ast.name.name, param[0], lambda symbol: symbol.name)
+        if var is not None and type(var) is VarSymbol:
             raise Redeclared(Variable(), ast.name.name)
         if ast.varInit is not None:
             if type(ast.varInit) is ArrayLiteral:
@@ -142,7 +143,7 @@ class StaticChecker(BaseVisitor, Utils):
         '''
         func = self.lookup(
             ast.name.name, param[-1], lambda symbol: symbol.name)
-        if func is not None and func.body is not None and not self.func_is_called:
+        if func is not None and type(func) is FuncSymbol and ((func.body is not None and not self.func_is_called) or (func.body is None and ast.body is None)):
             raise Redeclared(Function(), ast.name.name)
 
         def lookup_param(acc, cur: VarDecl):
@@ -181,7 +182,8 @@ class StaticChecker(BaseVisitor, Utils):
             self.func_current = func_found.name
             self.visit(ast.body, [[param_env] + param[0]] +
                        param[1:] if param_env else param)
-            func_found.rettype = self.func_return_type if self.func_return_type is not None else VoidType() if not self.func_return_list else None
+            func_found.rettype = self.func_return_type if self.func_return_type is not None else VoidType(
+            ) if not self.func_return_list else None
             func_found.body = ast.body
             self.func_has_returned = False
             self.func_return_list = []
@@ -191,7 +193,8 @@ class StaticChecker(BaseVisitor, Utils):
         self.func_current = ast.name.name
         self.visit(ast.body, [[param_env] + param[0]] + param[1:-1] + [param[-1] + [FuncSymbol(ast.name.name, param_env, None,
                    ast.body)]] if param_env else param[:-1] + [param[-1] + [FuncSymbol(ast.name.name, param_env, None, ast.body)]])
-        return_type = self.func_return_type if self.func_return_type is not None else VoidType() if not self.func_return_list else None
+        return_type = self.func_return_type if self.func_return_type is not None else VoidType(
+        ) if not self.func_return_list else None
         self.func_has_returned = False
         self.func_return_list = []
         self.func_return_type = None
