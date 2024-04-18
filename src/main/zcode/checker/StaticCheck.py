@@ -37,6 +37,7 @@ class StaticChecker(BaseVisitor, Utils):
         self.func_has_returned = False
         self.func_current = None
         self.func_return_list = []
+        self.func_return_type = None
         self.in_loop = []
         self.var_current = None
 
@@ -78,14 +79,14 @@ class StaticChecker(BaseVisitor, Utils):
         '''
         `decl`: List[Decl] - empty list if there is no statement in block
         '''
-        reduce(lambda acc, cur: self.visit(cur, acc), ast.decl, param)
+        o = reduce(lambda acc, cur: self.visit(cur, acc), ast.decl, param)
         if self.func_no_body:
             raise NoDefinition(self.func_no_body[0].name.name)
-        found_main_function = next((True for symbol in param[-1] if type(
+        found_main_function = next((True for symbol in o[-1] if type(
             symbol) is FuncSymbol and symbol.name == 'main' and type(symbol.rettype) is VoidType and symbol.param == []), None)
         if not found_main_function:
             raise NoEntryPoint()
-        return param
+        return o
 
     def visitVarDecl(self, ast: VarDecl, param):
         '''
@@ -178,19 +179,22 @@ class StaticChecker(BaseVisitor, Utils):
             if not all(map(check_param_type, func_found.param, param_env)):
                 raise Redeclared(Function(), ast.name.name)
             self.func_current = func_found.name
-            return_type = self.visit(
-                ast.body, [[param_env] + param[0]] + param[1:])
-            func_found.rettype = return_type
+            self.visit(ast.body, [[param_env] + param[0]] +
+                       param[1:] if param_env else param)
+            func_found.rettype = self.func_return_type if self.func_return_type is not None else VoidType() if not self.func_return_list else None
             func_found.body = ast.body
             self.func_has_returned = False
             self.func_return_list = []
+            self.func_return_type = None
             return param
 
         self.func_current = ast.name.name
-        return_type = self.visit(ast.body, [[param_env] + param[0]] + param[1:-1] + [
-                                 param[-1] + [FuncSymbol(ast.name.name, param_env, None, ast.body)]])
+        self.visit(ast.body, [[param_env] + param[0]] + param[1:-1] + [param[-1] + [FuncSymbol(ast.name.name, param_env, None,
+                   ast.body)]] if param_env else param[:-1] + [param[-1] + [FuncSymbol(ast.name.name, param_env, None, ast.body)]])
+        return_type = self.func_return_type if self.func_return_type is not None else VoidType() if not self.func_return_list else None
         self.func_has_returned = False
         self.func_return_list = []
+        self.func_return_type = None
         return param[:-1] + [param[-1] + [FuncSymbol(ast.name.name, param_env, return_type, ast.body)]]
 
     def visitNumberType(self, ast: NumberType, param):
@@ -394,7 +398,7 @@ class StaticChecker(BaseVisitor, Utils):
         '''
         reduce(lambda acc, cur: self.visit(cur, acc), ast.stmt, [[]] + param)
         self.func_has_returned = False
-        return None
+        return param
 
     def visitIf(self, ast: If, param):
         '''
@@ -436,7 +440,7 @@ class StaticChecker(BaseVisitor, Utils):
         if ast.elseStmt:
             self.visit(ast.elseStmt, param)
             self.func_has_returned = False
-        return None
+        return param
 
     def visitFor(self, ast: For, param):
         '''
@@ -480,37 +484,39 @@ class StaticChecker(BaseVisitor, Utils):
 
         self.visit(ast.body, param)
         self.in_loop = self.in_loop[:-1]
-        return None
+        return param
 
     def visitContinue(self, ast: Continue, param):
         if not self.in_loop:
             raise MustInLoop(ast)
-        return None
+        return param
 
     def visitBreak(self, ast: Break, param):
         if not self.in_loop:
             raise MustInLoop(ast)
-        return None
+        return param
 
     def visitReturn(self, ast: Return, param):
         '''
         `expr`: Expr = None - None if there is no expression after return
         '''
         if self.func_has_returned:
-            return None
+            self.func_return_type = None
+            return param
         self.func_has_returned = True
         if ast.expr is None:
-            return VoidType()
+            self.func_return_type = VoidType()
+            return param
         if type(ast.expr) is ArrayLiteral:
             self.origin_arrlit_ast = []
         return_type = self.visit(ast.expr, param)
         func = self.lookup(self.func_current,
                            param[-1], lambda symbol: symbol.name)
-        if func.typ is None:
+        if func.rettype is None:
             if return_type is None:
                 self.func_return_list += [ast]
             else:
-                func.typ = return_type
+                func.rettype = return_type
                 if self.func_return_list:
                     for ret in self.func_return_list:
                         if type(ret.expr) not in [Id, CallExpr, ArrayLiteral]:
@@ -520,30 +526,31 @@ class StaticChecker(BaseVisitor, Utils):
                             raise TypeCannotBeInferred(ast)
                     self.func_return_list = []
         else:
-            if type(func.typ) is VoidType:
+            if type(func.rettype) is VoidType:
                 raise TypeMismatchInStatement(ast)
             if return_type is None:
                 if type(ast.expr) not in [Id, CallExpr, ArrayLiteral]:
                     raise TypeCannotBeInferred(ast)
-                return_type = self.__inferType(ast.expr, func.typ, param)
+                return_type = self.__inferType(ast.expr, func.rettype, param)
                 if return_type is None:
                     raise TypeCannotBeInferred(ast)
-            elif type(return_type) is not type(func.typ):
+            elif type(return_type) is not type(func.rettype):
                 raise TypeMismatchInStatement(ast)
             elif type(return_type) is ArrayType:
-                if return_type.size != func.typ.size:
+                if return_type.size != func.rettype.size:
                     raise TypeMismatchInStatement(ast)
                 if return_type.eleType is None:
                     if type(ast.expr) not in [Id, CallExpr, ArrayLiteral]:
                         raise TypeCannotBeInferred(ast)
                     return_type.eleType = self.__inferType(
-                        ast.expr, func.typ, param)
+                        ast.expr, func.rettype, param)
                     if return_type.eleType is None:
                         raise TypeCannotBeInferred(ast)
                 else:
-                    if type(return_type.eleType) is not type(func.typ.eleType):
+                    if type(return_type.eleType) is not type(func.rettype.eleType):
                         raise TypeMismatchInStatement(ast)
-        return return_type
+        self.func_return_type = return_type
+        return param
 
     def visitAssign(self, ast: Assign, param):
         '''
@@ -590,7 +597,7 @@ class StaticChecker(BaseVisitor, Utils):
             else:
                 if type(lhs_type.eleType) is not type(rhs_type.eleType):
                     raise TypeMismatchInStatement(ast)
-        return None
+        return param
 
     def visitCallStmt(self, ast: CallStmt, param):
         '''
@@ -637,7 +644,7 @@ class StaticChecker(BaseVisitor, Utils):
             func_found.rettype = self.__inferType(ast, VoidType(), param)
             if func_found.rettype is None:
                 raise TypeCannotBeInferred(ast)
-        return func_found.rettype
+        return param
 
     def visitNumberLiteral(self, ast, param):
         return NumberType()
