@@ -23,7 +23,7 @@ def main(argv):
         subprocess.run(["java", "-jar", ANTLR_JAR, "-o", '../target',
                     "-no-listener", "-visitor", "-Xexact-output-dir", "main/zcode/parser/ZCode.g4"])
         
-        if argv[1] in ['LexerSuite', 'ParserSuite', 'ASTGenSuite', 'LexerSuite_VoTien', 'ParserSuite_VoTien', 'ASTGenSuite_TanNguyen']:
+        if argv[1] in ['LexerSuite', 'ParserSuite', 'ASTGenSuite', 'CheckSuite', 'LexerSuite_VoTien', 'ParserSuite_VoTien', 'ASTGenSuite_TanNguyen']:
             exec(f'from {argv[1]} import {argv[1]}')
             exec(f'getAndTest({argv[1]})')
 
@@ -72,6 +72,7 @@ def printUsage():
     print('python3 run.py test LexerSuite')
     print('python3 run.py test ParserSuite')
     print('python3 run.py test ASTGenSuite')
+    print('python3 run.py test CheckSuite')
     print('python3 run.py genTest LexerSuite')
     print('python3 run.py genTest ParserSuite')
     print('python3 run.py genTest ASTGenSuite')
