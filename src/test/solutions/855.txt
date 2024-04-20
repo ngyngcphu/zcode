@@ -1,0 +1,1 @@
+Type Cannot Be Inferred: If((Id(a), VarDecl(Id(a), NumberType, None, None)), [(Id(a), Return())], VarDecl(Id(a), NumberType, None, None))

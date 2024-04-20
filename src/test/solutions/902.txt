@@ -1,1 +1,1 @@
-Program([FuncDecl(Id(foo), [], None), FuncDecl(Id(foo), [], None), FuncDecl(Id(main), [], Return())])
+Type Cannot Be Inferred: VarDecl(Id(a), None, var, ArrayLit(Id(x)))

@@ -125,7 +125,7 @@ class StaticChecker(BaseVisitor, Utils):
             elif var_init_type is None and ast.varType is not None:
                 # If the type of ArrayCell expression is None, raise TypeCannotBeInferred
                 if type(ast.varInit) not in [Id, CallExpr, ArrayLiteral]:
-                    raise TypeCannotBeInferred(ast)
+                    raise TypeCannotBeInferred(ast) 
                 var_init_type = self.__inferType(
                     ast.varInit, ast.varType, param)
                 if var_init_type is None:
@@ -182,8 +182,9 @@ class StaticChecker(BaseVisitor, Utils):
             self.func_current = func_found.name
             self.visit(ast.body, [[param_env] + param[0]] +
                        param[1:] if param_env else param)
-            func_found.rettype = self.func_return_type if self.func_return_type is not None else VoidType(
-            ) if not self.func_return_list else None
+            if func_found.rettype is None:
+                func_found.rettype = self.func_return_type if self.func_return_type is not None else VoidType(
+                ) if not self.func_return_list else None
             func_found.body = ast.body
             self.func_has_returned = False
             self.func_return_list = []
@@ -319,8 +320,6 @@ class StaticChecker(BaseVisitor, Utils):
         '''
         if self.var_current is not None and ast.name.name == self.var_current:
             raise TypeMismatchInExpression(ast)
-        if not all(map(lambda env: self.lookup(ast.name.name, env, lambda symbol: symbol.name) is None, param[:-1])):
-            raise TypeMismatchInExpression(ast)
         func_found = self.lookup(
             ast.name.name, param[-1], lambda symbol: symbol.name)
         if func_found is None or (func_found is not None and type(func_found) is not FuncSymbol):
@@ -363,11 +362,11 @@ class StaticChecker(BaseVisitor, Utils):
         '''
         if self.var_current is not None and ast.name == self.var_current:
             raise Undeclared(Identifier(), ast.name)
-        found_type = next((symbol.typ for symbol_list in param for symbol in symbol_list if type(
+        found_type = next((symbol for symbol_list in param for symbol in symbol_list if type(
             symbol) is VarSymbol and symbol.name == ast.name), None)
         if not found_type:
             raise Undeclared(Identifier(), ast.name)
-        return found_type
+        return found_type.typ
 
     def visitArrayCell(self, ast: ArrayCell, param):
         '''
@@ -607,8 +606,6 @@ class StaticChecker(BaseVisitor, Utils):
         - `name`: Id
         - `args`: List[Expr] - empty list if there is no argument
         '''
-        if not all(map(lambda env: self.lookup(ast.name.name, env, lambda symbol: symbol.name) is None, param[:-1])):
-            raise TypeMismatchInStatement(ast)
         func_found = self.lookup(
             ast.name.name, param[-1], lambda symbol: symbol.name)
         if func_found is None or (func_found is not None and type(func_found) is not FuncSymbol):
@@ -645,8 +642,7 @@ class StaticChecker(BaseVisitor, Utils):
                         raise TypeMismatchInStatement(ast)
         if func_found.rettype is None:
             func_found.rettype = self.__inferType(ast, VoidType(), param)
-            if func_found.rettype is None:
-                raise TypeCannotBeInferred(ast)
+            self.func_return_type = VoidType()
         return param
 
     def visitNumberLiteral(self, ast, param):

@@ -1,6 +1,4 @@
 
-            func foo()
-            func foo()
-            
-            func main() return
+            dynamic x
+            var a <- [x]
         

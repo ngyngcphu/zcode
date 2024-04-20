@@ -1,0 +1,1 @@
+Type Cannot Be Inferred: VarDecl(Id(c), None, var, BinaryOp(+, NumLit(1.0), Id(right)))
